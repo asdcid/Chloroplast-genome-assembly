@@ -1,0 +1,20 @@
+1. same_structure means combine all contigs in an assembly to create a single, no duplication, same structure with cp ref genome contig. This step can be skipped. In general, hybrid assembly with >20x long read and > 20x short read can produce a "complete" contig, and with <20x long read can generate three contigs, lsc, ir, ssc, using Unicycler. 
+
+The mummer_plot.sh can give you the dot-plot for two genome alignment
+
+The direction.py script is recommended for assembly which has clear lsc/ir/ssc contigs or a complete contig but the structure is different from cp ref genome. The direction.py changed the direction based on genes, the genes used to ensure direction can be changed in the script. The mummer_direction.py is basing on mummer alignement result to merge the congits. These two scripts are VERY VERY VERY VERY depending on the original assembly, NOT SUITABLE FOR ALL SITUATIONS.
+
+
+2. polish
+Long read only assembly: Racon, Nanopolish, Racon+Nanopolish (suggested, used Racon polisehed assembly as input)
+Short read only assembly and hybrid assembly: Pilon
+
+The line 90 and line 106 in run_nanopolish should be changed to the path in which you put the nanopolish scripts
+
+The line 83 in run_pilon should be changed to the path in which you install the pilon
+
+Pilon assumes the genome end with 'fasta', whereas Racon and Nanopolish assume the genomee end with 'fa'. This can be change in the script.
+
+NOTE: Racon only run TEN iterations (because the polished is still changing after a few hundred iterations in the test), whereas Nanopolish and Pilon run until the result unchange.
+
+3. Using the 100x illumina validation data (separated in the before assembly step, randomly chosen, not use for assembly) to remap to assembly, check the mapping rate, error rate, mismatch/deletion/insertion

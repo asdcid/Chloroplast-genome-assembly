@@ -1,0 +1,4 @@
+1. The cp ref genome should be double-up, in case some read mapped to the 'cut-point'
+2. Put all ref genomes into one file
+3. The Blasr does not support fa.gz or fq.gz
+

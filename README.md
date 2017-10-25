@@ -1,5 +1,7 @@
 # Chroloplast-genome-assembly
 
+Requirements
+
 fastqc
 
 Bbduk v37.31

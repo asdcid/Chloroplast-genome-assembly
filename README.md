@@ -1,5 +1,10 @@
 # Chroloplast-genome-assembly
 
-Separate the fastq into two parts. (The small part as the testing data set to test the assembly quality)
+fastqc
+Bbduk v37.31
+Porechop v0.2.1
+Nanofilt v1.2.0
 
-Run getRandomRead.sh to separate the fastq.
+Bowtie2 v2.2.6
+Blasr v5.1
+samtools v1.5

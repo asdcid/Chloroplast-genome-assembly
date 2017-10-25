@@ -15,3 +15,4 @@ Bowtie2 v2.2.6
 Blasr v5.1
 
 samtools v1.5
+a

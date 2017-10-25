@@ -1,4 +1,4 @@
-1. same_structure means combine all contigs in an assembly to create a single, no duplication, same structure with cp ref genome contig. This step can be skipped. In general, hybrid assembly with >20x long read and > 20x short read can produce a "complete" contig, and with <20x long read can generate three contigs, lsc, ir, ssc, using Unicycler. 
+1. same_structure means combine all contigs in an assembly to create a single contig, which is no duplication and has same structure with cp ref genome. This step can be skipped. In general, hybrid assembly with >20x long read and > 20x short read can produce a "complete" contig, and with <20x long read can generate three contigs, lsc, ir, ssc, using Unicycler. 
 
 The mummer_plot.sh can give you the dot-plot for two genome alignment
 

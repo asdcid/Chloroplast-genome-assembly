@@ -56,7 +56,7 @@ mkdir 4_qualityCheck/result
 ./_qualityCheck/run_fastqc.sh 3_qualityTrim/result/long.trim.fastq.gz 4_qualityCheck/result
 ```
 
-## cp\_DNA\_extraction
+### cp\_DNA\_extraction
 
 assume the ref.fa (other cp genomes, should be double-up, in case read maps to the 'cut-point') is in 1\_pre\_assembly/2\_cpDNAExtraction/longRead/ref/
 ```
@@ -78,7 +78,17 @@ the cp reads are in the long.fasta
 ```
 cd ../../../2_assembly/longReadOnly
 ```
-canu assembly, assume cp genome size is 160kb, corOutCoverage is 40, correctedErrorRate is 0.154, the path of gnuplot is gunPlotPath, use 30 threads
+canu assembly, assume cp genome size is 160kb, corOutCoverage is 40, correctedErrorRate is 0.154, the path of gnuplot is gunPlotPath, use 30 threads. The final assembly is Epau.contigs.fasta
 ```
+cd canu
 ./run_canu.sh ../../../1_pre_assembly/2_cpDNAExtraction/longRead/result/long.fasta result Epau 160kb 40 0.154 30 gunPlotPath
+```
+hinge assembly. If not PacBio reads, run 1\_convertName.sh to get the correct header that hinge can recoginzed.
+```
+cd ../hinge
+./1_convertName.sh ../../../1_pre_assembly/2_cpDNAExtraction/longRead/result .
+```
+the reads with new header are in long.trim.pacbioName.fasta. Assume the coverage is 20x nominal is nominal.ini (can be found in hinge install dir) in this dir. The final assembly is 40coverage.consensus.fasta
+```
+2_run_hinge.sh long.trimm.pacbioName.fasta result 20 nominal.ini
 ```

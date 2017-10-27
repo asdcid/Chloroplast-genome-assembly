@@ -31,7 +31,7 @@ A demo run for assembling cp genome is the following:
 ## Long read only assembly
 
 #The inputFile is long.fastq.gz, in a dir ~/data/, species is E.pau
-
+### 1\_pre\_assembly
 ### QualityControl
 
 run fastqc to check the quality
@@ -144,7 +144,7 @@ mkdir result_qualimap
 ## Short read only assembly
 
 #The inputFiles are R1.fastq.gz, R2.fastq.gz in a dir ~/data/
-
+### 1\_pre\_assembly
 ### QualityControl
 
 run fastqc to check the quality

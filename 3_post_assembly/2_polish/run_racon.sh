@@ -25,7 +25,7 @@ polish()
     mkdir $bwaDir
     mkdir $resultDir
 
-    coverage=$(basename ${inputFile%%.fastq})
+    coverage=$(basename ${inputFile%%.fasta})
 
     #index
     ln $ref $refDir

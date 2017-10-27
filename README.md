@@ -24,3 +24,16 @@
 2_assembly: 100x short reads are separated for assembly quality check in the 3_post_assembly. https://github.com/roblanf/splitreads provides scripts for randomly select short/long reads for assembly. The long read only assembl were using Hinge and Canu, whereas short read only and hybrid assembly were using Unicycler
 
 3_post_assembly: the raw assembly was processed to create a single contig, which is no duplication and has same structure with cp reference genome (details see 3_post_assembly/README. Next, the 100x short reads kept from previous step was used to mapped to processed assembly to evaulate the assembly quality by checking the mapping rate, error rate and mismatch/insertion/deletion using Qualimap. 
+
+## Running
+A demo run for assembling cp genome is the following:
+### Long read only assembly
+'''
+#The inputFile is long.fastq.gz, in a dir called data/
+#run fastq to check the quality
+./1\_pre\_assembly/1\_qualityControl/longRead/1\_qualityCheck/run\_fastqc.sh data/long.fastq.gz outputFastqResult\_dir
+#trim adaptor
+./1\_pre\_assembly/1\_qualityControl/longRead/2\_adapterTrim/run\_porechop.sh data/long.fastq.gz 1\_pre\_assembly/1\_qualityControl/longRead/2\_adapterTrim/result/long.trim.fastq.gz
+#trim low qualty region (<9) and read < 1kb
+./1\_pre\_assembly/1\_qualityControl/longRead/3\_quaityTrim\run\_nanoFilt.sh 1\_pre\_assembly/1\_qualityControl/longRead/2\_adapterTrim/result/long.trim.fastq.gz 1\_pre\_assembly/1\_qualityControl/longRead/3\_qualityTrim/result 9 1000
+'''

@@ -30,7 +30,7 @@
 A demo run for assembling cp genome is the following:
 ## Long read only assembly
 
-#The inputFile is long.fastq.gz, in a dir ~/data/
+#The inputFile is long.fastq.gz, in a dir ~/data/, species is E.pau
 
 ### QualityControl
 
@@ -45,7 +45,7 @@ trim adaptor
 mkdir 2_adapterTrim/result
 ./2_adapterTrim/run_porechop.sh ~/data/long.fastq.gz 2_adapterTrim/result/long.trim.fastq.gz
 ```
-trim low qualty region (<9) and read < 1kb
+trim low qualty region (<9) and read <= 1kb
 ```
 mkdir 3_qualityTrim/result
 ./3_quaityTrim/run_nanoFilt.sh 2_adapterTrim/result/long.trim.fastq.gz 3_qualityTrim/result 9 1000
@@ -53,7 +53,7 @@ mkdir 3_qualityTrim/result
 rerun fastqc to check the data again
 ```
 mkdir 4_qualityCheck/result
-./\_qualityCheck/run_fastqc.sh 3_qualityTrim/result/long.trim.fastq.gz 4_qualityCheck/result
+./_qualityCheck/run_fastqc.sh 3_qualityTrim/result/long.trim.fastq.gz 4_qualityCheck/result
 ```
 
 ## cp\_DNA\_extraction
@@ -62,10 +62,23 @@ assume the ref.fa (other cp genomes, should be double-up, in case read maps to t
 ```
 cd ../../2_cpDNAExtraction/longRead
 mkdir result
-
 ```
-#use 10 threads, minMatch is 15, minAlnLength is 1kb (Blasr does not support the gz format, ungzip first, can be gzipped again after mapping)
+use 10 threads, minMatch is 15, minAlnLength is 1kb (Blasr does not support the gz format, ungzip first, can be gzipped again after mapping)
 ```
 pigz -d ../../1_qualityControl/longRead/3_qualityTrim/result/*gz
 ./1_run_Blasr.sh ../../1_qualityControl/longRead/3_qualityTrim/result/ result 10 ref/ref.fa 15 1000  
+```
+get cp read from the Blasr output
+```
+./2_resultParse.py result/long.trim.out ~/data/long.fastq result/long.fasta
+```
+the cp reads are in the long.fasta
+
+### 2\_assembly
+```
+cd ../../../2_assembly/longReadOnly
+```
+canu assembly, assume cp genome size is 160kb, corOutCoverage is 40, correctedErrorRate is 0.154, the path of gnuplot is gunPlotPath, use 30 threads
+```
+./run_canu.sh ../../../1_pre_assembly/2_cpDNAExtraction/longRead/result/long.fasta result Epau 160kb 40 0.154 30 gunPlotPath
 ```

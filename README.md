@@ -107,23 +107,37 @@ the alignment fig is result/assembly.png. According to the alignment suitation, 
 
 run direction.py
 ```
-python direction.py assembly.contig.fasta assembly_one_contig.fasta
+python direction.py assembly.contig.fasta assembly_one_contig.fa
 ```
 run mummer\_plot.sh
 ```
-./mummer_direction.sh result/assembly.coord  assembly_one_contig.fasta assembly.contig.fasta
+./mummer_direction.sh result/assembly.coord  assembly_one_contig.fa assembly.contig.fasta
 ```
 ### polish
 ```
 cd ../2_polish
 ```
 we use Racon+Nanopolish here. Racon runs 10 iterations, whereas Nanopolish runs until the result unchanged.
-Run Racon first, and then use the Racon-polish result as input to run Nanopolish. The number of iteration can be changed if the while loop : _if [ $n -gt 10 ]
+Run Racon first, and then use the Racon-polish result as input to run Nanopolish. The number of iteration can be changed if the while loop : _if [ $n -gt 10 ]_. Nanopolish is MinION specific, if data is from Pacbio, Nanopolish can be changed to another polisher or just skip.
 
-run Racon, use 10 threads. The path of inputFile (the cp reads) and ref (assembly result) should be absolute path.
+run Racon, use 10 threads. The path of inputFile (the cp reads) and ref (assembly result) should be absolute path. The ref should end with 'fa', if end with 'fasta', change all 'fa' into 'fasta' in the code.
 ```
 mkdir result_racon
-./run_racon.sh 1_pre_assembly/2_cpDNAExtraction/longRead/result/long.fasta result_racon 3_post_assembly/1_same_structure/assembly.contig.fasta 10
+./run_racon.sh 1_pre_assembly/2_cpDNAExtraction/longRead/result/long.fasta result_racon 3_post_assembly/1_same_structure/assembly_one_contig.fa 10
+```
+run Nanopolish with 10 threads. Nanopolish needs the index data (link to original Fast5 data, details see [nanopolish] (https://github.com/jts/nanopolish)). Assume the final polish result of Racon is  result\_racon/round10/result/assembly.polished.racon.fa
+```
+nanopolish index -d /path/to/raw_fast5s/ 1_pre_assembly/2_cpDNAExtraction/longRead/result/long.fasta
+mkdir result_nanopolish
+./run_nanopolish.sh 1_pre_assembly/2_cpDNAExtraction/longRead/result/long.fasta result_nanopolish result\_racon/round10/result/assembly.polished.racon.fa 10
+```
+### assembly\_quality\_control
+finally, we use the 100x short read (or other coverage of short read) to remap to the assembly to assess its quality. If no short read, this step can be ignored. Using 10 threads. Qualimap is used to grep the mapping information.
+```
+cd ../3_assembly_quality_control/
+mkdir result_bowtie2
+./1_run_bowtie2.sh /path/to/shortReadR1 /path/to/shortReadR2 result_bowtie2 /path/to/polished_assembly 10
+mkdir result_qualimap
+./2_run_qualimap.sh result_bowtie2 result_qualimap 10
 ```
 
-### assembly\_quality\_control

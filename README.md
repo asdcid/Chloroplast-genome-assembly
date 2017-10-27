@@ -83,7 +83,7 @@ canu assembly, assume cp genome size is 160kb, corOutCoverage is 40, correctedEr
 cd canu
 ./run_canu.sh ../../../1_pre_assembly/2_cpDNAExtraction/longRead/result/long.fasta result Epau 160kb 40 0.154 30 gunPlotPath
 ```
-hinge assembly. If not PacBio reads, run 1\_convertName.sh to get the correct header that hinge can recoginzed.
+hinge assembly. If MinION reads, run 1\_convertName.sh to get the correct header that hinge can recoginzed.
 ```
 cd ../hinge
 ./1_convertName.sh ../../../1_pre_assembly/2_cpDNAExtraction/longRead/result .
@@ -114,8 +114,16 @@ run mummer\_plot.sh
 ./mummer_direction.sh result/assembly.coord  assembly_one_contig.fasta assembly.contig.fasta
 ```
 ### polish
+```
+cd ../2_polish
+```
+we use Racon+Nanopolish here. Racon runs 10 iterations, whereas Nanopolish runs until the result unchanged.
+Run Racon first, and then use the Racon-polish result as input to run Nanopolish. The number of iteration can be changed if the while loop : _if [ $n -gt 10 ]
 
-
-
+run Racon, use 10 threads. The path of inputFile (the cp reads) and ref (assembly result) should be absolute path.
+```
+mkdir result_racon
+./run_racon.sh 1_pre_assembly/2_cpDNAExtraction/longRead/result/long.fasta result_racon 3_post_assembly/1_same_structure/assembly.contig.fasta 10
+```
 
 ### assembly\_quality\_control

@@ -17,7 +17,7 @@ outputDir=$2
 threads=$3
 ref=$4
 #15
-mimMatch=$5
+minMatch=$5
 #5000
 minAlnLength=$6
 

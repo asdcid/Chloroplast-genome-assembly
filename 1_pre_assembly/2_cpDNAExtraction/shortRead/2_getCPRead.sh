@@ -13,7 +13,7 @@ inputDir=$2
 #output dir for storing cp fastq read.
 outputDir=$3
 
-for inputFile in $inputDir/*.bam
+for inputFile in $inputDir/*.sort.bam
 do
     echo "Processing " $inputFile
     temp=temp_$(basename $inputFile)

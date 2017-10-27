@@ -20,11 +20,11 @@
 
 ## Procedure
 
-1_pre_assembly: the input could be the raw long/short reads. Reads will be trimed the low quality region and adapters. Fastqc is used to visualize the read quality. Next, the processed read could be mapped to cp reference genomes (custom) to get the cp reads. Assuming the original reads contain non-cp genome, such at mtDNA or nuclear DNA.
+1\_pre\_assembly: the input could be the raw long/short reads. Reads will be trimed the low quality region and adapters. Fastqc is used to visualize the read quality. Next, the processed read could be mapped to cp reference genomes (custom) to get the cp reads. Assuming the original reads contain non-cp genome, such at mtDNA or nuclear DNA.
 
-2_assembly: 100x short reads are separated for assembly quality check in the 3_post_assembly. https://github.com/roblanf/splitreads provides scripts for randomly select short/long reads for assembly. The long read only assembl were using Hinge and Canu, whereas short read only and hybrid assembly were using Unicycler
+2\_assembly: 100x short reads are separated for assembly quality check in the 3_post_assembly. https://github.com/roblanf/splitreads provides scripts for randomly select short/long reads for assembly. The long read only assembl were using Hinge and Canu, whereas short read only and hybrid assembly were using Unicycler
 
-3_post_assembly: the raw assembly was processed to create a single contig, which is no duplication and has same structure with cp reference genome (details see 3_post_assembly/README. Next, the 100x short reads kept from previous step was used to mapped to processed assembly to evaulate the assembly quality by checking the mapping rate, error rate and mismatch/insertion/deletion using Qualimap. 
+3\_post_assembly: the raw assembly was processed to create a single contig, which is no duplication and has same structure with cp reference genome (details see 3_post_assembly/README. Next, the 100x short reads kept from previous step was used to mapped to processed assembly to evaulate the assembly quality by checking the mapping rate, error rate and mismatch/insertion/deletion using Qualimap. 
 
 # Running
 A demo run for assembling cp genome is the following:
@@ -92,3 +92,30 @@ the reads with new header are in long.trim.pacbioName.fasta. Assume the coverage
 ```
 2_run_hinge.sh long.trimm.pacbioName.fasta result 20 nominal.ini
 ```
+### 3\_post\_assembly
+```
+cd ../../../3_post_assembly
+```
+### mummer
+first, use mummer to check the contig alignment. Assume to cp genome which is used to compare is 3\_post\_assembly/1\_same\_structure/ref/ref.fa, the assembly result is 3\_post\_assembly/1\_same\_structure/assembly.contig.fasta (can be the canu/hinge result)
+```
+cd 1_same_structure
+mkdir result
+./mummer_plot.sh assembly.contig.fasta ref/ref.fa result/assembly result/assembly.png 
+```
+the alignment fig is result/assembly.png. According to the alignment suitation, choose direction.py or mummer\_direction.py to create a single contig which is no duplication and has the same sturcture of cp ref genome. The direction.py script is recommended for assembly which has clear lsc/ir/ssc contigs or a complete contig but the structure is different from cp ref genome. The direction.py changed the direction based on genes, the genes used to ensure direction can be changed in the script. The mummer\_direction.py is basing on mummer alignement result to merge the congits. **These two scripts are VERY VERY VERY VERY depending on the original assembly, NOT SUITABLE FOR ALL SITUATIONS.**
+
+run direction.py
+```
+python direction.py assembly.contig.fasta assembly_one_contig.fasta
+```
+run mummer\_plot.sh
+```
+./mummer_direction.sh result/assembly.coord  assembly_one_contig.fasta assembly.contig.fasta
+```
+### polish
+
+
+
+
+### assembly\_quality\_control

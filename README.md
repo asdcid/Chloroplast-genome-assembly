@@ -1,5 +1,7 @@
 # Chroloplast-genome-assembly
 
+This pipeline is used to assemble cp genome with short read (Unicycler) or long read (Canu and Hinge) or hybrid (Unicycler). For long read only assembly, according to our analysis, Hinge is better than Canu, but the min coverage should be **>=20x**. In our analysis, long read only assembly result needs to be manually removed duplication and rearranged structure. For short read only assembly, we suggest that the short read coverage should be >= 20x. **When the short read coverage >=20x, Unicycler is able to correct distinguish short single copy (ssc), long singel copy (lsc) and inverst repeats (ir), which returns three individual, complete contigs (ssc, lsc and ir)**. In terms to hybrid assembly, we recommend using **>=20x coverage short read and >=20x coverage of long read**, which can provide **a single, no duplication and complete cp genome**. In general, the direction of lsc or ssc in hybrid assembly result could be different compared to other published cp genome. This could be cause by heteroplasmy. The structure of the hybrid assembly result could be easy changed according to the direction of gene exclusively located in lsc/ssc/ir (we provide an example script to do this (3\_post\_assembly/1\_same\_structure/direction.py), but this script cannot fix all conditions.) 
+
 ## Requirements
 - Fastqc
 - Bbduk v37.31

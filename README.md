@@ -277,7 +277,16 @@ as described above in long read only assembly part.
 ```
 cd ../2_polish
 ```
-we use Pilon to polish the assembly, run until result unchanged. 
+we use Pilon to polish the assembly, run until result unchanged. Using 10 threads. 
+```
+mkdir result_pilon
+./run_pilon.sh \
+  ../../1_pre_assembly/2_cpDNAExtraction/shortRead/cpRead/R1.trim.fastq.gz \
+  ../../1_pre_assembly/2_cpDNAExtraction/shortRead/cpRead/R2.trim.fastq.gz \
+  result_pilon \
+  /path/to/final_assembly_single_contig.fa \
+  10 \
+  checkDiff.py
 ```
 ### assembly\_quality\_control
 As described above in the long read only assembly part. NOTE: the short read used to remap should be **unuse** in the assembly. Read randomly separate can use script in https://github.com/roblanf/splitreads.

@@ -275,7 +275,7 @@ cd ../../3_post_assembly
 as described above in long read only assembly part.
 ### polish
 ```
-cd ../2_polish
+cd 2_polish
 ```
 we use Pilon to polish the assembly, run until result unchanged. Using 10 threads. 
 ```

@@ -30,7 +30,7 @@ This pipeline is used to assemble cp genome with short read (Unicycler) or long 
 
 # Running
 A demo run for assembling cp genome is the following:
-## Long read only assembly
+## LONG READ ONLY ASSEMBLY
 
 #The inputFile is long.fastq.gz, in a dir ~/data/, species is E.pau
 ### 1\_pre\_assembly
@@ -160,11 +160,11 @@ cd ../2_polish
 we use Racon+Nanopolish here. Racon runs 10 iterations, whereas Nanopolish runs until the result unchanged.
 Run Racon first, and then use the Racon-polish result as input to run Nanopolish. The number of iteration can be changed if the while loop : _if [ $n -gt 10 ]_. Nanopolish is MinION specific, if data is from Pacbio, Nanopolish can be changed to another polisher or just skip.
 
-run Racon, use 10 threads. The path of inputFile (the cp reads) and ref (assembly result) should be absolute path. The ref should end with 'fa', if end with 'fasta', change all 'fa' into 'fasta' in the code.
+run Racon, use 10 threads. The path of inputFile (the cp reads) and ref (assembly result) should be absolute path. The ref should end with 'fa', if end with 'fasta', change all 'fa' into 'fasta' in the code. In addition, the read used to assemble should be changed to fastq format, which can be obtained read from 1\_pre\_assembly/3\_qualityTrim/result/long.trim.fastq.gz according to the read name. 
 ```
 mkdir result_racon
 ./run_racon.sh \
-  1_pre_assembly/2_cpDNAExtraction/longRead/result/long.fasta \
+  1_pre_assembly/2_cpDNAExtraction/longRead/result/long.fastq \
   result_racon \
   3_post_assembly/1_same_structure/assembly_one_contig.fa \
   10
@@ -198,7 +198,7 @@ mkdir result_qualimap
   10
 ```
 
-## Short read only assembly
+## SHORT READ ONLY ASSEMBLY
 
 #The inputFiles are R1.fastq.gz, R2.fastq.gz in a dir ~/data/
 ### 1\_pre\_assembly
@@ -290,3 +290,15 @@ mkdir result_pilon
 ```
 ### assembly\_quality\_control
 As described above in the long read only assembly part. NOTE: the short read used to remap should be **unuse** in the assembly. Read randomly separate can use script in https://github.com/roblanf/splitreads.
+
+## HYBRID ASSEMBLY
+how to get cp short read and cp long read are described above (1\_pre\_assembly). In general, every step in the hybrid assembly is the same as short read only assembly (including the 3\_post\_assembly). Only the assembly script is different.
+```
+cd 2_assembly/hybrid/
+./run_unicycler.sh \
+  ../../1_pre_assembly/2_cpDNAExtraction/longRead/result/long.fasta \
+  ../../1_pre_assembly/2_cpDNAExtraction/shortRead/cpRead/R1.trim.fastq.gz \
+  ../../1_pre_assembly/2_cpDNAExtraction/shortRead/cpRead/R2.trim.fastq.gz \
+  result \
+  10
+```

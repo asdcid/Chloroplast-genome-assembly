@@ -1,5 +1,8 @@
+#Radom reads
 1. 100x illumina reads for assembly quality assessment were separte first using scripts in https://github.com/roblanf/splitreads
 2. The random reads (can be set for different coverage) were generated using scripts in https://github.com/roblanf/splitreads (optional)
+
+#long read assembly
 3. Long read only assembly were using Hinge and Canu
 4. Sometimes (in low coverage) Hinge failed to assemble a genome, change cut_off in nominal.ini from 300 to 10 could help
 5. The fasta2DB in Hinge can recoginze pacbio read header only, change the header (if not use pacbio data) using hinge/1_convertName.sh

@@ -1,6 +1,6 @@
-## Radom reads
+## Random reads
 1. 100x illumina reads for assembly quality assessment were separte first using scripts in https://github.com/roblanf/splitreads
-2. The random reads (can be set for different coverage) were generated using scripts in https://github.com/roblanf/splitreads (optional)
+2. The random reads (can be set for different coverage) were generated using scripts in https://github.com/roblanf/splitreads (optional). Also, the scripts I used to random select different coverage of long reads and short reads can be found in randomSelection folder.
 
 ## long read assembly
 1. Long read only assembly were using Hinge and Canu

@@ -19,6 +19,8 @@ This pipeline is used to assemble cp genome with short read (Unicycler) or long 
 - Nanopolish v0.8.1
 - Pilon v1.22
 - Qualimap v2.2.1
+- IQ-TREE v1.5.5
+- Cluster Omega v1.2.4
 
 ## Procedure
 
@@ -302,3 +304,6 @@ cd 2_assembly/hybrid/
   result \
   10
 ```
+
+### phylogenetic analysis
+First, split the different chloroplast genomes by exon and non-exon, and then put the same region together (in fasta format), run run\_clustalo.sh first to get the alignment from different chloroplast genome, and then check and fix the alignment manually. After that, combine all the fragment fasta file together to create a corrected whole genome alignment (in fasta format), and create a nexus file (optional) according to the alignment. Finally, run run\_iqtree.sh with the corrected whole genome alignment file nexus to get the phylogenetic tree. 

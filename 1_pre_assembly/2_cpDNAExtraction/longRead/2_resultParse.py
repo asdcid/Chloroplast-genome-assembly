@@ -12,16 +12,10 @@ from Bio import SeqIO
  
  
 def main():
-    #inputFile   = 'result/RB7_C4.fasta.out'
-    #reference   = 'query/RB7_C4.fasta'
-    #outputFile  = 'result/blasr_RB7_C4.fasta'
+    inputFile   = 'result/RB7_C4.fasta.out'
+    reference   = 'query/RB7_C4.fasta'
+    outputFile  = 'result/blasr_RB7_C4.fasta'
 
-    #blasr output
-    inputFile   = sys.argv[1]
-    #blasr inputFile
-    reference   = sys.argv[2]
-    #output parse result
-    outputFile  = sys.argv[3]
 
     o = open(outputFile, 'w+')
     reads   = {}

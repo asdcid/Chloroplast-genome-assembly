@@ -195,16 +195,42 @@ As described above in the long-read only assembly part， we used the 100x short
 ```
 
 ## HYBRID ASSEMBLY
-The method to get chloroplast long-/short- long read are described above (1\_pre\_assembly). In general, every step in the hybrid assembly is the same as short read only assembly (including the 3\_post\_assembly). Only the assembly script is different.
+The method to get chloroplast long-/short- long read are described above (1\_pre\_assembly). In general, every step in the hybrid assembly is the same as short read only assembly (including the 3\_post\_assembly). Only the 2\_assembly script is different.
+
+we used different combination of coverage of long-/short- read to do the assembly to find out the optimal combination, using Unicycler. Three different types of error-correction, SPAdes/Karect/Karect-SPAdes, were also compared in this hybrid assembly. 
+
+for SPAdes-correct read assembly:
 ```
-cd 2_assembly/hybrid/
-./run_unicycler.sh \
-  ../../1_pre_assembly/2_cpDNAExtraction/longRead/result/long.fasta \
-  ../../1_pre_assembly/2_cpDNAExtraction/shortRead/cpRead/R1.trim.fastq.gz \
-  ../../1_pre_assembly/2_cpDNAExtraction/shortRead/cpRead/R2.trim.fastq.gz \
-  result \
-  10
+./2_assembly/hybrid/run_unicycler.sh 
+```
+for Karect-correct read assembly:
+```
+./2_assembly/hybrid/run_unicycler_noSPAdes.sh
+```
+for Karect-SPAdes-correct read assembly:
+```
+./2_assembly/hybrid/run_unicycler.sh 
 ```
 
+## ANNOTATION
+We use [GeSeq] (https://chlorobox.mpimp-golm.mpg.de/geseq.html) to do the annotation. The genes with very short exon were manually annotated according to other known Eucalyptus chloroplast genome annotations. 
+
 ## PHYLOGENETIC ANALYSIS
-First, split the different chloroplast genomes by exon and non-exon, and then put the same region together (in fasta format), run run\_clustalo.sh first to get the alignment from different chloroplast genome, and then check and fix the alignment manually. After that, combine all the fragment fasta file together to create a corrected whole genome alignment (in fasta format), and create a nexus file (optional) according to the alignment. Finally, run run\_iqtree.sh with the corrected whole genome alignment file nexus to get the phylogenetic tree. 
+We draw the phylogenetic tree using E.pau chloroplast genome (this study generated) and other 31 known Eucalyptus chloroplast genomes. 
+
+First, split the 32 chloroplast genomes by exon and non-exon according our annotation (for E.pau) and genbank annotation (for other 31 known Eucalyptus):
+```
+./phylogenetic_analysis/1_gb_gff_fasta.py
+```
+totally 312 fragments for each species were generated. We created 312 alignments using clustalo.
+```
+./phylogenetic_analysis/2_run_clustalo.sh
+```
+The 312 alignments (fasta format) were checked and fixed manually. After that, combined all the fragment fasta file together to create a corrected whole genome alignment (in fasta format), and create a nexus file (optional) according to the alignment.
+```
+./phylogenetic_analysis/3_getFasta.py
+```
+ Finally, run IQ-TREE with the corrected whole genome alignment file (fasta and nexus format) to get the phylogenetic tree. 
+ ```
+./phylogenetic_analysis/4_run_iqtree.sh
+```

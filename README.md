@@ -55,7 +55,7 @@ rerun fastqc to check the data again
 
 ### cp\_DNA\_extraction
 
-Mapping all trimmed reads to refs (31 known Eucalyptus chloroplast genomes, all double-up) to get the chloroplast reads.
+Mapping all trimmed reads to refs (31 known Eucalyptus chloroplast genomes, all double-up, in case read maps to the 'cut-point') to get the chloroplast reads, using Blasr
 ```
 ./1_pre_assembly/2_cpDNAExtraction/longRead/1_run_Blasr.sh 
 ```
@@ -103,7 +103,7 @@ run Racon. The path of inputFile (the chloroplast long-reads) and ref (assembly 
 ```
 ./3_post_assembly/2_polish/run_racon.sh 
 ```
-run Nanopolish. Nanopolish needs the index data (link to original Fast5 data, details see [nanopolish] (https://github.com/jts/nanopolish)) first.
+run Nanopolish. Nanopolish needs the index data (link to original Fast5 data, details see [nanopolish] (https://github.com/jts/nanopolish)) .
 ```
 ./3_post_assembly/2_polish/
 ./3_post_assembly/2_polish/run_nanopolish.sh 
@@ -112,15 +112,14 @@ For Racon+Nanopolish, run Racon first, and then use the Racon-polish result as i
 
 ### assembly\_quality\_control
 
-finally, we use the 100x short read (randomly selected first, not used in assembly, method see below) to remap to the assembly to assess its quality. Qualimap is used to grep the mapping information.
+finally, we used the 100x short read (randomly selected first, not used in assembly, method see below) to remap to the assembly to assess its quality. Qualimap is used to grep the mapping information.
 ```
 ./3_assembly_quality_control/1_run_bowtie2.sh 
 ./3_assembly_quality_control/2_run_qualimap.sh 
 ```
 
-## SHORT READ ONLY and hybrid ASSEMBLY
+## SHORT READ ONLY ASSEMBLY
 
-#The inputFiles are R1.fastq.gz, R2.fastq.gz in a dir ~/data/
 ### 1\_pre\_assembly
 ### QualityControl
 
@@ -128,7 +127,7 @@ run fastqc to check the quality
 ```
 ./1_pre_assembly/1_qualityControl/shortRread/1_qualityCheck/run_fastqc.sh
 ```
-trim adaptor and low quality region (<30). Read length <50 bp will be removed. Parameters can be changed in the script. Script will auto get the R2 read if they have the same name (R\*.fastq.gz). 10 threads will be used.
+trim adaptor and low quality region (<30). Read length <50 bp will be removed. 
 ```
 ./1_pre_assembly/1_qualityControl/shortRead/2_adapterTrim/run_bbduk.sh 
 ```
@@ -139,25 +138,41 @@ rerun fastqc to check the data again
 
 ### cp\_DNA\_extraction
 
-assume the ref.fa (other cp genomes, should be double-up, in case read maps to the 'cut-point') is in 1\_pre\_assembly/2\_cpDNAExtraction/shortRead/ref/
-Bowtie2 is used, use 10 threads.R1 and R2 should have the same name, such as R\*.trim.fastq.gz.
+Mapping all trimmed reads to refs (31 known Eucalyptus chloroplast genomes, all double-up, in case read maps to the 'cut-point') to get the chloroplast reads, using bowtie2.
 ```
 ./1_pre_assembly/2_cpDNAExtraction/shortRead/1_run_bowtie2.sh 
 ```
-get cp read from the Bowtie2 output
+get chloroplast read from the Bowtie2 output
 ```
 ./1_pre_assembly/2_cpDNAExtraction/shortRead/2_getCPRead.py 
 ```
-the cp reads are in cpRead/R\*.trim.fastq.gz
 
 ### 2\_assembly
-Unicycler is used to do the short read only assembly. In the default setting, the read is corrected by SPAdes, and assembly is polished by Pilon. The final assembly is result/assembly.fasta
+Short-reads were randomly selected (5x, 8x, 10x, 20x, 40x, 60x, 80x, 100x, 200x, 300x, 400x and 500x, assuming the genome size is 160kb). 100x coverage of short-read was seprated first as the validation data which did not use in assembly.
 ```
-./2_assembly/shortReadOnly/2_run_shortRead_unicycler.sh 
+./2_assembly/randomSelection/split_pair_read.sh
+```
+Unicycler is used to do the short-read only assembly with different coverage. In the default setting, the read is corrected by SPAdes. In this study, we try three different read correction: SPAdes, Karect and SPAdes+Karect.
+
+get Karect-correct read
+```
+./2_assembly/run_Karect_correction.sh
+```
+for SPAdes-correct read assembly, using normal read as input:
+```
+./2_assembly/shortReadOnly/run_shortRead_unicycler.sh 
+```
+for Karect-correct read assembly, using the Karect-correct read as input:
+```
+./2_assembly/shortReadOnly/run_shortRead_unicycler_noSPAdes.sh 
+```
+for Karect-SPAdes-correct read assembly, using the Karect-correct read as input:
+```
+./2_assembly/shortReadOnly/run_shortRead_unicycler.sh 
 ```
 ### 3\_post\_assembly
 ### mummer
-as described above in long read only assembly part.
+as described above in long-read only assembly part.
 
 run direction.py
 ```
@@ -168,15 +183,19 @@ run mummer\_plot.sh
 ./3_post_assembly/1_same_structure/mummer_direction.sh 
 ```
 ### polish
-we use Pilon to polish the assembly, run until result unchanged. Using 10 threads. 
+we use Pilon to polish the assembly, run until result unchanged.
 ```
 ./3_post_assembly/2_polish/run_pilon.sh 
 ```
 ### assembly\_quality\_control
-As described above in the long read only assembly part. NOTE: the short read used to remap should be **unuse** in the assembly. Read randomly separate can use script in https://github.com/roblanf/splitreads.
+As described above in the long-read only assembly part， we used the 100x short read (randomly selected first, not used in assembly, method see below) to remap to the assembly to assess its quality. Qualimap is used to grep the mapping information.
+```
+./3_assembly_quality_control/1_run_bowtie2.sh 
+./3_assembly_quality_control/2_run_qualimap.sh 
+```
 
 ## HYBRID ASSEMBLY
-how to get cp short read and cp long read are described above (1\_pre\_assembly). In general, every step in the hybrid assembly is the same as short read only assembly (including the 3\_post\_assembly). Only the assembly script is different.
+The method to get chloroplast long-/short- long read are described above (1\_pre\_assembly). In general, every step in the hybrid assembly is the same as short read only assembly (including the 3\_post\_assembly). Only the assembly script is different.
 ```
 cd 2_assembly/hybrid/
 ./run_unicycler.sh \

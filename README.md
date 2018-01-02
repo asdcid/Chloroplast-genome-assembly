@@ -65,15 +65,21 @@ get chloroplast reads from the Blasr output, from Blasr output to fasta
 ```
 
 ### 2\_assembly
-canu assembly, assume cp genome size is 160kb, corOutCoverage is 40, correctedErrorRate is 0.154, the path of gnuplot is gunPlotPath, use 30 threads. The final assembly is Epau.contigs.fasta
+Randomly selected 5x, 8x, 10x, 20x, 40x, 60x, 80x, 100x, 200x, 300x 400x and 500x coverage reads (assume chloroplast genome size is 160kb).
+```
+./2\_assembly/randomSelection/split_longRead.py
+```
+Run assembly with different coverage of long-read with Canu/Hinge.
+
+Canu assembly, the final assembly is Epau.contigs.fasta
 ```
 ./2_assembly/longReadOnly/canu/run_canu.sh 
 ```
-hinge assembly. If MinION reads, run 1\_convertName.sh to get the correct header that hinge can recoginzed.
+Hinge assembly. Due to the data is MinION read, run 1\_convertName.sh to get the correct header that hinge can recoginzed.
 ```
 ./2_assembly/longReadOnly/hinge/1_convertName.sh 
 ```
-the reads with new header are in long.trim.pacbioName.fasta. Assume the coverage is 20x nominal is nominal.ini (can be found in hinge install dir) in this dir. The final assembly is 40coverage.consensus.fasta
+Using the reads with new header to do the assembly. nominal.ini (can be found in hinge install dir) should be in this dir. The final assembly is xx.consensus.fasta
 ```
 ./2_assembly/longReadOnly/hinge/2_run_hinge.sh 
 ```

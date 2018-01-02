@@ -15,6 +15,6 @@ The line 83 in run_pilon should be changed to the path in which you install the 
 
 Pilon assumes the genome end with 'fasta', whereas Racon and Nanopolish assume the genomee end with 'fa'. This can be change in the script.
 
-NOTE: Racon only run TEN iterations (because the polished is still changing after a few hundred iterations in the test), whereas Nanopolish and Pilon run until the result unchange.
+NOTE: Racon only run TEN iterations (because the polished is still changing after 10 round in the test), whereas Nanopolish and Pilon run until the result unchange.
 
 3. Using the 100x illumina validation data (separated in the before assembly step, randomly chosen, not use for assembly) to remap to assembly, check the mapping rate, error rate, mismatch/deletion/insertion

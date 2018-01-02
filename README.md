@@ -1,6 +1,6 @@
 # Chroloplast-genome-assembly
 
-This pipeline is used to assemble cp genome with short read (Unicycler) or long read (Canu and Hinge) or hybrid (Unicycler). For long read only assembly, according to our analysis, Hinge is better than Canu, but the min coverage should be **>=20x**. In our analysis, long read only assembly result needs to be manually removed duplication and rearranged structure. For short read only assembly, we suggest that the short read coverage should be >= 20x. **When the short read coverage >=20x, Unicycler is able to correct distinguish short single copy (ssc), long singel copy (lsc) and inverst repeats (ir), which returns three individual, complete contigs (ssc, lsc and ir)**. In terms to hybrid assembly, we recommend using **>=20x coverage short read and >=20x coverage of long read**, which can provide **a single, no duplication and complete cp genome**. In general, the direction of lsc or ssc in hybrid assembly result could be different compared to other published cp genome. This could be cause by heteroplasmy. The structure of the hybrid assembly result could be easy changed according to the direction of gene exclusively located in lsc/ssc/ir (we provide an example script to do this (3\_post\_assembly/1\_same\_structure/direction.py), but this script cannot fix all conditions.) 
+This pipeline is used to assemble chloroplast genome with short read (Unicycler) or long read (Canu and Hinge) or hybrid (Unicycler). If anyone want to use, they should change the input/output file in scripts. We randomly selected 5x, 8x, 10x, 20x, 40x, 60x, 80x, 100x, 200x, 300x, 400x and 500x coverage of short/long read to do the assembly to compare the difference. For long read only assembly, according to our analysis, Hinge is better than Canu, but the min coverage should be **>=20x**. In our analysis, long read only assembly result needs to be manually removed duplication and rearranged structure. For short read only assembly, we found that **when the short read coverage >=20x, Unicycler is able to correct distinguish short single copy (ssc), long singel copy (lsc) and inverst repeats (ir), which returns three individual, complete contigs (ssc, lsc and ir)**. In terms to hybrid assembly, we found that **>=20x coverage short read and >=20x coverage of long read** can provide **a single, no duplication and complete chloroplast genome**.) 
 
 ## Requirements
 - Fastqc
@@ -24,11 +24,11 @@ This pipeline is used to assemble cp genome with short read (Unicycler) or long 
 
 ## Procedure
 
-1\_pre\_assembly: the input could be the raw long/short reads. Reads will be trimed the low quality region and adapters. Fastqc is used to visualize the read quality. Next, the processed read could be mapped to cp reference genomes (custom) to get the cp reads. Assuming the original reads contain non-cp genome, such at mtDNA or nuclear DNA.
+1\_pre\_assembly: the input could be the raw long/short reads. Reads will be trimed the low quality region and adapters. Fastqc is used to visualize the read quality. Next, the processed read could be mapped to chloroplast reference genomes (custom) to get the chloroplast reads. Assuming the original reads contain non-chloroplast genome, such at mtDNA or nuclear DNA.
 
-2\_assembly: 100x short reads are separated for assembly quality check in the 3_post_assembly. https://github.com/roblanf/splitreads provides scripts for randomly select short/long reads for assembly. The long read only assembl were using Hinge and Canu, whereas short read only and hybrid assembly were using Unicycler
+2\_assembly: 100x short reads are separated for assembly quality check in the 3\_post\_assembly. 5x, 8x, 10, 20x, 40x, 60x, 80x, 100x, 200x, 300x, 400x and 500x coverage of short/long read were randomly selected for assembly. The long read only assembly was using Hinge and Canu, whereas short read only and hybrid assembly were using Unicycler.
 
-3\_post_assembly: the raw assembly was processed to create a single contig, which is no duplication and has same structure with cp reference genome (details see 3_post_assembly/README. Next, the 100x short reads kept from previous step was used to mapped to processed assembly to evaulate the assembly quality by checking the mapping rate, error rate and mismatch/insertion/deletion using Qualimap. 
+3\_post\_assembly: the raw assembly was processed to create a single contig, which is no duplication and has same structure with cp reference genome (details see 3_post_assembly/README. Next, the 100x short reads kept from previous step was used to mapped to processed assembly to evaulate the assembly quality by checking the mapping rate, error rate and mismatch/insertion/deletion using Qualimap. 
 
 # Running
 A demo run for assembling cp genome is the following:
@@ -120,7 +120,7 @@ finally, we use the 100x short read (or other coverage of short read) to remap t
 ./3_assembly_quality_control/2_run_qualimap.sh 
 ```
 
-## SHORT READ ONLY ASSEMBLY
+## SHORT READ ONLY and hybrid ASSEMBLY
 
 #The inputFiles are R1.fastq.gz, R2.fastq.gz in a dir ~/data/
 ### 1\_pre\_assembly

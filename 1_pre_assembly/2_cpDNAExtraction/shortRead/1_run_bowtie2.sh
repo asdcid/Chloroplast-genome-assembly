@@ -3,19 +3,15 @@
 
 set -e 
 
-#source /home/raymond/devel/C/gcc/setenv.sh
+source /home/raymond/devel/C/gcc/setenv.sh
 
-export PATH='bowtie/path:'$PATH
 
-#inputDir='/home/raymond/work/Eucalyptus_pauciflora/genome/bin/raw_read_check/8_branches/short_read/3_correction/data/'
-#outputDir='result'
-#threads=40
-#ref='ref/cp_double_up_combine'
+inputDir='/home/raymond/work/Eucalyptus_pauciflora/genome/bin/raw_read_check/8_branches/short_read/3_correction/data/'
+outputDir='result'
+threads=40
+ref='ref/cp_double_up_combine'
 
-inputDir=$1
-outputDir=$2
-threads=$3
-ref=$4
+
 
 
 for in1 in $inputDir/*R1*fastq.gz

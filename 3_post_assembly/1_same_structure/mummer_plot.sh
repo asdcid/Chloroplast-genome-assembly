@@ -2,8 +2,6 @@
 
 set -e
 
-#export PATH="/home/raymond/devel/mummer3/MUMmer3.23/":$PATH
-#export PATH="/home/raymond/devel/gnuplot/install/bin/":$PATH
 
 export PATH="mummer/path":$PATH
 export PATH="gnuplot/path":$PATH

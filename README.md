@@ -57,17 +57,17 @@ rerun fastqc to check the data again
 
 Mapping all trimmed reads to refs (31 known Eucalyptus chloroplast genomes, all double-up) to get the chloroplast reads.
 ```
-./2_cpDNAExtraction/longRead/1_run_Blasr.sh 
+./1_pre_assembly/2_cpDNAExtraction/longRead/1_run_Blasr.sh 
 ```
 get chloroplast reads from the Blasr output, from Blasr output to fasta
 ```
-./2_cpDNAExtraction/longRead/2_resultParse.py 
+./1_pre_assembly/2_cpDNAExtraction/longRead/2_resultParse.py 
 ```
 
 ### 2\_assembly
 Randomly selected 5x, 8x, 10x, 20x, 40x, 60x, 80x, 100x, 200x, 300x 400x and 500x coverage reads (assume chloroplast genome size is 160kb).
 ```
-./2\_assembly/randomSelection/split_longRead.py
+./2_assembly/randomSelection/split_longRead.py
 ```
 Run assembly with different coverage of long-read with Canu/Hinge.
 

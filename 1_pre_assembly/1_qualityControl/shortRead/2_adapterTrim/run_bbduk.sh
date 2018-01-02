@@ -4,19 +4,14 @@
 
 export PATH="/home/raymond/devel/bbmap/bbmap/":$PATH
 
-#inputf='/home/raymond/work/Eucalyptus_pauciflora/genome/data/illumina/SN877_0428_RLanfear_RSB_Eucalyptus_gDNA/select/'
-#outputtrimreads='428_result/'
-#minlen=50
-#adaptors='/home/raymond/devel/bbmap/bbmap/resources/adapters.fa'
-#trimq=30
-#threads=40
+inputf='/home/raymond/work/Eucalyptus_pauciflora/genome/data/illumina/SN877_0428_RLanfear_RSB_Eucalyptus_gDNA/select/'
+outputtrimreads='428_result/'
+minlen=50
+adaptors='/home/raymond/devel/bbmap/bbmap/resources/adapters.fa'
+trimq=30
+threads=40
 
-inputf=$1
-outputtrimreads=$2
-minlen=$3
-#adaptors file, can be found in bbmap file
-adaptors=$4
-threads=$5
+
 
 for in1 in $(find $inputf -name "*R.fastq.gz"); do
     in2=${in1%%R1.fastq.gz}"R2.fastq.gz"

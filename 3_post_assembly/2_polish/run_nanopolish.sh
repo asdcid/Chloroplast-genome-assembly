@@ -2,8 +2,7 @@
 
 
 
-#export PATH='/home/raymond/devel/nanopolish/nanopolish/':$PATH
-export PATH='nanopolish/path':$PATH
+export PATH='/home/raymond/devel/nanopolish/nanopolish/':$PATH
 
 
 

@@ -3,23 +3,15 @@
 
 set -e 
 
-#source /home/raymond/devel/blasr/install/setup-env.sh
+source /home/raymond/devel/blasr/install/setup-env.sh
 
-source blasr/path/setup-env.sh
 
-#inputDir='query/'
-#outputDir='result'
-#threads=40
-#ref='ref/cp_double_up_combine.fasta'
-
-inputDir=$1
-outputDir=$2
-threads=$3
-ref=$4
-#15
-minMatch=$5
-#5000
-minAlnLength=$6
+inputDir='query/'
+outputDir='result'
+threads=40
+ref='ref/cp_double_up_combine.fasta'
+minMatch=15
+minAlnLength=5000
 
 
 for in1 in $inputDir/*fastq

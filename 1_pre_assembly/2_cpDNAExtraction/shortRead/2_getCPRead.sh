@@ -2,16 +2,14 @@
 
 set -e
 
-#ref='/home/raymond/work/Eucalyptus_pauciflora/genome/bin/double_up/cp_double_up_combine.fasta'
-#inputDir='result'
-#outputDir='map_to_chl'
-
 #the ref using for bowtie2 mapping
-ref=$1
+ref='/home/raymond/work/Eucalyptus_pauciflora/genome/bin/double_up/cp_double_up_combine.fasta'
 #the dir of bowtie2 output results, bam file, sorted
-inputDir=$2
+inputDir='result'
 #output dir for storing cp fastq read.
-outputDir=$3
+outputDir='map_to_chl'
+
+
 
 for inputFile in $inputDir/*.sort.bam
 do

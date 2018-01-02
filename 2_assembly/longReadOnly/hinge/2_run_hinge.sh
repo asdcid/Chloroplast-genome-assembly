@@ -2,19 +2,18 @@
 
 
 set -e
-#PPWD='/home/raymond/devel/hinge/HINGE/'
-PPWD='hinge/path'
+PPWD='/home/raymond/devel/hinge/HINGE/'
 export PATH="$PATH:$PPWD/thirdparty:$PPWD/thirdparty/DALIGNER:$PPWD/thirdparty/DAZZ_DB:$PPWD/thirdparty/DEXTRACTOR/:$PPWD/thirdparty/DASCRUBBER"
 export PATH="$PATH:$PPWD/inst/bin"
 export MANPATH="$MANPATH:$PPWD/inst/share/man"
 
-#export PATH='/home/raymond/devel/polish/racon/racon/bin/':$PATH
-#export PATH='/home/raymond/devel/miniasm/minimap/':$PATH
+export PATH='/home/raymond/devel/polish/racon/racon/bin/':$PATH
+export PATH='/home/raymond/devel/miniasm/minimap/':$PATH
 
 inputFile=$1
 outputDir=$2
 coverage=$3
-nominal=$4
+nominal='nominal.ini'
 
 cd $outputDir 
 # reads.fasta should be in data/$coverage

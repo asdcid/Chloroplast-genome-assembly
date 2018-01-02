@@ -3,8 +3,7 @@
 
 ulimit -c unlimited
 
-#export PATH='/home/raymond/devel/racon/racon/bin/':$PATH
-export PATH='racon/path':$PATH
+export PATH='/home/raymond/devel/racon/racon/bin/':$PATH
 
 polish()
 {

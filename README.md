@@ -1,6 +1,6 @@
 # Chroloplast-genome-assembly
 
-This pipeline is used to assemble chloroplast genome with short read (Unicycler) or long read (Canu and Hinge) or hybrid (Unicycler). If anyone want to use, they should change the input/output file in scripts. We randomly selected 5x, 8x, 10x, 20x, 40x, 60x, 80x, 100x, 200x, 300x, 400x and 500x coverage of short/long read to do the assembly to compare the difference. For long read only assembly, according to our analysis, Hinge is better than Canu, but the min coverage should be **>=20x**. In our analysis, long read only assembly result needs to be manually removed duplication and rearranged structure. For short read only assembly, we found that **when the short read coverage >=20x, Unicycler is able to correct distinguish short single copy (ssc), long singel copy (lsc) and inverst repeats (ir), which returns three individual, complete contigs (ssc, lsc and ir)**. In terms to hybrid assembly, we found that **>=20x coverage short read and >=20x coverage of long read** can provide **a single, no duplication and complete chloroplast genome**.) 
+This pipeline is used to assemble Eucalyptus pauciflora chloroplast genome with short read (Unicycler) or long read (Canu and Hinge) or hybrid (Unicycler). If anyone want to use, they should change the input/output file in scripts. We randomly selected 5x, 8x, 10x, 20x, 40x, 60x, 80x, 100x, 200x, 300x, 400x and 500x coverage of short/long read to do the assembly to compare the difference. For long read only assembly, according to our analysis, Hinge is better than Canu, but the min coverage should be **>=20x**. In our analysis, long read only assembly result needs to be manually removed duplication and rearranged structure. For short read only assembly, we found that **when the short read coverage >=20x, Unicycler is able to correct distinguish short single copy (ssc), long singel copy (lsc) and inverst repeats (ir), which returns three individual, complete contigs (ssc, lsc and ir)**. In terms to hybrid assembly, we found that **>=20x coverage short read and >=20x coverage of long read** can provide **a single, no duplication and complete chloroplast genome**.) 
 
 ## Requirements
 - Fastqc
@@ -85,38 +85,34 @@ Using the reads with new header to do the assembly. nominal.ini (can be found in
 ```
 ### 3\_post\_assembly
 ### mummer
-first, use mummer to check the contig alignment. Assume to cp genome which is used to compare is 3\_post\_assembly/1\_same\_structure/ref/ref.fa, the assembly result is 3\_post\_assembly/1\_same\_structure/assembly.contig.fasta (can be the canu/hinge result)
+first, use mummer to check the contig alignment. E.reg, the most close known species to E.pau, was used as the reference to compare. 
 ```
 ./3_post_assembly/1_same_structure/mummer_plot.sh 
 ```
-the alignment fig is result/assembly.png. According to the alignment suitation, choose direction.py or mummer\_direction.py to create a single contig which is no duplication and has the same sturcture of cp ref genome. The direction.py script is recommended for assembly which has clear lsc/ir/ssc contigs or a complete contig but the structure is different from cp ref genome. The direction.py changed the direction based on genes, the genes used to ensure direction can be changed in the script. The mummer\_direction.py is basing on mummer alignement result to merge the congits. **These two scripts are VERY VERY VERY VERY depending on the original assembly, NOT SUITABLE FOR ALL SITUATIONS.**
+ According to the alignment suitation (alignment figure), choose direction.py or mummer\_direction.py to create a single contig which is no duplication and has the same sturcture of cp ref genome. The direction.py script is recommended for assembly which has clear lsc/ir/ssc contigs or a complete contig but the structure is different from cp ref genome. The direction.py changed the direction based on genes, the genes used to ensure direction can be changed in the script. The mummer\_direction.py is basing on mummer alignement result to merge the congits, which may produce extra errors. In general, all long-read assembly used mummer\_plot.sh, because lots of duplicates were observed in the alignment. However, for the short-read only and hybrid assembly, direction.py can be used in the assembly with >= 20x short-read coverage input. Since those assemlies have clear lsc/ssc/ir contigs or has one single contig without overlap (according to mummer result)
 
-run direction.py
-```
-python ./3_post_assembly/1_same_structure/direction.py 
-```
 run mummer\_plot.sh
 ```
 ./3_post_assembly/1_same_structure/mummer_direction.sh 
 ```
 ### polish
-```
-cd ../2_polish
-```
-we use Racon+Nanopolish here. Racon runs 10 iterations, whereas Nanopolish runs until the result unchanged.
-Run Racon first, and then use the Racon-polish result as input to run Nanopolish. The number of iteration can be changed if the while loop : _if [ $n -gt 10 ]_. Nanopolish is MinION specific, if data is from Pacbio, Nanopolish can be changed to another polisher or just skip.
 
-run Racon, use 10 threads. The path of inputFile (the cp reads) and ref (assembly result) should be absolute path. The ref should end with 'fa', if end with 'fasta', change all 'fa' into 'fasta' in the code. In addition, the read used to assemble should be changed to fastq format, which can be obtained read from 1\_pre\_assembly/3\_qualityTrim/result/long.trim.fastq.gz according to the read name. 
+we polished the genome from last step useing Racon, Nanopolish and Racon+Nanopolish, respectively. Racon run 10 iterations (the result keeps change after 10 rounds), whereas Nanopolish run until the result unchanged. The aligner used here is bwa mem.
+
+run Racon. The path of inputFile (the chloroplast long-reads) and ref (assembly result) should be absolute path. The ref should end with 'fa'. In addition, the read used to assemble should be changed to fastq format. 
 ```
 ./3_post_assembly/2_polish/run_racon.sh 
 ```
-run Nanopolish with 10 threads. Nanopolish needs the index data (link to original Fast5 data, details see [nanopolish] (https://github.com/jts/nanopolish)). Assume the final polish result of Racon is  result\_racon/round10/result/assembly.polished.racon.fa
+run Nanopolish. Nanopolish needs the index data (link to original Fast5 data, details see [nanopolish] (https://github.com/jts/nanopolish)) first.
 ```
 ./3_post_assembly/2_polish/
 ./3_post_assembly/2_polish/run_nanopolish.sh 
 ```
+For Racon+Nanopolish, run Racon first, and then use the Racon-polish result as input to run Nanopolish.
+
 ### assembly\_quality\_control
-finally, we use the 100x short read (or other coverage of short read) to remap to the assembly to assess its quality. If no short read, this step can be ignored. Using 10 threads. Qualimap is used to grep the mapping information.
+
+finally, we use the 100x short read (randomly selected first, not used in assembly, method see below) to remap to the assembly to assess its quality. Qualimap is used to grep the mapping information.
 ```
 ./3_assembly_quality_control/1_run_bowtie2.sh 
 ./3_assembly_quality_control/2_run_qualimap.sh 
@@ -162,6 +158,15 @@ Unicycler is used to do the short read only assembly. In the default setting, th
 ### 3\_post\_assembly
 ### mummer
 as described above in long read only assembly part.
+
+run direction.py
+```
+python ./3_post_assembly/1_same_structure/direction.py 
+```
+run mummer\_plot.sh
+```
+./3_post_assembly/1_same_structure/mummer_direction.sh 
+```
 ### polish
 we use Pilon to polish the assembly, run until result unchanged. Using 10 threads. 
 ```

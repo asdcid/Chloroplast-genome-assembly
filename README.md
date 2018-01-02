@@ -103,7 +103,7 @@ Run Racon. The path of inputFile (the chloroplast long-reads) and ref (assembly 
 ```
 ./3_post_assembly/2_polish/run_racon.sh 
 ```
-Run Nanopolish. Nanopolish needs the index data (link to original Fast5 data, details see [nanopolish] (https://github.com/jts/nanopolish)) .
+Run Nanopolish. Nanopolish needs the index data (link to original Fast5 data, details see [Nanopolish] (https://github.com/jts/nanopolish)) .
 ```
 ./3_post_assembly/2_polish/
 ./3_post_assembly/2_polish/run_nanopolish.sh 
@@ -183,7 +183,7 @@ Run mummer\_plot.sh
 ./3_post_assembly/1_same_structure/mummer_direction.sh 
 ```
 ### polish
-we use Pilon to polish the assembly, run until result unchanged.
+we used Pilon to polish the assembly, run until result unchanged.
 ```
 ./3_post_assembly/2_polish/run_pilon.sh 
 ```

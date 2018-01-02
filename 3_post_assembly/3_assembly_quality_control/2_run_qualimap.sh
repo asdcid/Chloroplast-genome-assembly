@@ -2,8 +2,7 @@
 
 set -e
 
-#export PATH="/home/raymond/devel/qualimap/qualimap_v2.2.1/":$PATH
-export PATH='qualimap/path':$PATH
+export PATH="/home/raymond/devel/qualimap/qualimap_v2.2.1/":$PATH
 
 #inputDir='../bowtie2/result/'
 #outputDir='result/'

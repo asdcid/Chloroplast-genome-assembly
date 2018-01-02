@@ -31,10 +31,8 @@ This pipeline is used to assemble chloroplast genome with short read (Unicycler)
 3\_post\_assembly: the raw assembly was processed to create a single contig, which is no duplication and has same structure with cp reference genome (details see 3_post_assembly/README. Next, the 100x short reads kept from previous step was used to mapped to processed assembly to evaulate the assembly quality by checking the mapping rate, error rate and mismatch/insertion/deletion using Qualimap. 
 
 # Running
-A demo run for assembling cp genome is the following:
 ## LONG READ ONLY ASSEMBLY
 
-#The inputFile is long.fastq.gz, in a dir ~/data/, species is E.pau
 ### 1\_pre\_assembly
 ### QualityControl
 
@@ -46,7 +44,7 @@ trim adaptor
 ```
 ./1_pre_assembly/1_qualityControl/longRead/2_adapterTrim/run_porechop.sh 
 ```
-trim low qualty region (<9) and read <= 1kb
+trim low qualty region (<9) and read <= 5kb
 ```
 ./1_pre_assembly/1_qualityControl/longRead/3_quaityTrim/run_nanoFilt.sh 
 ```
@@ -57,16 +55,14 @@ rerun fastqc to check the data again
 
 ### cp\_DNA\_extraction
 
-assume the ref.fa (other cp genomes, should be double-up, in case read maps to the 'cut-point') is in 1\_pre\_assembly/2\_cpDNAExtraction/longRead/ref/
-use 10 threads, minMatch is 15, minAlnLength is 1kb (Blasr does not support the gz format, ungzip first, can be gzipped again after mapping)
+Mapping all trimmed reads to refs (31 known Eucalyptus chloroplast genomes, all double-up) to get the chloroplast reads.
 ```
 ./2_cpDNAExtraction/longRead/1_run_Blasr.sh 
 ```
-get cp read from the Blasr output
+get chloroplast reads from the Blasr output, from Blasr output to fasta
 ```
 ./2_cpDNAExtraction/longRead/2_resultParse.py 
 ```
-the cp reads are in the long.fasta
 
 ### 2\_assembly
 canu assembly, assume cp genome size is 160kb, corOutCoverage is 40, correctedErrorRate is 0.154, the path of gnuplot is gunPlotPath, use 30 threads. The final assembly is Epau.contigs.fasta

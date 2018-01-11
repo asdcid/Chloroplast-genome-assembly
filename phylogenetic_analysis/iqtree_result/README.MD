@@ -6,6 +6,6 @@ The alignment of 32 Eucalyptus chloroplast genomes alignment, which were used as
 
 *all.nexus*: the nexus format of 32 Eucalyptus chloroplast genomes alignment. The regions which could not be confidently aligned were removed, and manually adjusted the remaining alignments.
 
-## OutputFile:
+## OutputFiles:
 
 The result of iqtree.

@@ -234,3 +234,5 @@ The 312 alignments (fasta format) were checked and fixed manually. After that, c
  ```
 ./phylogenetic_analysis/4_run_iqtree.sh
 ```
+
+The final alignments are in phylogenetic\_analysis/iqtree\_result/InputFiles, the IQ-TREE results are in phylogenetic\_analysis/iqtree\_result/OutputFiles.

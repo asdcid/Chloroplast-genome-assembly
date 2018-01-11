@@ -1,0 +1,1533 @@
+IQ-TREE version 1.5.5 for Linux 64-bit built Aug 10 2017
+Copyright (c) 2011-2017 by Bui Quang Minh, Nguyen Lam Tung,
+Olga Chernomor, Heiko Schmidt, and Arndt von Haeseler.
+
+Host:    compute-5-0.local (AVX, 1009 GB RAM)
+Command: iqtree -s ../data/final_data/all.fasta -spp ../data/final_data/all.info -pre ../result/nexus/all.aln -bb 1000
+Seed:    808945 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Thu Aug 31 15:53:36 2017
+Kernel:  AVX
+
+NOTE: Consider using the multicore version because your CPU has 96 cores!
+
+Reading partition model file ../data/final_data/all.info ...
+Reading alignment file ../data/final_data/all.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+WARNING: 70 sites contain only gaps or ambiguous characters.
+Alignment has 32 sequences with 156244 columns and 1684 patterns (1418 informative sites, 151958 constant sites)
+                 Gap/Ambiguity  Composition  p-value
+   1  E.cloeziana        0.47%    passed     99.86%
+   2  E.marginata        0.42%    passed     99.97%
+   3  E.nitens           0.26%    passed     99.82%
+   4  E.sieberi          0.41%    passed     99.75%
+   5  E.guilfoylei       0.46%    passed     99.84%
+   6  E.aromaphloia      0.27%    passed     99.81%
+   7  E.pauciflora       0.46%    passed     99.52%
+   8  E.camaldulensis    0.28%    passed     99.85%
+   9  E.baxteri          0.36%    passed     99.24%
+  10  E.deglupta         0.25%    passed     99.96%
+  11  E.spathulata       0.30%    passed     99.80%
+  12  E.radiata          0.41%    passed     99.91%
+  13  E.polybractea      0.30%    passed     99.93%
+  14  E.diversicolor     0.33%    passed     99.98%
+  15  E.torquata         0.30%    passed     99.84%
+  16  E.cladocalyx       0.24%    passed     99.99%
+  17  E.verrucata        0.43%    passed     99.33%
+  18  E.erythrocorys     0.49%    passed     99.38%
+  19  E.elata            0.41%    passed     99.89%
+  20  E.microcorys       0.34%    passed     99.90%
+  21  E.umbra            0.60%    passed     98.15%
+  22  E.grandis          0.31%    passed     99.56%
+  23  E.diversifolia     0.41%    passed     99.60%
+  24  E.regnans          0.43%    passed     99.96%
+  25  E.curtisii         0.40%    passed     84.29%
+  26  E.salmonophloia    0.30%    passed     99.92%
+  27  E.patens           0.40%    passed     99.95%
+  28  E.obliqua          0.44%    passed     99.87%
+  29  E.globulus         0.28%    passed     99.78%
+  30  E.melliodora       0.26%    passed     99.94%
+  31  E.saligna          0.46%    passed     99.78%
+  32  E.delegatensis     0.38%    passed     99.72%
+****  TOTAL              0.37%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: No CharPartition defined, use all CharSets
+
+Reading partition trnH_GUG (model=, aln=, seq=, pos=1-75) ...
+32 sequences and 75 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=76-296) ...
+32 sequences and 221 sites extracted
+
+Reading partition psbA (model=, aln=, seq=, pos=297-1358) ...
+32 sequences and 1062 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=1359-1626) ...
+32 sequences and 268 sites extracted
+
+Reading partition trnK_UUU (model=, aln=, seq=, pos=1627-1661) ...
+32 sequences and 35 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=1662-1930) ...
+32 sequences and 269 sites extracted
+
+Reading partition matK (model=, aln=, seq=, pos=1931-3442) ...
+32 sequences and 1512 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=3443-4214) ...
+32 sequences and 772 sites extracted
+
+Reading partition trnK_UUU (model=, aln=, seq=, pos=4215-4251) ...
+32 sequences and 37 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=4252-4821) ...
+32 sequences and 570 sites extracted
+
+Reading partition rps16 (model=, aln=, seq=, pos=4822-5015) ...
+32 sequences and 194 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=5016-5871) ...
+32 sequences and 856 sites extracted
+
+Reading partition rps16 (model=, aln=, seq=, pos=5872-5911) ...
+32 sequences and 40 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=5912-7218) ...
+32 sequences and 1307 sites extracted
+
+Reading partition trnQ_UUG (model=, aln=, seq=, pos=7219-7290) ...
+32 sequences and 72 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=7291-7644) ...
+32 sequences and 354 sites extracted
+
+Reading partition psbK (model=, aln=, seq=, pos=7645-7830) ...
+32 sequences and 186 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=7831-8109) ...
+32 sequences and 279 sites extracted
+
+Reading partition psbI (model=, aln=, seq=, pos=8110-8220) ...
+32 sequences and 111 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=8221-8330) ...
+32 sequences and 110 sites extracted
+
+Reading partition trnS_GCU (model=, aln=, seq=, pos=8331-8418) ...
+32 sequences and 88 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=8419-9145) ...
+32 sequences and 727 sites extracted
+
+Reading partition trnG_GGA (model=, aln=, seq=, pos=9146-9168) ...
+32 sequences and 23 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=9169-9914) ...
+32 sequences and 746 sites extracted
+
+Reading partition trnG_GGA (model=, aln=, seq=, pos=9915-9963) ...
+32 sequences and 49 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=9964-10217) ...
+32 sequences and 254 sites extracted
+
+Reading partition trnR_UCU (model=, aln=, seq=, pos=10218-10289) ...
+32 sequences and 72 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=10290-10590) ...
+32 sequences and 301 sites extracted
+
+Reading partition atpA (model=, aln=, seq=, pos=10591-12114) ...
+32 sequences and 1524 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=12115-12172) ...
+32 sequences and 58 sites extracted
+
+Reading partition atpF (model=, aln=, seq=, pos=12173-12597) ...
+32 sequences and 425 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=12598-13343) ...
+32 sequences and 746 sites extracted
+
+Reading partition atpF (model=, aln=, seq=, pos=13344-13488) ...
+32 sequences and 145 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=13489-13929) ...
+32 sequences and 441 sites extracted
+
+Reading partition atpH (model=, aln=, seq=, pos=13930-14175) ...
+32 sequences and 246 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=14176-15234) ...
+32 sequences and 1059 sites extracted
+
+Reading partition atpI (model=, aln=, seq=, pos=15235-15978) ...
+32 sequences and 744 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=15979-16165) ...
+32 sequences and 187 sites extracted
+
+Reading partition rps2 (model=, aln=, seq=, pos=16166-16876) ...
+32 sequences and 711 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=16877-17107) ...
+32 sequences and 231 sites extracted
+
+Reading partition rpoC2 (model=, aln=, seq=, pos=17108-21292) ...
+32 sequences and 4185 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=21293-21457) ...
+32 sequences and 165 sites extracted
+
+Reading partition rpoC1 (model=, aln=, seq=, pos=21458-23074) ...
+32 sequences and 1617 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=23075-23803) ...
+32 sequences and 729 sites extracted
+
+Reading partition rpoC1 (model=, aln=, seq=, pos=23804-24256) ...
+32 sequences and 453 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=24257-24261) ...
+32 sequences and 5 sites extracted
+
+Reading partition rpoB (model=, aln=, seq=, pos=24262-27480) ...
+32 sequences and 3219 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=27481-28751) ...
+32 sequences and 1271 sites extracted
+
+Reading partition trnC_GCA (model=, aln=, seq=, pos=28752-28822) ...
+32 sequences and 71 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=28823-29278) ...
+32 sequences and 456 sites extracted
+
+Reading partition petN (model=, aln=, seq=, pos=29279-29368) ...
+32 sequences and 90 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=29369-30320) ...
+32 sequences and 952 sites extracted
+
+Reading partition psbM (model=, aln=, seq=, pos=30321-30425) ...
+32 sequences and 105 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=30426-31232) ...
+32 sequences and 807 sites extracted
+
+Reading partition trnD_GUC (model=, aln=, seq=, pos=31233-31306) ...
+32 sequences and 74 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=31307-31750) ...
+32 sequences and 444 sites extracted
+
+Reading partition trnY_GUA (model=, aln=, seq=, pos=31751-31834) ...
+32 sequences and 84 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=31835-31893) ...
+32 sequences and 59 sites extracted
+
+Reading partition trnE_UUC (model=, aln=, seq=, pos=31894-31966) ...
+32 sequences and 73 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=31967-32885) ...
+32 sequences and 919 sites extracted
+
+Reading partition trnT_GGU (model=, aln=, seq=, pos=32886-32957) ...
+32 sequences and 72 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=32958-34381) ...
+32 sequences and 1424 sites extracted
+
+Reading partition psbD (model=, aln=, seq=, pos=34382-35443) ...
+32 sequences and 1062 sites extracted
+
+Reading partition psbC (model=, aln=, seq=, pos=35444-36812) ...
+32 sequences and 1369 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=36813-37072) ...
+32 sequences and 260 sites extracted
+
+Reading partition trnS_UGA (model=, aln=, seq=, pos=37073-37165) ...
+32 sequences and 93 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=37166-37513) ...
+32 sequences and 348 sites extracted
+
+Reading partition psbZ (model=, aln=, seq=, pos=37514-37702) ...
+32 sequences and 189 sites extracted
+
+Reading partition trnG_UCC (model=, aln=, seq=, pos=37703-37773) ...
+32 sequences and 71 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=37774-37943) ...
+32 sequences and 170 sites extracted
+
+Reading partition trnfM_CAU (model=, aln=, seq=, pos=37944-38017) ...
+32 sequences and 74 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=38018-38177) ...
+32 sequences and 160 sites extracted
+
+Reading partition rps14 (model=, aln=, seq=, pos=38178-38480) ...
+32 sequences and 303 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=38481-38607) ...
+32 sequences and 127 sites extracted
+
+Reading partition psaB (model=, aln=, seq=, pos=38608-40812) ...
+32 sequences and 2205 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=40813-40837) ...
+32 sequences and 25 sites extracted
+
+Reading partition psaA (model=, aln=, seq=, pos=40838-43090) ...
+32 sequences and 2253 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=43091-43789) ...
+32 sequences and 699 sites extracted
+
+Reading partition ycf3 (model=, aln=, seq=, pos=43790-43944) ...
+32 sequences and 155 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=43945-44677) ...
+32 sequences and 733 sites extracted
+
+Reading partition ycf3 (model=, aln=, seq=, pos=44678-44907) ...
+32 sequences and 230 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=44908-45660) ...
+32 sequences and 753 sites extracted
+
+Reading partition ycf3 (model=, aln=, seq=, pos=45661-45784) ...
+32 sequences and 124 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=45785-46611) ...
+32 sequences and 827 sites extracted
+
+Reading partition trnS_GGA (model=, aln=, seq=, pos=46612-46698) ...
+32 sequences and 87 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=46699-46980) ...
+32 sequences and 282 sites extracted
+
+Reading partition rps4 (model=, aln=, seq=, pos=46981-47586) ...
+32 sequences and 606 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=47587-47776) ...
+32 sequences and 190 sites extracted
+
+Reading partition trnT_UGU (model=, aln=, seq=, pos=47777-47849) ...
+32 sequences and 73 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=47850-48996) ...
+32 sequences and 1147 sites extracted
+
+Reading partition trnL_UAA (model=, aln=, seq=, pos=48997-49031) ...
+32 sequences and 35 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=49032-49546) ...
+32 sequences and 515 sites extracted
+
+Reading partition trnL_UAA (model=, aln=, seq=, pos=49547-49592) ...
+32 sequences and 46 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=49593-49756) ...
+32 sequences and 164 sites extracted
+
+Reading partition trnF_GAA (model=, aln=, seq=, pos=49757-49829) ...
+32 sequences and 73 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=49830-50611) ...
+32 sequences and 782 sites extracted
+
+Reading partition ndhJ (model=, aln=, seq=, pos=50612-51088) ...
+32 sequences and 477 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=51089-51180) ...
+32 sequences and 92 sites extracted
+
+Reading partition ndhK (model=, aln=, seq=, pos=51181-51858) ...
+32 sequences and 678 sites extracted
+
+Reading partition ndhC (model=, aln=, seq=, pos=51859-52221) ...
+32 sequences and 363 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=52222-52681) ...
+32 sequences and 460 sites extracted
+
+Reading partition trnV_UAC (model=, aln=, seq=, pos=52682-52716) ...
+32 sequences and 35 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=52717-53314) ...
+32 sequences and 598 sites extracted
+
+Reading partition trnV_UAC (model=, aln=, seq=, pos=53315-53353) ...
+32 sequences and 39 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=53354-53526) ...
+32 sequences and 173 sites extracted
+
+Reading partition trnM_CAU (model=, aln=, seq=, pos=53527-53599) ...
+32 sequences and 73 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=53600-53860) ...
+32 sequences and 261 sites extracted
+
+Reading partition atpE (model=, aln=, seq=, pos=53861-54262) ...
+32 sequences and 402 sites extracted
+
+Reading partition atpB (model=, aln=, seq=, pos=54263-55755) ...
+32 sequences and 1493 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=55756-56526) ...
+32 sequences and 771 sites extracted
+
+Reading partition rbcL (model=, aln=, seq=, pos=56527-57954) ...
+32 sequences and 1428 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=57955-58633) ...
+32 sequences and 679 sites extracted
+
+Reading partition accD (model=, aln=, seq=, pos=58634-60106) ...
+32 sequences and 1473 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=60107-60831) ...
+32 sequences and 725 sites extracted
+
+Reading partition psaI (model=, aln=, seq=, pos=60832-60945) ...
+32 sequences and 114 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=60946-61335) ...
+32 sequences and 390 sites extracted
+
+Reading partition ycf4 (model=, aln=, seq=, pos=61336-61890) ...
+32 sequences and 555 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=61891-62928) ...
+32 sequences and 1038 sites extracted
+
+Reading partition cemA (model=, aln=, seq=, pos=62929-63618) ...
+32 sequences and 690 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=63619-63837) ...
+32 sequences and 219 sites extracted
+
+Reading partition petA (model=, aln=, seq=, pos=63838-64800) ...
+32 sequences and 963 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=64801-65792) ...
+32 sequences and 992 sites extracted
+
+Reading partition psbJ (model=, aln=, seq=, pos=65793-65915) ...
+32 sequences and 123 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=65916-66063) ...
+32 sequences and 148 sites extracted
+
+Reading partition psbL (model=, aln=, seq=, pos=66064-66180) ...
+32 sequences and 117 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=66181-66202) ...
+32 sequences and 22 sites extracted
+
+Reading partition psbF (model=, aln=, seq=, pos=66203-66322) ...
+32 sequences and 120 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=66323-66331) ...
+32 sequences and 9 sites extracted
+
+Reading partition psbE (model=, aln=, seq=, pos=66332-66583) ...
+32 sequences and 252 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=66584-67844) ...
+32 sequences and 1261 sites extracted
+
+Reading partition petL (model=, aln=, seq=, pos=67845-67940) ...
+32 sequences and 96 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=67941-68113) ...
+32 sequences and 173 sites extracted
+
+Reading partition petG (model=, aln=, seq=, pos=68114-68227) ...
+32 sequences and 114 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=68228-68353) ...
+32 sequences and 126 sites extracted
+
+Reading partition trnW_CCA (model=, aln=, seq=, pos=68354-68427) ...
+32 sequences and 74 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=68428-68620) ...
+32 sequences and 193 sites extracted
+
+Reading partition trnP_UGG (model=, aln=, seq=, pos=68621-68694) ...
+32 sequences and 74 sites extracted
+
+Reading partition psaJ (model=, aln=, seq=, pos=68695-68829) ...
+32 sequences and 135 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=68830-69247) ...
+32 sequences and 418 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=69248-69642) ...
+32 sequences and 395 sites extracted
+
+Reading partition rpl33 (model=, aln=, seq=, pos=69643-69849) ...
+32 sequences and 207 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=69850-70054) ...
+32 sequences and 205 sites extracted
+
+Reading partition rps18 (model=, aln=, seq=, pos=70055-70360) ...
+32 sequences and 306 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=70361-70624) ...
+32 sequences and 264 sites extracted
+
+Reading partition rpl20 (model=, aln=, seq=, pos=70625-70978) ...
+32 sequences and 354 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=70979-71737) ...
+32 sequences and 759 sites extracted
+
+Reading partition rps12 (model=, aln=, seq=, pos=71738-71851) ...
+32 sequences and 114 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=71852-72017) ...
+32 sequences and 166 sites extracted
+
+Reading partition clpP (model=, aln=, seq=, pos=72018-72245) ...
+32 sequences and 228 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=72246-72859) ...
+32 sequences and 614 sites extracted
+
+Reading partition clpP (model=, aln=, seq=, pos=72860-73151) ...
+32 sequences and 292 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=73152-74024) ...
+32 sequences and 873 sites extracted
+
+Reading partition clpP (model=, aln=, seq=, pos=74025-74095) ...
+32 sequences and 71 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=74096-74498) ...
+32 sequences and 403 sites extracted
+
+Reading partition psbB (model=, aln=, seq=, pos=74499-76025) ...
+32 sequences and 1527 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=76026-76139) ...
+32 sequences and 114 sites extracted
+
+Reading partition psbT (model=, aln=, seq=, pos=76140-76247) ...
+32 sequences and 108 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=76248-76312) ...
+32 sequences and 65 sites extracted
+
+Reading partition psbN (model=, aln=, seq=, pos=76313-76444) ...
+32 sequences and 132 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=76445-76548) ...
+32 sequences and 104 sites extracted
+
+Reading partition psbH (model=, aln=, seq=, pos=76549-76770) ...
+32 sequences and 222 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=76771-76907) ...
+32 sequences and 137 sites extracted
+
+Reading partition petB (model=, aln=, seq=, pos=76908-76913) ...
+32 sequences and 6 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=76914-77693) ...
+32 sequences and 780 sites extracted
+
+Reading partition petB (model=, aln=, seq=, pos=77694-78335) ...
+32 sequences and 642 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=78336-78527) ...
+32 sequences and 192 sites extracted
+
+Reading partition petD (model=, aln=, seq=, pos=78528-78535) ...
+32 sequences and 8 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=78536-79305) ...
+32 sequences and 770 sites extracted
+
+Reading partition petD (model=, aln=, seq=, pos=79306-79780) ...
+32 sequences and 475 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=79781-79986) ...
+32 sequences and 206 sites extracted
+
+Reading partition rpoA (model=, aln=, seq=, pos=79987-81000) ...
+32 sequences and 1014 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=81001-81065) ...
+32 sequences and 65 sites extracted
+
+Reading partition rps11 (model=, aln=, seq=, pos=81066-81482) ...
+32 sequences and 417 sites extracted
+
+Reading partition rpl36 (model=, aln=, seq=, pos=81483-81596) ...
+32 sequences and 114 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=81597-81712) ...
+32 sequences and 116 sites extracted
+
+Reading partition infA_fragment (model=, aln=, seq=, pos=81713-81956) ...
+32 sequences and 244 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=81957-82119) ...
+32 sequences and 163 sites extracted
+
+Reading partition rps8 (model=, aln=, seq=, pos=82120-82524) ...
+32 sequences and 405 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=82525-82711) ...
+32 sequences and 187 sites extracted
+
+Reading partition rpl14 (model=, aln=, seq=, pos=82712-83080) ...
+32 sequences and 369 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=83081-83208) ...
+32 sequences and 128 sites extracted
+
+Reading partition rpl16 (model=, aln=, seq=, pos=83209-83607) ...
+32 sequences and 399 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=83608-84626) ...
+32 sequences and 1019 sites extracted
+
+Reading partition rpl16 (model=, aln=, seq=, pos=84627-84635) ...
+32 sequences and 9 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=84636-84794) ...
+32 sequences and 159 sites extracted
+
+Reading partition rps3 (model=, aln=, seq=, pos=84795-85445) ...
+32 sequences and 651 sites extracted
+
+Reading partition rpl22 (model=, aln=, seq=, pos=85446-85909) ...
+32 sequences and 464 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=85910-85972) ...
+32 sequences and 63 sites extracted
+
+Reading partition rps19 (model=, aln=, seq=, pos=85973-86251) ...
+32 sequences and 279 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=86252-86282) ...
+32 sequences and 31 sites extracted
+
+Reading partition rpl2 (model=, aln=, seq=, pos=86283-86716) ...
+32 sequences and 434 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=86717-87380) ...
+32 sequences and 664 sites extracted
+
+Reading partition rpl2 (model=, aln=, seq=, pos=87381-87771) ...
+32 sequences and 391 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=87772-87795) ...
+32 sequences and 24 sites extracted
+
+Reading partition rpl23 (model=, aln=, seq=, pos=87796-88077) ...
+32 sequences and 282 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=88078-88246) ...
+32 sequences and 169 sites extracted
+
+Reading partition trnI_CAU (model=, aln=, seq=, pos=88247-88320) ...
+32 sequences and 74 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=88321-88408) ...
+32 sequences and 88 sites extracted
+
+Reading partition ycf2 (model=, aln=, seq=, pos=88409-95251) ...
+32 sequences and 6843 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=95252-95341) ...
+32 sequences and 90 sites extracted
+
+Reading partition ycf15_fragment (model=, aln=, seq=, pos=95342-95885) ...
+32 sequences and 544 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=95886-96199) ...
+32 sequences and 314 sites extracted
+
+Reading partition trnL_CAA (model=, aln=, seq=, pos=96200-96280) ...
+32 sequences and 81 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=96281-96862) ...
+32 sequences and 582 sites extracted
+
+Reading partition ndhB (model=, aln=, seq=, pos=96863-97618) ...
+32 sequences and 756 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=97619-98300) ...
+32 sequences and 682 sites extracted
+
+Reading partition ndhB (model=, aln=, seq=, pos=98301-99077) ...
+32 sequences and 777 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=99078-99402) ...
+32 sequences and 325 sites extracted
+
+Reading partition rps7 (model=, aln=, seq=, pos=99403-99870) ...
+32 sequences and 468 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=99871-102595) ...
+32 sequences and 2725 sites extracted
+
+Reading partition trnV_GAC (model=, aln=, seq=, pos=102596-102667) ...
+32 sequences and 72 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=102668-102894) ...
+32 sequences and 227 sites extracted
+
+Reading partition rrn16 (model=, aln=, seq=, pos=102895-104385) ...
+32 sequences and 1491 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=104386-104679) ...
+32 sequences and 294 sites extracted
+
+Reading partition trnI_GAU (model=, aln=, seq=, pos=104680-104716) ...
+32 sequences and 37 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=104717-105668) ...
+32 sequences and 952 sites extracted
+
+Reading partition trnI_GAU (model=, aln=, seq=, pos=105669-105703) ...
+32 sequences and 35 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=105704-105772) ...
+32 sequences and 69 sites extracted
+
+Reading partition trnA_UGC (model=, aln=, seq=, pos=105773-105810) ...
+32 sequences and 38 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=105811-106613) ...
+32 sequences and 803 sites extracted
+
+Reading partition trnA_UGC (model=, aln=, seq=, pos=106614-106648) ...
+32 sequences and 35 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=106649-106800) ...
+32 sequences and 152 sites extracted
+
+Reading partition rrn23 (model=, aln=, seq=, pos=106801-109614) ...
+32 sequences and 2814 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=109615-109712) ...
+32 sequences and 98 sites extracted
+
+Reading partition rrn4.5 (model=, aln=, seq=, pos=109713-109815) ...
+32 sequences and 103 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=109816-110039) ...
+32 sequences and 224 sites extracted
+
+Reading partition rrn5 (model=, aln=, seq=, pos=110040-110160) ...
+32 sequences and 121 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=110161-110415) ...
+32 sequences and 255 sites extracted
+
+Reading partition trnR_ACG (model=, aln=, seq=, pos=110416-110489) ...
+32 sequences and 74 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=110490-111118) ...
+32 sequences and 629 sites extracted
+
+Reading partition trnN_GUU (model=, aln=, seq=, pos=111119-111190) ...
+32 sequences and 72 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=111191-111519) ...
+32 sequences and 329 sites extracted
+
+Reading partition ycf1_fragment (model=, aln=, seq=, pos=111520-112617) ...
+32 sequences and 1098 sites extracted
+
+Reading partition ndhF (model=, aln=, seq=, pos=112618-114823) ...
+32 sequences and 2206 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=114824-115753) ...
+32 sequences and 930 sites extracted
+
+Reading partition rpl32 (model=, aln=, seq=, pos=115754-115927) ...
+32 sequences and 174 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=115928-116459) ...
+32 sequences and 532 sites extracted
+
+Reading partition trnL_UAG (model=, aln=, seq=, pos=116460-116539) ...
+32 sequences and 80 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=116540-116631) ...
+32 sequences and 92 sites extracted
+
+Reading partition ccsA (model=, aln=, seq=, pos=116632-117591) ...
+32 sequences and 960 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=117592-117915) ...
+32 sequences and 324 sites extracted
+
+Reading partition ndhD (model=, aln=, seq=, pos=117916-119418) ...
+32 sequences and 1503 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=119419-119567) ...
+32 sequences and 149 sites extracted
+
+Reading partition psaC (model=, aln=, seq=, pos=119568-119813) ...
+32 sequences and 246 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=119814-120042) ...
+32 sequences and 229 sites extracted
+
+Reading partition ndhE (model=, aln=, seq=, pos=120043-120348) ...
+32 sequences and 306 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=120349-120584) ...
+32 sequences and 236 sites extracted
+
+Reading partition ndhG (model=, aln=, seq=, pos=120585-121115) ...
+32 sequences and 531 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=121116-121517) ...
+32 sequences and 402 sites extracted
+
+Reading partition ndhI (model=, aln=, seq=, pos=121518-122021) ...
+32 sequences and 504 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=122022-122121) ...
+32 sequences and 100 sites extracted
+
+Reading partition ndhA (model=, aln=, seq=, pos=122122-122661) ...
+32 sequences and 540 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=122662-123722) ...
+32 sequences and 1061 sites extracted
+
+Reading partition ndhA (model=, aln=, seq=, pos=123723-124274) ...
+32 sequences and 552 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=124275-124275) ...
+32 sequences and 1 sites extracted
+
+Reading partition ndhH (model=, aln=, seq=, pos=124276-125457) ...
+32 sequences and 1182 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=125458-125563) ...
+32 sequences and 106 sites extracted
+
+Reading partition rps15 (model=, aln=, seq=, pos=125564-125839) ...
+32 sequences and 276 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=125840-126254) ...
+32 sequences and 415 sites extracted
+
+Reading partition ycf1 (model=, aln=, seq=, pos=126255-131909) ...
+32 sequences and 5655 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=131910-132238) ...
+32 sequences and 329 sites extracted
+
+Reading partition trnN_GUU (model=, aln=, seq=, pos=132239-132310) ...
+32 sequences and 72 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=132311-132939) ...
+32 sequences and 629 sites extracted
+
+Reading partition trnR_ACG (model=, aln=, seq=, pos=132940-133013) ...
+32 sequences and 74 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=133014-133268) ...
+32 sequences and 255 sites extracted
+
+Reading partition rrn5 (model=, aln=, seq=, pos=133269-133389) ...
+32 sequences and 121 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=133390-133613) ...
+32 sequences and 224 sites extracted
+
+Reading partition rrn4.5 (model=, aln=, seq=, pos=133614-133716) ...
+32 sequences and 103 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=133717-133814) ...
+32 sequences and 98 sites extracted
+
+Reading partition rrn23 (model=, aln=, seq=, pos=133815-136627) ...
+32 sequences and 2813 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=136628-136779) ...
+32 sequences and 152 sites extracted
+
+Reading partition trnA_UGC (model=, aln=, seq=, pos=136780-136814) ...
+32 sequences and 35 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=136815-137617) ...
+32 sequences and 803 sites extracted
+
+Reading partition trnA_UGC (model=, aln=, seq=, pos=137618-137655) ...
+32 sequences and 38 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=137656-137725) ...
+32 sequences and 70 sites extracted
+
+Reading partition trnI_GAU (model=, aln=, seq=, pos=137726-137760) ...
+32 sequences and 35 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=137761-138712) ...
+32 sequences and 952 sites extracted
+
+Reading partition rrn16 (model=, aln=, seq=, pos=138713-140203) ...
+32 sequences and 1491 sites extracted
+
+Reading partition trnI_GAU (model=, aln=, seq=, pos=140204-140240) ...
+32 sequences and 37 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=140241-140533) ...
+32 sequences and 293 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=140534-140760) ...
+32 sequences and 227 sites extracted
+
+Reading partition trnV_GAC (model=, aln=, seq=, pos=140761-140832) ...
+32 sequences and 72 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=140833-142701) ...
+32 sequences and 1869 sites extracted
+
+Reading partition rps12 (model=, aln=, seq=, pos=142702-142940) ...
+32 sequences and 239 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=142941-143468) ...
+32 sequences and 528 sites extracted
+
+Reading partition rps12 (model=, aln=, seq=, pos=143469-143505) ...
+32 sequences and 37 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=143506-143558) ...
+32 sequences and 53 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=143559-143883) ...
+32 sequences and 325 sites extracted
+
+Reading partition ndhB (model=, aln=, seq=, pos=143884-144660) ...
+32 sequences and 777 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=144661-145342) ...
+32 sequences and 682 sites extracted
+
+Reading partition ndhB (model=, aln=, seq=, pos=145343-146098) ...
+32 sequences and 756 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=146099-146680) ...
+32 sequences and 582 sites extracted
+
+Reading partition trnL_CAA (model=, aln=, seq=, pos=146681-146761) ...
+32 sequences and 81 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=146762-147075) ...
+32 sequences and 314 sites extracted
+
+Reading partition ycf15_fragment (model=, aln=, seq=, pos=147076-147619) ...
+32 sequences and 544 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=147620-147709) ...
+32 sequences and 90 sites extracted
+
+Reading partition ycf2 (model=, aln=, seq=, pos=147710-154552) ...
+32 sequences and 6843 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=154553-154640) ...
+32 sequences and 88 sites extracted
+
+Reading partition trnI_CAU (model=, aln=, seq=, pos=154641-154714) ...
+32 sequences and 74 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=154715-154883) ...
+32 sequences and 169 sites extracted
+
+Reading partition rpl23 (model=, aln=, seq=, pos=154884-155165) ...
+32 sequences and 282 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=155166-155189) ...
+32 sequences and 24 sites extracted
+
+Reading partition rpl2 (model=, aln=, seq=, pos=155190-155580) ...
+32 sequences and 391 sites extracted
+
+Reading partition nocoding (model=, aln=, seq=, pos=155581-156244) ...
+32 sequences and 664 sites extracted
+Degree of missing data: 0.000
+
+WARNING: C is not present in partition petB that may cause numerical problems
+WARNING: C is not present in partition petD that may cause numerical problems
+WARNING: A, C, G are not present in partition nocoding that may cause numerical problems
+WARNING: 5 states (see above) are not present that may cause numerical problems
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.030 seconds
+
+NOTE: ModelFinder requires 105 MB RAM!
+Selecting individual models for 304 charsets using BIC...
+ No. Model        Score       Charset
+   1 JC           471.335     trnH_GUG
+   2 TPM2u+G4     1314.571    nocoding
+   3 TN+I         3681.534    psbA
+   4 TPM2u+G4     1327.490    nocoding
+   5 JC           313.928     trnK_UUU
+   6 TPM2u+G4     1327.739    nocoding
+   7 TVM+R2       6048.536    matK
+   8 TPM2u+G4     1398.376    nocoding
+   9 JC           317.318     trnK_UUU
+  10 TPM2u+G4     1378.051    nocoding	0h:0m:7s (0h:3m:51s left)
+  11 F81          1036.721    rps16	0h:0m:9s (0h:3m:59s left)
+  12 TPM2u+G4     1405.296    nocoding	0h:0m:9s (0h:3m:39s left)
+  13 F81+I        935.627     rps16	0h:0m:9s (0h:3m:21s left)
+  14 TPM2u+G4     1433.652    nocoding	0h:0m:9s (0h:3m:7s left)
+  15 JC           473.262     trnQ_UUG	0h:0m:9s (0h:3m:2s left)
+  16 TPM2u+G4     1346.137    nocoding	0h:0m:9s (0h:2m:50s left)
+  17 F81          873.837     psbK	0h:0m:10s (0h:2m:51s left)
+  18 TPM2u+G4     1330.185    nocoding	0h:0m:10s (0h:2m:41s left)
+  19 F81          607.588     psbI	0h:0m:10s (0h:2m:37s left)
+  20 TPM2u+R2     1267.175    nocoding	0h:0m:10s (0h:2m:28s left)
+  21 JC           517.134     trnS_GCU	0h:0m:10s (0h:2m:27s left)
+  22 TPM2u+G4     1394.352    nocoding	0h:0m:10s (0h:2m:20s left)
+  23 JC           255.042     trnG_GGA	0h:0m:11s (0h:2m:18s left)
+  24 TPM2u+G4     1396.080    nocoding	0h:0m:11s (0h:2m:12s left)
+  25 JC           301.178     trnG_GGA	0h:0m:11s (0h:2m:6s left)
+  26 TPM2u+G4     1323.895    nocoding	0h:0m:11s (0h:2m:1s left)
+  27 JC           460.526     trnR_UCU	0h:0m:11s (0h:2m:0s left)
+  28 TPM2u+G4     1335.270    nocoding	0h:0m:11s (0h:1m:56s left)
+  29 HKY          4935.476    atpA	0h:0m:12s (0h:2m:0s left)
+  30 TPM2u+R2     1223.653    nocoding	0h:0m:12s (0h:1m:56s left)
+  31 F81          1543.145    atpF	0h:0m:13s (0h:1m:55s left)
+  32 TPM2u+G4     1396.080    nocoding	0h:0m:13s (0h:1m:51s left)
+  33 F81          1474.323    atpF	0h:0m:13s (0h:1m:47s left)
+  34 TPM2u+G4     1360.860    nocoding	0h:0m:13s (0h:1m:44s left)
+  35 K2P          1063.119    atpH	0h:0m:13s (0h:1m:44s left)
+  36 TPM2u+G4     1419.554    nocoding	0h:0m:13s (0h:1m:41s left)
+  37 HKY          2647.073    atpI	0h:0m:14s (0h:1m:45s left)
+  38 TPM2u+R2     1303.258    nocoding	0h:0m:14s (0h:1m:42s left)
+  39 F81          2615.094    rps2	0h:0m:15s (0h:1m:44s left)
+  40 TPM2u+G4     1317.536    nocoding	0h:0m:15s (0h:1m:41s left)
+  41 TIM+R2       13683.042   rpoC2	0h:0m:21s (0h:2m:16s left)
+  42 TPM2u+R2     1294.747    nocoding	0h:0m:21s (0h:2m:12s left)
+  43 F81          5273.879    rpoC1	0h:0m:23s (0h:2m:21s left)
+  44 TPM2u+G4     1394.536    nocoding	0h:0m:23s (0h:2m:17s left)
+  45 K3Pu+I       5189.728    rpoC1	0h:0m:23s (0h:2m:14s left)
+  46 TVM+R2       1056.180    nocoding	0h:0m:23s (0h:2m:11s left)
+  47 K3Pu+I       10483.470   rpoB	0h:0m:26s (0h:2m:25s left)
+  48 TPM2u+G4     1431.780    nocoding	0h:0m:26s (0h:2m:22s left)
+  49 JC           456.900     trnC_GCA	0h:0m:27s (0h:2m:21s left)
+  50 TPM2u+G4     1363.101    nocoding	0h:0m:27s (0h:2m:17s left)
+  51 JC           537.236     petN	0h:0m:27s (0h:2m:17s left)
+  52 TPM2u+G4     1412.418    nocoding	0h:0m:27s (0h:2m:13s left)
+  53 F81          585.485     psbM	0h:0m:28s (0h:2m:13s left)
+  54 TPM2u+G4     1401.346    nocoding	0h:0m:28s (0h:2m:10s left)
+  55 JC           467.743     trnD_GUC	0h:0m:28s (0h:2m:9s left)
+  56 TPM2u+G4     1361.314    nocoding	0h:0m:28s (0h:2m:6s left)
+  57 JC           516.251     trnY_GUA	0h:0m:29s (0h:2m:6s left)
+  58 TPM2u+R2     1224.815    nocoding	0h:0m:29s (0h:2m:3s left)
+  59 JC           476.904     trnE_UUC	0h:0m:29s (0h:2m:3s left)
+  60 TPM2u+G4     1410.054    nocoding	0h:0m:29s (0h:2m:0s left)
+  61 JC           460.526     trnT_GGU	0h:0m:30s (0h:1m:59s left)
+  62 TPM2u+G4     1439.396    nocoding	0h:0m:30s (0h:1m:57s left)
+  63 F81          3529.259    psbD	0h:0m:30s (0h:1m:56s left)
+  64 F81+I        4521.190    psbC	0h:0m:33s (0h:2m:4s left)
+  65 TPM2u+G4     1325.459    nocoding	0h:0m:33s (0h:2m:1s left)
+  66 JC           547.620     trnS_UGA	0h:0m:33s (0h:2m:1s left)
+  67 TPM2u+G4     1344.991    nocoding	0h:0m:33s (0h:1m:59s left)
+  68 HKY          894.517     psbZ	0h:0m:34s (0h:1m:58s left)
+  69 JC           469.608     trnG_UCC	0h:0m:34s (0h:1m:58s left)
+  70 TPM2u+R2     1296.777    nocoding	0h:0m:34s (0h:1m:55s left)
+  71 JC           467.743     trnfM_CAU	0h:0m:35s (0h:1m:55s left)
+  72 TPM2u+R2     1292.654    nocoding	0h:0m:35s (0h:1m:53s left)
+  73 K2P          1295.663    rps14	0h:0m:36s (0h:1m:55s left)
+  74 TPM2u+R2     1276.947    nocoding	0h:0m:36s (0h:1m:53s left)
+  75 HKY          6996.326    psaB	0h:0m:37s (0h:1m:54s left)
+  76 TPM2u+R2     1166.426    nocoding	0h:0m:37s (0h:1m:52s left)
+  77 F81          7115.715    psaA	0h:0m:38s (0h:1m:52s left)
+  78 TPM2u+G4     1391.720    nocoding	0h:0m:38s (0h:1m:50s left)
+  79 JC           746.155     ycf3	0h:0m:38s (0h:1m:50s left)
+  80 TPM2u+G4     1394.903    nocoding	0h:0m:38s (0h:1m:48s left)
+  81 JC           770.229     ycf3	0h:0m:38s (0h:1m:46s left)
+  82 TPM2u+G4     1396.706    nocoding	0h:0m:38s (0h:1m:44s left)
+  83 JC           732.543     ycf3	0h:0m:38s (0h:1m:43s left)
+  84 TPM2u+G4     1402.987    nocoding	0h:0m:38s (0h:1m:41s left)
+  85 JC           539.898     trnS_GGA	0h:0m:39s (0h:1m:41s left)
+  86 TPM2u+G4     1330.902    nocoding	0h:0m:39s (0h:1m:39s left)
+  87 F81          2290.567    rps4	0h:0m:40s (0h:1m:40s left)
+  88 TPM2u+R2     1304.340    nocoding	0h:0m:40s (0h:1m:38s left)
+  89 JC           464.140     trnT_UGU	0h:0m:40s (0h:1m:38s left)
+  90 TPM2u+G4     1424.902    nocoding	0h:0m:40s (0h:1m:36s left)
+  91 JC           313.928     trnL_UAA	0h:0m:41s (0h:1m:36s left)
+  92 TPM2u+G4     1371.253    nocoding	0h:0m:41s (0h:1m:34s left)
+  93 JC           330.599     trnL_UAA	0h:0m:41s (0h:1m:33s left)
+  94 TPM2u+R2     1294.333    nocoding	0h:0m:41s (0h:1m:32s left)
+  95 JC           464.140     trnF_GAA	0h:0m:41s (0h:1m:32s left)
+  96 TPM2u+G4     1399.238    nocoding	0h:0m:41s (0h:1m:30s left)
+  97 F81+I        1797.886    ndhJ	0h:0m:45s (0h:1m:37s left)
+  98 TPM2u+R2     1255.024    nocoding	0h:0m:45s (0h:1m:36s left)
+  99 F81          2459.540    ndhK	0h:0m:46s (0h:1m:36s left)
+ 100 TPM2u+I      1484.191    ndhC	0h:0m:48s (0h:1m:38s left)
+ 101 TPM2u+G4     1363.686    nocoding	0h:0m:48s (0h:1m:37s left)
+ 102 JC           313.928     trnV_UAC	0h:0m:48s (0h:1m:36s left)
+ 103 TPM2u+G4     1381.264    nocoding	0h:0m:48s (0h:1m:35s left)
+ 104 JC           320.529     trnV_UAC	0h:0m:48s (0h:1m:33s left)
+ 105 TPM2u+R2     1297.966    nocoding	0h:0m:48s (0h:1m:32s left)
+ 106 JC           464.140     trnM_CAU	0h:0m:49s (0h:1m:31s left)
+ 107 TPM2u+G4     1325.717    nocoding	0h:0m:49s (0h:1m:30s left)
+ 108 HKY          1641.721    atpE	0h:0m:49s (0h:1m:30s left)
+ 109 F81+I        4945.426    atpB	0h:0m:51s (0h:1m:32s left)
+ 110 TPM2u+G4     1398.289    nocoding	0h:0m:51s (0h:1m:31s left)
+ 111 F81+R2       4950.637    rbcL	0h:0m:53s (0h:1m:33s left)
+ 112 TPM2u+G4     1389.775    nocoding	0h:0m:53s (0h:1m:31s left)
+ 113 K3Pu         5267.900    accD	0h:0m:54s (0h:1m:32s left)
+ 114 TPM2u+G4     1394.167    nocoding	0h:0m:54s (0h:1m:31s left)
+ 115 F81          627.638     psaI	0h:0m:55s (0h:1m:30s left)
+ 116 TPM2u+G4     1352.626    nocoding	0h:0m:55s (0h:1m:29s left)
+ 117 HKY          2105.105    ycf4	0h:0m:55s (0h:1m:29s left)
+ 118 TPM2u+G4     1418.212    nocoding	0h:0m:55s (0h:1m:28s left)
+ 119 F81+R2       2658.200    cemA	0h:0m:58s (0h:1m:30s left)
+ 120 TPM2u+G4     1313.962    nocoding	0h:0m:58s (0h:1m:28s left)
+ 121 F81+I        3417.764    petA	0h:0m:59s (0h:1m:30s left)
+ 122 TPM2u+G4     1415.175    nocoding	0h:0m:59s (0h:1m:28s left)
+ 123 F81          645.853     psbJ	0h:0m:59s (0h:1m:28s left)
+ 124 TPM2u+R2     1287.353    nocoding	0h:0m:59s (0h:1m:27s left)
+ 125 F81          627.327     psbL	0h:1m:0s (0h:1m:26s left)
+ 126 TPM2u+R2     1157.733    nocoding	0h:1m:0s (0h:1m:25s left)
+ 127 JC           624.786     psbF	0h:1m:0s (0h:1m:24s left)
+ 128 TPM2u+R2     1096.954    nocoding	0h:1m:0s (0h:1m:23s left)
+ 129 JC           1036.068    psbE	0h:1m:1s (0h:1m:23s left)
+ 130 TPM2u+G4     1431.251    nocoding	0h:1m:1s (0h:1m:22s left)
+ 131 F81          544.555     petL	0h:1m:1s (0h:1m:21s left)
+ 132 TPM2u+R2     1297.966    nocoding	0h:1m:1s (0h:1m:20s left)
+ 133 F81          596.369     petG	0h:1m:2s (0h:1m:19s left)
+ 134 TPM2u+R2     1276.410    nocoding	0h:1m:2s (0h:1m:18s left)
+ 135 JC           467.743     trnW_CCA	0h:1m:2s (0h:1m:18s left)
+ 136 TPM2u+R2     1305.405    nocoding	0h:1m:2s (0h:1m:17s left)
+ 137 JC           467.743     trnP_UGG	0h:1m:2s (0h:1m:16s left)
+ 138 JC           687.564     psaJ	0h:1m:3s (0h:1m:16s left)
+ 139 TPM2u+G4     1357.271    nocoding	0h:1m:3s (0h:1m:15s left)
+ 140 TPM2u+G4     1353.479    nocoding	0h:1m:3s (0h:1m:14s left)
+ 141 F81          999.124     rpl33	0h:1m:5s (0h:1m:15s left)
+ 142 TPM2u+R2     1309.507    nocoding	0h:1m:5s (0h:1m:14s left)
+ 143 F81          1302.008    rps18	0h:1m:5s (0h:1m:14s left)
+ 144 TPM2u+G4     1326.482    nocoding	0h:1m:5s (0h:1m:13s left)
+ 145 K3Pu         1510.868    rpl20	0h:1m:6s (0h:1m:13s left)
+ 146 TPM2u+G4     1397.238    nocoding	0h:1m:6s (0h:1m:12s left)
+ 147 JC           605.020     rps12	0h:1m:7s (0h:1m:11s left)
+ 148 TPM2u+R2     1295.158    nocoding	0h:1m:7s (0h:1m:10s left)
+ 149 JC           978.464     clpP	0h:1m:7s (0h:1m:10s left)
+ 150 TPM2u+G4     1383.033    nocoding	0h:1m:7s (0h:1m:9s left)
+ 151 JC           993.556     clpP	0h:1m:7s (0h:1m:8s left)
+ 152 TPM2u+G4     1406.613    nocoding	0h:1m:7s (0h:1m:7s left)
+ 153 JC           907.297     clpP	0h:1m:7s (0h:1m:6s left)
+ 154 TPM2u+G4     1354.823    nocoding	0h:1m:7s (0h:1m:5s left)
+ 155 HKY          4894.867    psbB	0h:1m:8s (0h:1m:5s left)
+ 156 TPM2u+R2     1269.604    nocoding	0h:1m:8s (0h:1m:4s left)
+ 157 JC           612.188     psbT	0h:1m:8s (0h:1m:4s left)
+ 158 TPM2u+R2     1231.401    nocoding	0h:1m:8s (0h:1m:3s left)
+ 159 K2P          704.396     psbN	0h:1m:9s (0h:1m:3s left)
+ 160 TPM2u+R2     1263.361    nocoding	0h:1m:9s (0h:1m:2s left)
+ 161 K2P          1047.291    psbH	0h:1m:10s (0h:1m:2s left)
+ 162 TPM2u+R2     1282.101    nocoding	0h:1m:10s (0h:1m:2s left)
+ 163 JC           125.935     petB	0h:1m:11s (0h:1m:1s left)
+ 164 TPM2u+G4     1399.067    nocoding	0h:1m:11s (0h:1m:0s left)
+ 165 JC           410.977     petB	0h:1m:11s (0h:0m:59s left)
+ 166 TPM2u+R2     1305.052    nocoding	0h:1m:11s (0h:0m:59s left)
+ 167 JC           149.029     petD	0h:1m:11s (0h:0m:58s left)
+ 168 TPM2u+G4     1398.202    nocoding	0h:1m:11s (0h:0m:57s left)
+ 169 JC           398.145     petD	0h:1m:11s (0h:0m:57s left)
+ 170 TPM2u+R2     1309.838    nocoding	0h:1m:11s (0h:0m:56s left)
+ 171 TPM2u        3704.994    rpoA	0h:1m:13s (0h:0m:57s left)
+ 172 TPM2u+R2     1231.401    nocoding	0h:1m:13s (0h:0m:56s left)
+ 173 K2P          1666.566    rps11	0h:1m:14s (0h:0m:56s left)
+ 174 TVMe+I       697.941     rpl36	0h:1m:17s (0h:0m:58s left)
+ 175 TPM2u+R2     1270.787    nocoding	0h:1m:17s (0h:0m:57s left)
+ 176 F81          1082.247    infA_fragment	0h:1m:18s (0h:0m:57s left)
+ 177 TPM2u+R2     1293.917    nocoding	0h:1m:18s (0h:0m:56s left)
+ 178 F81          1585.118    rps8	0h:1m:20s (0h:0m:56s left)
+ 179 TPM2u+R2     1303.258    nocoding	0h:1m:20s (0h:0m:55s left)
+ 180 F81          1515.550    rpl14	0h:1m:21s (0h:0m:55s left)
+ 181 TPM2u+R2     1277.480    nocoding	0h:1m:21s (0h:0m:55s left)
+ 182 F81          1538.597    rpl16	0h:1m:22s (0h:0m:55s left)
+ 183 TPM2u+G4     1416.974    nocoding	0h:1m:22s (0h:0m:54s left)
+ 184 TPM2u        1293.074    rpl16	0h:1m:22s (0h:0m:53s left)
+ 185 TPM2u+R2     1292.228    nocoding	0h:1m:22s (0h:0m:52s left)
+ 186 F81          2686.219    rps3	0h:1m:23s (0h:0m:53s left)
+ 187 TPM2u+R2     2359.664    rpl22	0h:1m:27s (0h:0m:54s left)
+ 188 TPM2u+R2     1229.276    nocoding	0h:1m:27s (0h:0m:53s left)
+ 189 K3Pu         1290.567    rps19	0h:1m:28s (0h:0m:53s left)
+ 190 TPM2u+R2     1181.054    nocoding	0h:1m:28s (0h:0m:53s left)
+ 191 F81+I        1647.141    rpl2	0h:1m:31s (0h:0m:53s left)
+ 192 TPM2u+G4     1388.279    nocoding	0h:1m:31s (0h:0m:53s left)
+ 193 F81+I        1640.360    rpl2	0h:1m:31s (0h:0m:52s left)
+ 194 TPM2u+R2     1163.650    nocoding	0h:1m:31s (0h:0m:51s left)
+ 195 F81          1136.598    rpl23	0h:1m:31s (0h:0m:51s left)
+ 196 TPM2u+R2     1296.376    nocoding	0h:1m:31s (0h:0m:50s left)
+ 197 JC           467.743     trnI_CAU	0h:1m:32s (0h:0m:49s left)
+ 198 TPM2u+R2     1252.001    nocoding	0h:1m:32s (0h:0m:49s left)
+ 199 K3Pu+I       20116.766   ycf2	0h:1m:42s (0h:0m:54s left)
+ 200 TPM2u+R2     1253.529    nocoding	0h:1m:42s (0h:0m:53s left)
+ 201 K3Pu+I       2118.355    ycf15_fragment	0h:1m:45s (0h:0m:54s left)
+ 202 TPM2u+G4     1338.103    nocoding	0h:1m:45s (0h:0m:53s left)
+ 203 JC           492.667     trnL_CAA	0h:1m:46s (0h:0m:52s left)
+ 204 TPM2u+G4     1379.447    nocoding	0h:1m:46s (0h:0m:52s left)
+ 205 F81          2467.124    ndhB	0h:1m:47s (0h:0m:51s left)
+ 206 TPM2u+G4     1390.071    nocoding	0h:1m:47s (0h:0m:50s left)
+ 207 F81          2468.877    ndhB	0h:1m:47s (0h:0m:50s left)
+ 208 TPM2u+G4     1340.410    nocoding	0h:1m:47s (0h:0m:49s left)
+ 209 F81          1663.762    rps7	0h:1m:47s (0h:0m:48s left)
+ 210 TPM2u+G4     1482.879    nocoding	0h:1m:47s (0h:0m:48s left)
+ 211 JC           460.526     trnV_GAC	0h:1m:48s (0h:0m:47s left)
+ 212 TPM2u+G4     1316.365    nocoding	0h:1m:48s (0h:0m:47s left)
+ 213 F81          4566.036    rrn16	0h:1m:48s (0h:0m:46s left)
+ 214 TPM2u+G4     1333.694    nocoding	0h:1m:48s (0h:0m:45s left)
+ 215 JC           322.864     trnI_GAU	0h:1m:49s (0h:0m:45s left)
+ 216 TPM2u+G4     1412.418    nocoding	0h:1m:49s (0h:0m:44s left)
+ 217 JC           319.474     trnI_GAU	0h:1m:49s (0h:0m:43s left)
+ 218 TPM2u+R2     1235.462    nocoding	0h:1m:49s (0h:0m:43s left)
+ 219 JC           327.263     trnA_UGC	0h:1m:49s (0h:0m:42s left)
+ 220 TPM2u+G4     1401.014    nocoding	0h:1m:49s (0h:0m:41s left)
+ 221 JC           322.247     trnA_UGC	0h:1m:49s (0h:0m:41s left)
+ 222 TPM2u+R2     1289.166    nocoding	0h:1m:49s (0h:0m:40s left)
+ 223 F81+I        8350.552    rrn23	0h:1m:53s (0h:0m:41s left)
+ 224 TPM2u+R2     1259.320    nocoding	0h:1m:53s (0h:0m:40s left)
+ 225 JC           568.328     rrn4.5	0h:1m:54s (0h:0m:40s left)
+ 226 TPM2u+G4     1315.474    nocoding	0h:1m:54s (0h:0m:39s left)
+ 227 JC           628.065     rrn5	0h:1m:54s (0h:0m:38s left)
+ 228 TPM2u+G4     1324.158    nocoding	0h:1m:54s (0h:0m:38s left)
+ 229 JC           467.743     trnR_ACG	0h:1m:55s (0h:0m:37s left)
+ 230 TPM2u+G4     1384.651    nocoding	0h:1m:55s (0h:0m:37s left)
+ 231 JC           460.526     trnN_GUU	0h:1m:55s (0h:0m:36s left)
+ 232 TPM2u+G4     1341.230    nocoding	0h:1m:55s (0h:0m:35s left)
+ 233 F81+I        3878.255    ycf1_fragment	0h:1m:58s (0h:0m:35s left)
+ 234 TVM+I        8384.337    ndhF	0h:2m:6s (0h:0m:37s left)
+ 235 TPM2u+G4     1410.851    nocoding	0h:2m:6s (0h:0m:37s left)
+ 236 F81          883.894     rpl32	0h:2m:8s (0h:0m:36s left)
+ 237 TPM2u+G4     1373.429    nocoding	0h:2m:8s (0h:0m:36s left)
+ 238 JC           489.136     trnL_UAG	0h:2m:8s (0h:0m:35s left)
+ 239 TPM2u+R2     1255.024    nocoding	0h:2m:8s (0h:0m:35s left)
+ 240 K3Pu+I       3782.044    ccsA	0h:2m:12s (0h:0m:35s left)
+ 241 TPM2u+G4     1340.204    nocoding	0h:2m:12s (0h:0m:34s left)
+ 242 TVM+R2       5651.134    ndhD	0h:2m:16s (0h:0m:35s left)
+ 243 TPM2u+R2     1287.811    nocoding	0h:2m:16s (0h:0m:34s left)
+ 244 K2P          1076.224    psaC	0h:2m:17s (0h:0m:33s left)
+ 245 TPM2u+G4     1316.953    nocoding	0h:2m:17s (0h:0m:33s left)
+ 246 F81          1338.344    ndhE	0h:2m:18s (0h:0m:32s left)
+ 247 TPM2u+G4     1318.971    nocoding	0h:2m:18s (0h:0m:32s left)
+ 248 F81          2038.874    ndhG	0h:2m:20s (0h:0m:31s left)
+ 249 TPM2u+G4     1354.656    nocoding	0h:2m:20s (0h:0m:31s left)
+ 250 F81          1950.671    ndhI	0h:2m:22s (0h:0m:30s left)
+ 251 TPM2u+R2     1260.694    nocoding	0h:2m:22s (0h:0m:30s left)
+ 252 F81          1998.941    ndhA	0h:2m:23s (0h:0m:29s left)
+ 253 TPM2u+G4     1419.681    nocoding	0h:2m:23s (0h:0m:28s left)
+ 254 F81          2000.348    ndhA	0h:2m:23s (0h:0m:28s left)
+ 255 GTR+R3       943.326     nocoding	0h:2m:23s (0h:0m:27s left)
+ 256 F81          3945.526    ndhH	0h:2m:24s (0h:0m:27s left)
+ 257 TPM2u+R2     1264.656    nocoding	0h:2m:24s (0h:0m:26s left)
+ 258 F81          1177.929    rps15	0h:2m:25s (0h:0m:25s left)
+ 259 TPM2u+G4     1356.788    nocoding	0h:2m:25s (0h:0m:25s left)
+ 260 TVM+I        23410.293   ycf1	0h:2m:51s (0h:0m:29s left)
+ 261 TPM2u+G4     1341.230    nocoding	0h:2m:51s (0h:0m:28s left)
+ 262 JC           460.526     trnN_GUU	0h:2m:51s (0h:0m:27s left)
+ 263 TPM2u+G4     1384.651    nocoding	0h:2m:51s (0h:0m:26s left)
+ 264 JC           467.743     trnR_ACG	0h:2m:51s (0h:0m:26s left)
+ 265 TPM2u+G4     1324.158    nocoding	0h:2m:51s (0h:0m:25s left)
+ 266 JC           628.065     rrn5	0h:2m:51s (0h:0m:24s left)
+ 267 TPM2u+G4     1315.474    nocoding	0h:2m:51s (0h:0m:23s left)
+ 268 JC           568.328     rrn4.5	0h:2m:51s (0h:0m:23s left)
+ 269 TPM2u+R2     1259.320    nocoding	0h:2m:51s (0h:0m:22s left)
+ 270 F81+I        8350.528    rrn23	0h:2m:51s (0h:0m:21s left)
+ 271 TPM2u+R2     1289.166    nocoding	0h:2m:51s (0h:0m:20s left)
+ 272 JC           322.247     trnA_UGC	0h:2m:51s (0h:0m:20s left)
+ 273 TPM2u+G4     1401.014    nocoding	0h:2m:51s (0h:0m:19s left)
+ 274 JC           327.263     trnA_UGC	0h:2m:51s (0h:0m:18s left)
+ 275 TPM2u+R2     1236.440    nocoding	0h:2m:51s (0h:0m:18s left)
+ 276 JC           319.474     trnI_GAU	0h:2m:51s (0h:0m:17s left)
+ 277 TPM2u+G4     1412.418    nocoding	0h:2m:51s (0h:0m:16s left)
+ 278 F81          4566.036    rrn16	0h:2m:51s (0h:0m:16s left)
+ 279 JC           322.864     trnI_GAU	0h:2m:51s (0h:0m:15s left)
+ 280 TPM2u+G4     1333.465    nocoding	0h:2m:51s (0h:0m:14s left)
+ 281 TPM2u+G4     1316.365    nocoding	0h:2m:51s (0h:0m:14s left)
+ 282 JC           460.526     trnV_GAC	0h:2m:51s (0h:0m:13s left)
+ 283 TPM2u+G4     1457.615    nocoding	0h:2m:51s (0h:0m:12s left)
+ 284 JC           650.176     rps12	0h:2m:51s (0h:0m:12s left)
+ 285 TPM2u+G4     1372.923    nocoding	0h:2m:51s (0h:0m:11s left)
+ 286 JC           536.378     rps12	0h:2m:51s (0h:0m:10s left)
+ 287 TPM2u+R2     1217.522    nocoding	0h:2m:51s (0h:0m:10s left)
+ 288 TPM2u+G4     1340.410    nocoding	0h:2m:51s (0h:0m:9s left)
+ 289 F81          2468.877    ndhB	0h:2m:51s (0h:0m:8s left)
+ 290 TPM2u+G4     1390.071    nocoding	0h:2m:51s (0h:0m:8s left)
+ 291 F81          2467.124    ndhB	0h:2m:51s (0h:0m:7s left)
+ 292 TPM2u+G4     1379.447    nocoding	0h:2m:51s (0h:0m:7s left)
+ 293 JC           492.667     trnL_CAA	0h:2m:52s (0h:0m:6s left)
+ 294 TPM2u+G4     1338.103    nocoding	0h:2m:52s (0h:0m:5s left)
+ 295 K3Pu+I       2118.355    ycf15_fragment	0h:2m:52s (0h:0m:5s left)
+ 296 TPM2u+R2     1253.529    nocoding	0h:2m:52s (0h:0m:4s left)
+ 297 K3Pu+I       20116.766   ycf2	0h:2m:52s (0h:0m:4s left)
+ 298 TPM2u+R2     1252.001    nocoding	0h:2m:52s (0h:0m:3s left)
+ 299 JC           467.743     trnI_CAU	0h:2m:52s (0h:0m:2s left)
+ 300 TPM2u+R2     1296.376    nocoding	0h:2m:52s (0h:0m:2s left)
+ 301 F81          1136.598    rpl23	0h:2m:52s (0h:0m:1s left)
+ 302 TPM2u+R2     1163.650    nocoding	0h:2m:52s (0h:0m:1s left)
+ 303 F81+I        1640.360    rpl2	0h:2m:52s (0h:0m:0s left)
+ 304 TPM2u+G4     1388.279    nocoding	0h:2m:52s (0h:0m:0s left)
+Partition information was printed to ../result/nexus/all.aln.best_scheme.nex
+Partition information in Raxml format was printed to ../result/nexus/all.aln.best_scheme
+
+All model information printed to ../result/nexus/all.aln.model
+CPU time for ModelFinder: 171.459 seconds (0h:2m:51s)
+Wall-clock time for ModelFinder: 172.298 seconds (0h:2m:52s)
+Generating 1000 samples for ultrafast bootstrap (seed: 808945)...
+
+NOTE: 48 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -256664.632
+Current log-likelihood at step 1: -252933.621
+Current log-likelihood at step 2: -252808.141
+Current log-likelihood at step 3: -252767.633
+Current log-likelihood at step 4: -252750.680
+Current log-likelihood at step 5: -252743.522
+Current log-likelihood at step 6: -252736.741
+Current log-likelihood at step 7: -252730.008
+Current log-likelihood at step 8: -252723.740
+Current log-likelihood at step 9: -252718.741
+Current log-likelihood at step 10: -252714.865
+Current log-likelihood at step 11: -252711.449
+Current log-likelihood at step 12: -252708.183
+Current log-likelihood at step 13: -252704.975
+Current log-likelihood at step 14: -252701.775
+Current log-likelihood at step 15: -252698.536
+Current log-likelihood at step 16: -252695.142
+Current log-likelihood at step 17: -252690.098
+Current log-likelihood at step 18: -252686.611
+Current log-likelihood at step 19: -252683.050
+Current log-likelihood at step 20: -252679.459
+Current log-likelihood at step 21: -252675.909
+Current log-likelihood at step 22: -252672.420
+Current log-likelihood at step 23: -252668.940
+Current log-likelihood at step 24: -252665.408
+Current log-likelihood at step 25: -252661.780
+Current log-likelihood at step 26: -252658.029
+Current log-likelihood at step 27: -252654.124
+Current log-likelihood at step 28: -252650.022
+Current log-likelihood at step 29: -252645.673
+Current log-likelihood at step 30: -252641.056
+Current log-likelihood at step 31: -252636.259
+Current log-likelihood at step 32: -252631.762
+Current log-likelihood at step 33: -252628.430
+Current log-likelihood at step 34: -252626.232
+Current log-likelihood at step 35: -252623.641
+Current log-likelihood at step 36: -252620.342
+Current log-likelihood at step 37: -252619.266
+Current log-likelihood at step 38: -252618.560
+Current log-likelihood at step 39: -252617.745
+Current log-likelihood at step 40: -252616.671
+Current log-likelihood at step 41: -252614.990
+Current log-likelihood at step 42: -252611.617
+Current log-likelihood at step 43: -252605.612
+Current log-likelihood at step 44: -252603.598
+Current log-likelihood at step 45: -252602.522
+Current log-likelihood at step 46: -252601.192
+Current log-likelihood at step 47: -252599.447
+Current log-likelihood at step 48: -252596.979
+Current log-likelihood at step 49: -252593.893
+Current log-likelihood at step 50: -252592.256
+Current log-likelihood at step 51: -252591.467
+Current log-likelihood at step 52: -252590.666
+Current log-likelihood at step 53: -252589.802
+Current log-likelihood at step 54: -252588.870
+Current log-likelihood at step 55: -252587.853
+Current log-likelihood at step 56: -252586.732
+Current log-likelihood at step 57: -252585.480
+Current log-likelihood at step 58: -252584.058
+Current log-likelihood at step 59: -252582.424
+Current log-likelihood at step 60: -252580.510
+Current log-likelihood at step 61: -252578.281
+Current log-likelihood at step 62: -252575.770
+Current log-likelihood at step 63: -252573.222
+Current log-likelihood at step 64: -252571.041
+Current log-likelihood at step 65: -252569.422
+Current log-likelihood at step 66: -252568.417
+Current log-likelihood at step 67: -252567.938
+Current log-likelihood at step 68: -252567.673
+Current log-likelihood at step 69: -252567.432
+Current log-likelihood at step 70: -252567.195
+Current log-likelihood at step 71: -252566.954
+Current log-likelihood at step 72: -252566.706
+Current log-likelihood at step 73: -252566.452
+Current log-likelihood at step 74: -252566.190
+Current log-likelihood at step 75: -252565.919
+Current log-likelihood at step 76: -252565.635
+Current log-likelihood at step 77: -252565.336
+Current log-likelihood at step 78: -252565.016
+Current log-likelihood at step 79: -252564.665
+Current log-likelihood at step 80: -252564.266
+Current log-likelihood at step 81: -252563.795
+Current log-likelihood at step 82: -252563.257
+Current log-likelihood at step 83: -252562.796
+Current log-likelihood at step 84: -252562.503
+Current log-likelihood at step 85: -252562.253
+Current log-likelihood at step 86: -252562.005
+Current log-likelihood at step 87: -252561.752
+Current log-likelihood at step 88: -252561.495
+Current log-likelihood at step 89: -252561.234
+Current log-likelihood at step 90: -252560.968
+Current log-likelihood at step 91: -252560.696
+Current log-likelihood at step 92: -252560.418
+Current log-likelihood at step 93: -252560.133
+Current log-likelihood at step 94: -252559.841
+Current log-likelihood at step 95: -252559.542
+Current log-likelihood at step 96: -252559.235
+Current log-likelihood at step 97: -252558.920
+Current log-likelihood at step 98: -252558.598
+Current log-likelihood at step 99: -252558.267
+Partition-specific rates:  0.012 3.542 0.520 2.278 0.025 1.603 1.848 1.085 0.024 2.556 1.703 1.147 0.025 2.054 0.352 1.569 0.545 2.450 0.228 3.607 0.010 2.400 0.038 1.899 0.018 2.823 0.012 3.947 0.283 0.000 0.060 1.306 0.350 2.285 0.309 2.428 0.443 1.917 0.570 7.459 0.672 0.461 0.360 1.212 0.345 0.000 0.564 1.921 0.012 2.381 0.281 1.638 0.241 1.374 0.012 2.308 0.301 1.290 0.347 1.861 0.012 1.857 0.262 0.356 57.344 0.272 0.875 0.670 0.357 2.679 0.012 1.251 0.585 0.999 0.310 0.000 0.270 1.008 0.165 0.670 0.330 0.472 0.007 1.172 0.583 1.300 0.586 0.540 0.012 1.969 0.025 0.759 0.551 1.405 0.012 1.717 0.384 2.240 0.448 0.774 3.440 0.025 0.591 0.023 0.879 0.012 0.865 0.694 0.378 1.238 0.736 1.374 0.861 2.397 0.444 0.839 0.548 1.701 1.125 1.043 0.584 3.670 0.206 0.171 0.216 0.000 0.007 51.913 0.004 2.191 0.009 1.920 0.008 1.007 0.012 1.380 0.012 0.188 0.840 1.287 0.878 1.237 0.662 1.566 0.931 1.037 0.008 1.537 0.111 0.793 1.215 1.351 0.012 0.751 0.249 0.890 0.469 3.798 0.576 0.244 0.799 1.651 0.147 1.259 0.197 0.528 0.111 1.297 0.480 1.921 0.825 0.596 0.547 4.894 0.655 1.768 0.934 0.438 4.107 0.618 1.187 0.317 1.856 0.098 2.310 1.325 2.909 1.622 1.272 4.427 0.377 0.153 0.065 2.134 0.090 0.300 0.012 0.289 0.199 0.000 0.950 0.323 0.011 0.305 0.001 0.149 0.033 0.158 0.002 0.320 0.012 0.339 0.017 0.086 0.024 0.186 0.025 0.368 0.023 0.063 0.025 0.167 0.072 0.000 0.009 0.004 0.007 0.298 0.012 0.530 0.012 0.491 0.769 1.527 2.908 1.021 3.586 0.011 1.934 1.362 3.526 1.272 2.260 0.412 1.909 0.911 2.977 0.716 4.318 0.654 1.014 0.516 1.640 0.413 0.000 0.386 3.771 0.556 2.639 2.410 0.470 0.012 0.537 0.012 0.298 0.007 0.004 0.009 0.000 0.064 0.167 0.025 0.063 0.023 0.361 0.025 0.186 0.017 0.024 0.086 0.339 0.012 0.371 0.004 0.192 0.024 0.000 0.158 0.033 0.149 0.001 0.305 0.011 0.323 0.950 0.000 0.199 0.288 0.012 0.300 0.090 2.117 0.065 0.153
+Parameters optimization took 99 rounds (80.097 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+Computing ML distances based on estimated model parameters... 1.260 sec
+Computing BIONJ tree...
+0.057 seconds
+Log-likelihood of BIONJ tree: -252584.332
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 25.453 second
+Computing log-likelihood of 98 initial trees ... 123.925 seconds
+Current best score: -252555.829
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -252553.496
+Current log-likelihood at step 1: -252552.221
+Current log-likelihood at step 2: -252551.832
+Current log-likelihood at step 3: -252551.444
+Current log-likelihood at step 4: -252551.051
+Current log-likelihood at step 5: -252550.652
+Current log-likelihood at step 6: -252550.247
+Current log-likelihood at step 7: -252549.835
+Current log-likelihood at step 8: -252549.413
+Current log-likelihood at step 9: -252548.976
+Current log-likelihood at step 10: -252548.520
+Current log-likelihood at step 11: -252548.044
+Current log-likelihood at step 12: -252547.543
+Current log-likelihood at step 13: -252547.022
+Current log-likelihood at step 14: -252546.494
+Current log-likelihood at step 15: -252545.992
+Current log-likelihood at step 16: -252545.563
+Current log-likelihood at step 17: -252545.237
+Current log-likelihood at step 18: -252544.993
+Current log-likelihood at step 19: -252544.783
+Current log-likelihood at step 20: -252544.582
+Current log-likelihood at step 21: -252544.381
+Current log-likelihood at step 22: -252544.179
+Current log-likelihood at step 23: -252543.974
+Current log-likelihood at step 24: -252543.766
+Current log-likelihood at step 25: -252543.553
+Current log-likelihood at step 26: -252543.335
+Current log-likelihood at step 27: -252543.111
+Current log-likelihood at step 28: -252542.879
+Current log-likelihood at step 29: -252542.638
+Current log-likelihood at step 30: -252542.387
+Current log-likelihood at step 31: -252542.124
+Current log-likelihood at step 32: -252541.849
+Current log-likelihood at step 33: -252541.561
+Current log-likelihood at step 34: -252541.260
+Current log-likelihood at step 35: -252540.944
+Current log-likelihood at step 36: -252540.618
+Current log-likelihood at step 37: -252540.284
+Current log-likelihood at step 38: -252539.949
+Current log-likelihood at step 39: -252539.632
+Current log-likelihood at step 40: -252539.344
+Current log-likelihood at step 41: -252539.109
+Current log-likelihood at step 42: -252538.929
+Current log-likelihood at step 43: -252538.814
+Current log-likelihood at step 44: -252538.744
+Parameters optimization took 43 rounds (27.691 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BETTER TREE FOUND at iteration 1: -252538.744
+UPDATE BEST LOG-LIKELIHOOD: -252538.742
+UPDATE BEST LOG-LIKELIHOOD: -252538.741
+Iteration 10 / LogL: -252538.747 / Time: 0h:7m:50s
+UPDATE BEST LOG-LIKELIHOOD: -252538.741
+Iteration 20 / LogL: -252538.743 / Time: 0h:8m:44s
+Finish initializing candidate tree set (5)
+Current best tree score: -252538.741 / CPU time: 267.233
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -252538.742 / Time: 0h:9m:37s (0h:16m:31s left)
+UPDATE BEST LOG-LIKELIHOOD: -252538.740
+UPDATE BEST LOG-LIKELIHOOD: -252538.739
+Iteration 40 / LogL: -252538.744 / Time: 0h:10m:34s (0h:12m:3s left)
+Iteration 50 / LogL: -252538.741 / Time: 0h:11m:25s (0h:8m:54s left)
+Log-likelihood cutoff on original alignment: -252588.347
+Iteration 60 / LogL: -252558.333 / Time: 0h:12m:22s (0h:6m:36s left)
+Iteration 70 / LogL: -252538.753 / Time: 0h:13m:14s (0h:4m:39s left)
+Iteration 80 / LogL: -252544.407 / Time: 0h:14m:10s (0h:3m:0s left)
+UPDATE BEST LOG-LIKELIHOOD: -252538.739
+Iteration 90 / LogL: -252538.739 / Time: 0h:15m:4s (0h:1m:30s left)
+Iteration 100 / LogL: -252538.745 / Time: 0h:16m:5s (0h:0m:8s left)
+Log-likelihood cutoff on original alignment: -252588.347
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:16m:17s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -252538.739
+Current log-likelihood at step 1: -252538.700
+Current log-likelihood at step 2: -252538.681
+Current log-likelihood at step 3: -252538.670
+Current log-likelihood at step 4: -252538.664
+Partition-specific rates:  0.012 3.542 0.520 2.278 0.025 1.603 1.848 1.048 0.024 2.556 1.703 1.147 0.027 2.080 0.352 1.569 0.545 2.450 0.228 3.608 0.010 2.400 0.038 1.899 0.018 2.823 0.012 4.053 0.282 0.000 0.060 1.306 0.349 2.285 0.309 2.421 0.443 1.919 0.570 7.325 0.669 0.461 0.360 1.169 0.345 0.000 0.564 1.921 0.012 2.406 0.281 1.638 0.241 1.374 0.012 2.308 0.301 1.290 0.347 1.861 0.012 1.857 0.262 0.356 57.338 0.272 0.875 0.670 0.357 2.678 0.012 1.247 0.585 0.999 0.310 0.000 0.270 1.008 0.165 0.670 0.330 0.472 0.007 1.172 0.583 1.299 0.586 0.540 0.012 1.999 0.025 0.759 0.551 1.405 0.012 1.594 0.325 2.241 0.448 0.774 3.439 0.025 0.591 0.023 0.879 0.012 0.865 0.694 0.378 1.237 0.718 1.374 0.844 2.396 0.444 0.838 0.548 1.701 1.125 1.043 0.584 3.701 0.206 0.171 0.216 0.000 0.007 51.863 0.004 2.223 0.009 1.918 0.008 1.007 0.012 1.529 0.012 0.188 0.840 1.287 0.878 1.237 0.662 1.687 0.931 1.037 0.008 1.537 0.111 0.793 1.215 1.351 0.012 0.751 0.249 0.890 0.469 3.800 0.576 0.244 0.799 1.593 0.147 1.286 0.197 0.528 0.111 1.297 0.480 1.921 0.825 0.595 0.547 4.898 0.655 1.768 0.934 0.438 4.106 0.618 1.187 0.317 1.856 0.098 2.310 1.325 2.894 1.623 1.272 4.427 0.376 0.153 0.065 2.135 0.090 0.300 0.012 0.288 0.199 0.000 0.949 0.323 0.011 0.305 0.001 0.148 0.033 0.158 0.002 0.320 0.012 0.339 0.017 0.086 0.024 0.186 0.025 0.368 0.023 0.063 0.025 0.167 0.072 0.000 0.009 0.004 0.007 0.298 0.012 0.530 0.012 0.491 0.769 1.527 2.936 1.021 3.586 0.011 1.934 1.362 3.526 1.291 2.218 0.412 1.909 0.911 2.968 0.716 4.318 0.653 1.014 0.516 1.640 0.413 0.000 0.386 3.771 0.556 2.640 2.410 0.470 0.012 0.537 0.012 0.298 0.007 0.004 0.009 0.000 0.064 0.167 0.025 0.063 0.023 0.361 0.025 0.186 0.017 0.024 0.086 0.339 0.012 0.371 0.004 0.192 0.024 0.000 0.158 0.033 0.149 0.001 0.305 0.011 0.323 0.949 0.000 0.199 0.288 0.012 0.300 0.090 2.116 0.065 0.153
+Parameters optimization took 3 rounds (2.592 sec)
+
+
+WARNING: Estimated model parameters are at boundary that can cause numerical instability!
+
+BEST SCORE FOUND : -252538.664
+Creating bootstrap support values...
+Split supports printed to NEXUS file ../result/nexus/all.aln.splits.nex
+Total tree length: 0.039
+
+Total number of iterations: 102
+CPU time used for tree search: 720.005 sec (0h:12m:0s)
+Wall-clock time used for tree search: 720.638 sec (0h:12m:0s)
+Total CPU time used: 978.856 sec (0h:16m:18s)
+Total wall-clock time used: 980.535 sec (0h:16m:20s)
+
+Computing bootstrap consensus tree...
+Reading input file ../result/nexus/all.aln.splits.nex...
+32 taxa and 96 splits.
+Consensus tree written to ../result/nexus/all.aln.contree
+Reading input trees file ../result/nexus/all.aln.contree
+Log-likelihood of consensus tree: -252538.667
+
+Analysis results written to: 
+  IQ-TREE report:                ../result/nexus/all.aln.iqtree
+  Maximum-likelihood tree:       ../result/nexus/all.aln.treefile
+  Likelihood distances:          ../result/nexus/all.aln.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          ../result/nexus/all.aln.splits.nex
+  Consensus tree:                ../result/nexus/all.aln.contree
+  Screen log file:               ../result/nexus/all.aln.log
+
+Date and Time: Thu Aug 31 16:10:01 2017

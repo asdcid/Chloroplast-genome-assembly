@@ -1,0 +1,1147 @@
+IQ-TREE 1.5.5 built Aug 10 2017
+
+Partition file name: ../data/final_data/all.info
+Input file name: ../data/final_data/all.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 808945
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+http://dx.doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+http://dx.doi.org/10.1093/molbev/msu300
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Bui Quang Minh, Minh Anh Thi Nguyen, and Arndt von Haeseler (2013)
+Ultrafast approximation for phylogenetic bootstrap. Mol Biol Evol, 30:1188-95.
+http://dx.doi.org/10.1093/molbev/mst024
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst Biol, 65:997-1008.
+http://dx.doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 32 taxa with 304 partitions and 156244 total sites (0% missing data)
+
+  ID  Name            Type  #Seqs  #Sites  #Patterns  #Const_Sites
+   1  trnH_GUG        DNA      32      75       4      100%
+   2  nocoding        DNA      32     221      25      90%
+   3  psbA            DNA      32    1062      22      98%
+   4  nocoding        DNA      32     268      28      92%
+   5  trnK_UUU        DNA      32      35       4      100%
+   6  nocoding        DNA      32     269      17      94%
+   7  matK            DNA      32    1512      79      95%
+   8  nocoding        DNA      32     772      42      97%
+   9  trnK_UUU        DNA      32      37       4      100%
+  10  nocoding        DNA      32     570      56      92%
+  11  rps16           DNA      32     194      18      94%
+  12  nocoding        DNA      32     856      44      96%
+  13  rps16           DNA      32      40       4      100%
+  14  nocoding        DNA      32    1307     103      94%
+  15  trnQ_UUG        DNA      32      72       5      99%
+  16  nocoding        DNA      32     354      20      95%
+  17  psbK            DNA      32     186       7      98%
+  18  nocoding        DNA      32     279      27      95%
+  19  psbI            DNA      32     111       5      99%
+  20  nocoding        DNA      32     110      22      90%
+  21  trnS_GCU        DNA      32      88       4      100%
+  22  nocoding        DNA      32     727      58      94%
+  23  trnG_GGA        DNA      32      23       4      100%
+  24  nocoding        DNA      32     746      46      95%
+  25  trnG_GGA        DNA      32      49       4      100%
+  26  nocoding        DNA      32     254      26      93%
+  27  trnR_UCU        DNA      32      72       4      100%
+  28  nocoding        DNA      32     301      34      88%
+  29  atpA            DNA      32    1524      19      99%
+  30  nocoding        DNA      32      58       5      100%
+  31  atpF            DNA      32     425       8      100%
+  32  nocoding        DNA      32     746      48      96%
+  33  atpF            DNA      32     145       5      99%
+  34  nocoding        DNA      32     441      48      92%
+  35  atpH            DNA      32     246       7      99%
+  36  nocoding        DNA      32    1059      74      94%
+  37  atpI            DNA      32     744      17      98%
+  38  nocoding        DNA      32     187      12      96%
+  39  rps2            DNA      32     711      19      98%
+  40  nocoding        DNA      32     231      27      91%
+  41  rpoC2           DNA      32    4185      77      98%
+  42  nocoding        DNA      32     165       7      98%
+  43  rpoC1           DNA      32    1617      24      99%
+  44  nocoding        DNA      32     729      23      97%
+  45  rpoC1           DNA      32     453       8      99%
+  46  nocoding        DNA      32       5       4      100%
+  47  rpoB            DNA      32    3219      61      98%
+  48  nocoding        DNA      32    1271      84      94%
+  49  trnC_GCA        DNA      32      71       4      100%
+  50  nocoding        DNA      32     456      31      94%
+  51  petN            DNA      32      90       5      99%
+  52  nocoding        DNA      32     952      62      95%
+  53  psbM            DNA      32     105       5      99%
+  54  nocoding        DNA      32     807      44      95%
+  55  trnD_GUC        DNA      32      74       4      100%
+  56  nocoding        DNA      32     444      54      92%
+  57  trnY_GUA        DNA      32      84       5      99%
+  58  nocoding        DNA      32      59       7      95%
+  59  trnE_UUC        DNA      32      73       5      99%
+  60  nocoding        DNA      32     919      83      94%
+  61  trnT_GGU        DNA      32      72       4      100%
+  62  nocoding        DNA      32    1424      88      95%
+  63  psbD            DNA      32    1062      15      99%
+  64  psbC            DNA      32    1369      20      99%
+  65  nocoding        DNA      32     260      18      95%
+  66  trnS_UGA        DNA      32      93       5      99%
+  67  nocoding        DNA      32     348      18      97%
+  68  psbZ            DNA      32     189       9      97%
+  69  trnG_UCC        DNA      32      71       5      99%
+  70  nocoding        DNA      32     170      19      91%
+  71  trnfM_CAU       DNA      32      74       4      100%
+  72  nocoding        DNA      32     160      11      96%
+  73  rps14           DNA      32     303      11      98%
+  74  nocoding        DNA      32     127       9      96%
+  75  psaB            DNA      32    2205      27      99%
+  76  nocoding        DNA      32      25       4      100%
+  77  psaA            DNA      32    2253      24      99%
+  78  nocoding        DNA      32     699      38      97%
+  79  ycf3            DNA      32     155       6      99%
+  80  nocoding        DNA      32     733      28      98%
+  81  ycf3            DNA      32     230       7      99%
+  82  nocoding        DNA      32     753      19      98%
+  83  ycf3            DNA      32     124       4      100%
+  84  nocoding        DNA      32     827      55      96%
+  85  trnS_GGA        DNA      32      87       6      98%
+  86  nocoding        DNA      32     282      19      96%
+  87  rps4            DNA      32     606      17      98%
+  88  nocoding        DNA      32     190      16      98%
+  89  trnT_UGU        DNA      32      73       4      100%
+  90  nocoding        DNA      32    1147      94      95%
+  91  trnL_UAA        DNA      32      35       4      100%
+  92  nocoding        DNA      32     515      24      97%
+  93  trnL_UAA        DNA      32      46       5      98%
+  94  nocoding        DNA      32     164       9      97%
+  95  trnF_GAA        DNA      32      73       4      100%
+  96  nocoding        DNA      32     782      47      95%
+  97  ndhJ            DNA      32     477       9      99%
+  98  nocoding        DNA      32      92      12      93%
+  99  ndhK            DNA      32     678      15      98%
+ 100  ndhC            DNA      32     363      13      98%
+ 101  nocoding        DNA      32     460      34      93%
+ 102  trnV_UAC        DNA      32      35       4      100%
+ 103  nocoding        DNA      32     598      20      98%
+ 104  trnV_UAC        DNA      32      39       4      100%
+ 105  nocoding        DNA      32     173      10      97%
+ 106  trnM_CAU        DNA      32      73       4      100%
+ 107  nocoding        DNA      32     261      12      97%
+ 108  atpE            DNA      32     402      15      97%
+ 109  atpB            DNA      32    1493      21      99%
+ 110  nocoding        DNA      32     771      47      96%
+ 111  rbcL            DNA      32    1428      24      98%
+ 112  nocoding        DNA      32     679      47      96%
+ 113  accD            DNA      32    1473      47      97%
+ 114  nocoding        DNA      32     725      66      93%
+ 115  psaI            DNA      32     114       6      98%
+ 116  nocoding        DNA      32     390      18      97%
+ 117  ycf4            DNA      32     555      15      98%
+ 118  nocoding        DNA      32    1038      90      95%
+ 119  cemA            DNA      32     690      23      97%
+ 120  nocoding        DNA      32     219      13      96%
+ 121  petA            DNA      32     963      22      98%
+ 122  nocoding        DNA      32     992      72      93%
+ 123  psbJ            DNA      32     123       5      99%
+ 124  nocoding        DNA      32     148       5      99%
+ 125  psbL            DNA      32     117       5      99%
+ 126  nocoding        DNA      32      22       4      100%
+ 127  psbF            DNA      32     120       4      100%
+ 128  nocoding        DNA      32       9       4      89%
+ 129  psbE            DNA      32     252       4      100%
+ 130  nocoding        DNA      32    1261      83      94%
+ 131  petL            DNA      32      96       4      100%
+ 132  nocoding        DNA      32     173      17      93%
+ 133  petG            DNA      32     114       4      100%
+ 134  nocoding        DNA      32     126       9      96%
+ 135  trnW_CCA        DNA      32      74       4      100%
+ 136  nocoding        DNA      32     193      13      95%
+ 137  trnP_UGG        DNA      32      74       4      100%
+ 138  psaJ            DNA      32     135       5      99%
+ 139  nocoding        DNA      32     418      27      97%
+ 140  nocoding        DNA      32     395      23      95%
+ 141  rpl33           DNA      32     207      13      97%
+ 142  nocoding        DNA      32     205      14      95%
+ 143  rps18           DNA      32     306      12      97%
+ 144  nocoding        DNA      32     264      19      97%
+ 145  rpl20           DNA      32     354      17      96%
+ 146  nocoding        DNA      32     759      34      96%
+ 147  rps12           DNA      32     114       4      100%
+ 148  nocoding        DNA      32     166      12      95%
+ 149  clpP            DNA      32     228       5      100%
+ 150  nocoding        DNA      32     614      26      97%
+ 151  clpP            DNA      32     292      16      96%
+ 152  nocoding        DNA      32     873      44      96%
+ 153  clpP            DNA      32      71       4      100%
+ 154  nocoding        DNA      32     403      19      97%
+ 155  psbB            DNA      32    1527      19      99%
+ 156  nocoding        DNA      32     114      11      96%
+ 157  psbT            DNA      32     108       6      98%
+ 158  nocoding        DNA      32      65       9      92%
+ 159  psbN            DNA      32     132       7      98%
+ 160  nocoding        DNA      32     104       5      99%
+ 161  psbH            DNA      32     222      10      97%
+ 162  nocoding        DNA      32     137      13      95%
+ 163  petB            DNA      32       6       3      100%
+ 164  nocoding        DNA      32     780      46      96%
+ 165  petB            DNA      32     642       9      99%
+ 166  nocoding        DNA      32     192       8      98%
+ 167  petD            DNA      32       8       3      100%
+ 168  nocoding        DNA      32     770      32      96%
+ 169  petD            DNA      32     475      12      98%
+ 170  nocoding        DNA      32     206      18      95%
+ 171  rpoA            DNA      32    1014      33      97%
+ 172  nocoding        DNA      32      65       5      98%
+ 173  rps11           DNA      32     417      12      98%
+ 174  rpl36           DNA      32     114       8      96%
+ 175  nocoding        DNA      32     116       7      97%
+ 176  infA_fragment   DNA      32     244      19      94%
+ 177  nocoding        DNA      32     163      11      96%
+ 178  rps8            DNA      32     405      10      99%
+ 179  nocoding        DNA      32     187      28      91%
+ 180  rpl14           DNA      32     369      13      98%
+ 181  nocoding        DNA      32     128      10      95%
+ 182  rpl16           DNA      32     399       9      99%
+ 183  nocoding        DNA      32    1019      64      95%
+ 184  rpl16           DNA      32       9       4      100%
+ 185  nocoding        DNA      32     159      16      93%
+ 186  rps3            DNA      32     651      36      95%
+ 187  rpl22           DNA      32     464      50      91%
+ 188  nocoding        DNA      32      63      12      94%
+ 189  rps19           DNA      32     279      16      96%
+ 190  nocoding        DNA      32      31       7      90%
+ 191  rpl2            DNA      32     434       7      99%
+ 192  nocoding        DNA      32     664       8      99%
+ 193  rpl2            DNA      32     391       5      100%
+ 194  nocoding        DNA      32      24       6      92%
+ 195  rpl23           DNA      32     282       5      100%
+ 196  nocoding        DNA      32     169       6      99%
+ 197  trnI_CAU        DNA      32      74       4      100%
+ 198  nocoding        DNA      32      88       5      99%
+ 199  ycf2            DNA      32    6843      52      99%
+ 200  nocoding        DNA      32      90       4      100%
+ 201  ycf15_fragment  DNA      32     544      17      98%
+ 202  nocoding        DNA      32     314       8      99%
+ 203  trnL_CAA        DNA      32      81       4      100%
+ 204  nocoding        DNA      32     582      11      99%
+ 205  ndhB            DNA      32     756       4      100%
+ 206  nocoding        DNA      32     682       8      99%
+ 207  ndhB            DNA      32     777       5      100%
+ 208  nocoding        DNA      32     325       5      100%
+ 209  rps7            DNA      32     468       4      100%
+ 210  nocoding        DNA      32    2725      38      99%
+ 211  trnV_GAC        DNA      32      72       4      100%
+ 212  nocoding        DNA      32     227       6      99%
+ 213  rrn16           DNA      32    1491       5      100%
+ 214  nocoding        DNA      32     294       5      100%
+ 215  trnI_GAU        DNA      32      37       4      100%
+ 216  nocoding        DNA      32     952      11      99%
+ 217  trnI_GAU        DNA      32      35       4      100%
+ 218  nocoding        DNA      32      69       5      99%
+ 219  trnA_UGC        DNA      32      38       4      100%
+ 220  nocoding        DNA      32     803       6      100%
+ 221  trnA_UGC        DNA      32      35       4      100%
+ 222  nocoding        DNA      32     152       5      99%
+ 223  rrn23           DNA      32    2814      11      100%
+ 224  nocoding        DNA      32      98       4      100%
+ 225  rrn4.5          DNA      32     103       4      100%
+ 226  nocoding        DNA      32     224       4      100%
+ 227  rrn5            DNA      32     121       4      100%
+ 228  nocoding        DNA      32     255       7      99%
+ 229  trnR_ACG        DNA      32      74       4      100%
+ 230  nocoding        DNA      32     629      17      98%
+ 231  trnN_GUU        DNA      32      72       4      100%
+ 232  nocoding        DNA      32     329       8      99%
+ 233  ycf1_fragment   DNA      32    1098      41      98%
+ 234  ndhF            DNA      32    2206     102      95%
+ 235  nocoding        DNA      32     930      91      92%
+ 236  rpl32           DNA      32     174      10      97%
+ 237  nocoding        DNA      32     532      65      90%
+ 238  trnL_UAG        DNA      32      80       4      100%
+ 239  nocoding        DNA      32      92      11      92%
+ 240  ccsA            DNA      32     960      44      96%
+ 241  nocoding        DNA      32     324      47      90%
+ 242  ndhD            DNA      32    1503      58      96%
+ 243  nocoding        DNA      32     149      21      93%
+ 244  psaC            DNA      32     246       8      98%
+ 245  nocoding        DNA      32     229      16      95%
+ 246  ndhE            DNA      32     306      15      96%
+ 247  nocoding        DNA      32     236      19      93%
+ 248  ndhG            DNA      32     531      16      98%
+ 249  nocoding        DNA      32     402      48      91%
+ 250  ndhI            DNA      32     504      16      98%
+ 251  nocoding        DNA      32     100       8      96%
+ 252  ndhA            DNA      32     540      13      98%
+ 253  nocoding        DNA      32    1061      72      95%
+ 254  ndhA            DNA      32     552      12      99%
+ 255  nocoding        DNA      32       1       1      100%
+ 256  ndhH            DNA      32    1182      21      98%
+ 257  nocoding        DNA      32     106      14      91%
+ 258  rps15           DNA      32     276      14      98%
+ 259  nocoding        DNA      32     415      40      92%
+ 260  ycf1            DNA      32    5655     354      93%
+ 261  nocoding        DNA      32     329       8      99%
+ 262  trnN_GUU        DNA      32      72       4      100%
+ 263  nocoding        DNA      32     629      17      98%
+ 264  trnR_ACG        DNA      32      74       4      100%
+ 265  nocoding        DNA      32     255       7      99%
+ 266  rrn5            DNA      32     121       4      100%
+ 267  nocoding        DNA      32     224       4      100%
+ 268  rrn4.5          DNA      32     103       4      100%
+ 269  nocoding        DNA      32      98       4      100%
+ 270  rrn23           DNA      32    2813       9      100%
+ 271  nocoding        DNA      32     152       5      99%
+ 272  trnA_UGC        DNA      32      35       4      100%
+ 273  nocoding        DNA      32     803       6      100%
+ 274  trnA_UGC        DNA      32      38       4      100%
+ 275  nocoding        DNA      32      70       5      99%
+ 276  trnI_GAU        DNA      32      35       4      100%
+ 277  nocoding        DNA      32     952      11      99%
+ 278  rrn16           DNA      32    1491       5      100%
+ 279  trnI_GAU        DNA      32      37       4      100%
+ 280  nocoding        DNA      32     293       5      100%
+ 281  nocoding        DNA      32     227       6      99%
+ 282  trnV_GAC        DNA      32      72       4      100%
+ 283  nocoding        DNA      32    1869      32      99%
+ 284  rps12           DNA      32     239       4      100%
+ 285  nocoding        DNA      32     528       8      99%
+ 286  rps12           DNA      32      37       4      100%
+ 287  nocoding        DNA      32      53       4      100%
+ 288  nocoding        DNA      32     325       5      100%
+ 289  ndhB            DNA      32     777       5      100%
+ 290  nocoding        DNA      32     682       8      99%
+ 291  ndhB            DNA      32     756       4      100%
+ 292  nocoding        DNA      32     582      11      99%
+ 293  trnL_CAA        DNA      32      81       4      100%
+ 294  nocoding        DNA      32     314       8      99%
+ 295  ycf15_fragment  DNA      32     544      17      98%
+ 296  nocoding        DNA      32      90       4      100%
+ 297  ycf2            DNA      32    6843      52      99%
+ 298  nocoding        DNA      32      88       5      99%
+ 299  trnI_CAU        DNA      32      74       4      100%
+ 300  nocoding        DNA      32     169       6      99%
+ 301  rpl23           DNA      32     282       5      100%
+ 302  nocoding        DNA      32      24       6      92%
+ 303  rpl2            DNA      32     391       5      100%
+ 304  nocoding        DNA      32     664       9      99%
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: JC:trnH_GUG,TPM2u+G4:nocoding,TN+I:psbA,TPM2u+G4:nocoding,JC:trnK_UUU,TPM2u+G4:nocoding,TVM+R2:matK,TPM2u+G4:nocoding,JC:trnK_UUU,TPM2u+G4:nocoding,F81+I:rps16,TPM2u+G4:nocoding,F81+I:rps16,TPM2u+G4:nocoding,JC:trnQ_UUG,TPM2u+G4:nocoding,F81:psbK,TPM2u+G4:nocoding,F81:psbI,TPM2u+G4:nocoding,JC:trnS_GCU,TPM2u+G4:nocoding,JC:trnG_GGA,TPM2u+G4:nocoding,JC:trnG_GGA,TPM2u+G4:nocoding,JC:trnR_UCU,TPM2u+G4:nocoding,HKY:atpA,TPM2u+G4:nocoding,F81:atpF,TPM2u+G4:nocoding,F81:atpF,TPM2u+G4:nocoding,K2P:atpH,TPM2u+G4:nocoding,HKY:atpI,TPM2u+G4:nocoding,F81:rps2,TPM2u+G4:nocoding,TIM+R2:rpoC2,TPM2u+G4:nocoding,K3Pu+I:rpoC1,TPM2u+G4:nocoding,K3Pu+I:rpoC1,TPM2u+G4:nocoding,K3Pu+I:rpoB,TPM2u+G4:nocoding,JC:trnC_GCA,TPM2u+G4:nocoding,JC:petN,TPM2u+G4:nocoding,F81:psbM,TPM2u+G4:nocoding,JC:trnD_GUC,TPM2u+G4:nocoding,JC:trnY_GUA,TPM2u+G4:nocoding,JC:trnE_UUC,TPM2u+G4:nocoding,JC:trnT_GGU,TPM2u+G4:nocoding,F81:psbD,F81+I:psbC,TPM2u+G4:nocoding,JC:trnS_UGA,TPM2u+G4:nocoding,HKY:psbZ,JC:trnG_UCC,TPM2u+G4:nocoding,JC:trnfM_CAU,TPM2u+G4:nocoding,K2P:rps14,TPM2u+G4:nocoding,HKY:psaB,TPM2u+G4:nocoding,F81:psaA,TPM2u+G4:nocoding,JC:ycf3,TPM2u+G4:nocoding,JC:ycf3,TPM2u+G4:nocoding,JC:ycf3,TPM2u+G4:nocoding,JC:trnS_GGA,TPM2u+G4:nocoding,F81:rps4,TPM2u+G4:nocoding,JC:trnT_UGU,TPM2u+G4:nocoding,JC:trnL_UAA,TPM2u+G4:nocoding,JC:trnL_UAA,TPM2u+G4:nocoding,JC:trnF_GAA,TPM2u+G4:nocoding,F81+I:ndhJ,TPM2u+G4:nocoding,F81:ndhK,TPM2u+I:ndhC,TPM2u+G4:nocoding,JC:trnV_UAC,TPM2u+G4:nocoding,JC:trnV_UAC,TPM2u+G4:nocoding,JC:trnM_CAU,TPM2u+G4:nocoding,HKY:atpE,F81+I:atpB,TPM2u+G4:nocoding,F81+R2:rbcL,TPM2u+G4:nocoding,K3Pu:accD,TPM2u+G4:nocoding,F81:psaI,TPM2u+G4:nocoding,HKY:ycf4,TPM2u+G4:nocoding,F81+R2:cemA,TPM2u+G4:nocoding,F81+I:petA,TPM2u+G4:nocoding,F81:psbJ,TPM2u+G4:nocoding,F81:psbL,TPM2u+G4:nocoding,JC:psbF,TPM2u+G4:nocoding,JC:psbE,TPM2u+G4:nocoding,F81:petL,TPM2u+G4:nocoding,F81:petG,TPM2u+G4:nocoding,JC:trnW_CCA,TPM2u+G4:nocoding,JC:trnP_UGG,JC:psaJ,TPM2u+G4:nocoding,F81:rpl33,TPM2u+G4:nocoding,F81:rps18,TPM2u+G4:nocoding,K3Pu:rpl20,TPM2u+G4:nocoding,JC:rps12,TPM2u+G4:nocoding,JC:clpP,TPM2u+G4:nocoding,JC:clpP,TPM2u+G4:nocoding,JC:clpP,TPM2u+G4:nocoding,HKY:psbB,TPM2u+G4:nocoding,JC:psbT,TPM2u+G4:nocoding,K2P:psbN,TPM2u+G4:nocoding,K2P:psbH,TPM2u+G4:nocoding,JC:petB,TPM2u+G4:nocoding,JC:petB,TPM2u+G4:nocoding,JC:petD,TPM2u+G4:nocoding,JC:petD,TPM2u+G4:nocoding,TPM2u:rpoA,TPM2u+G4:nocoding,K2P:rps11,TVMe+I:rpl36,TPM2u+G4:nocoding,F81:infA_fragment,TPM2u+G4:nocoding,F81:rps8,TPM2u+G4:nocoding,F81:rpl14,TPM2u+G4:nocoding,TPM2u:rpl16,TPM2u+G4:nocoding,TPM2u:rpl16,TPM2u+G4:nocoding,F81:rps3,TPM2u+R2:rpl22,TPM2u+G4:nocoding,K3Pu:rps19,TPM2u+G4:nocoding,F81+I:rpl2,TPM2u+G4:nocoding,F81+I:rpl2,TPM2u+G4:nocoding,F81:rpl23,TPM2u+G4:nocoding,JC:trnI_CAU,TPM2u+G4:nocoding,K3Pu+I:ycf2,TPM2u+G4:nocoding,K3Pu+I:ycf15_fragment,TPM2u+G4:nocoding,JC:trnL_CAA,TPM2u+G4:nocoding,F81:ndhB,TPM2u+G4:nocoding,F81:ndhB,TPM2u+G4:nocoding,F81:rps7,TPM2u+G4:nocoding,JC:trnV_GAC,TPM2u+G4:nocoding,F81:rrn16,TPM2u+G4:nocoding,JC:trnI_GAU,TPM2u+G4:nocoding,JC:trnI_GAU,TPM2u+G4:nocoding,JC:trnA_UGC,TPM2u+G4:nocoding,JC:trnA_UGC,TPM2u+G4:nocoding,F81+I:rrn23,TPM2u+G4:nocoding,JC:rrn4.5,TPM2u+G4:nocoding,JC:rrn5,TPM2u+G4:nocoding,JC:trnR_ACG,TPM2u+G4:nocoding,JC:trnN_GUU,TPM2u+G4:nocoding,F81+I:ycf1_fragment,TVM+I:ndhF,TPM2u+G4:nocoding,F81:rpl32,TPM2u+G4:nocoding,JC:trnL_UAG,TPM2u+G4:nocoding,K3Pu+I:ccsA,TPM2u+G4:nocoding,TVM+R2:ndhD,TPM2u+G4:nocoding,K2P:psaC,TPM2u+G4:nocoding,F81:ndhE,TPM2u+G4:nocoding,F81:ndhG,TPM2u+G4:nocoding,F81:ndhI,TPM2u+G4:nocoding,F81:ndhA,TPM2u+G4:nocoding,F81:ndhA,TPM2u+G4:nocoding,F81:ndhH,TPM2u+G4:nocoding,F81:rps15,TPM2u+G4:nocoding,TVM+I:ycf1,TPM2u+G4:nocoding,JC:trnN_GUU,TPM2u+G4:nocoding,JC:trnR_ACG,TPM2u+G4:nocoding,JC:rrn5,TPM2u+G4:nocoding,JC:rrn4.5,TPM2u+G4:nocoding,F81+I:rrn23,TPM2u+G4:nocoding,JC:trnA_UGC,TPM2u+G4:nocoding,JC:trnA_UGC,TPM2u+G4:nocoding,JC:trnI_GAU,TPM2u+G4:nocoding,F81:rrn16,JC:trnI_GAU,TPM2u+G4:nocoding,JC:trnV_GAC,TPM2u+G4:nocoding,JC:rps12,TPM2u+G4:nocoding,JC:rps12,TPM2u+G4:nocoding,F81:ndhB,TPM2u+G4:nocoding,F81:ndhB,TPM2u+G4:nocoding,JC:trnL_CAA,TPM2u+G4:nocoding,K3Pu+I:ycf15_fragment,TPM2u+G4:nocoding,K3Pu+I:ycf2,TPM2u+G4:nocoding,JC:trnI_CAU,TPM2u+G4:nocoding,F81:rpl23,TPM2u+G4:nocoding,F81+I:rpl2,TPM2u+G4:nocoding
+
+List of best-fit models per partition:
+
+  ID  Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+   1  JC                -103.9841    329.9682 + 0.2241    911.8144 + 1.0000    471.3350 + 0.6884
+   2  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+   3  TN+I             -1607.3423   3348.6845 + 0.1052   3357.8515 + 0.1270   3681.5345 + 0.5467
+   4  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+   5  JC                 -48.5259    219.0518 + 0.1864   7783.0518 + 1.0000    317.3178 + 0.5662
+   6  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+   7  TVM+R2           -2768.0265   5676.0529 + 0.3606   5682.9509 + 0.3869   6048.5361 + 0.8828
+   8  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+   9  JC                 -48.5259    219.0518 + 0.1864   7783.0518 + 1.0000    317.3178 + 0.5662
+  10  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  11  F81+I             -347.9248    825.8496 + 0.0448   9405.8496 - 0.0000    935.6268 + 0.1722
+  12  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  13  F81+I             -347.9248    825.8496 + 0.0448   9405.8496 - 0.0000    935.6268 + 0.1722
+  14  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  15  JC                -106.1928    334.3857 + 0.0555   1090.7857 + 1.0000    473.2623 + 0.5231
+  16  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  17  F81               -269.6947    667.3894 + 0.0652    736.1497 + 0.6062    873.8371 + 0.6890
+  18  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  19  F81               -153.0888    434.1776 + 0.0950    615.0472 - 0.0002    607.5875 + 0.3786
+  20  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  21  JC                -122.0080    366.0160 + 0.2085    656.9391 + 1.0000    517.1336 + 0.7086
+  22  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  23  JC                 -31.8885    185.7769 + 0.0781   7749.7769 + 1.0000    301.1780 + 0.5638
+  24  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  25  JC                 -31.8885    185.7769 + 0.0781   7749.7769 + 1.0000    301.1780 + 0.5638
+  26  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  27  JC                 -99.8247    321.6495 + 0.2318   1078.0495 + 1.0000    460.5261 + 0.6834
+  28  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  29  HKY              -2229.5422   4589.0844 + 0.0211   4594.9692 + 0.0268   4935.4755 + 0.3609
+  30  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  31  F81               -577.9059   1283.8117 + 0.1045   1387.8117 + 0.8468   1474.3227 + 0.6518
+  32  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  33  F81               -577.9059   1283.8117 + 0.1045   1387.8117 + 0.8468   1474.3227 + 0.6518
+  34  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  35  K2P               -360.8943    845.7887 - 0.0023    888.4772 + 0.0622   1063.1192 + 0.3492
+  36  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  37  HKY              -1108.6451   2347.2902 + 0.0219   2359.9451 + 0.0320   2647.0729 + 0.3379
+  38  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  39  F81              -1097.4136   2322.8272 + 0.0037   2335.7065 + 0.0084   2615.0943 + 0.5320
+  40  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  41  TIM+R2           -6553.8164  13245.6329 + 0.4856  13247.9804 + 0.4905  13683.0419 + 0.9334
+  42  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  43  K3Pu+I           -2389.9816   4913.9633 + 0.0224   4937.6308 + 0.0495   5189.7280 + 0.1355
+  44  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  45  K3Pu+I           -2389.9816   4913.9633 + 0.0224   4937.6308 + 0.0495   5189.7280 + 0.1355
+  46  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  47  K3Pu+I           -4971.1613  10076.3226 + 0.1615  10079.2144 + 0.1709  10483.4700 + 0.3021
+  48  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  49  JC                 -98.4383    318.8766 + 0.1575   1159.3210 + 1.0000    456.9000 + 0.6715
+  50  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  51  JC                -131.3736    384.7472 + 0.0068    654.8900 + 0.9999    537.2355 + 0.4491
+  52  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  53  F81               -143.8159    415.6317 + 0.0708    623.6317 - 0.0000    585.4852 + 0.4411
+  54  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  55  JC                -102.5977    327.1953 + 0.1721    957.5286 + 1.0000    467.7433 + 0.6802
+  56  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  57  JC                -122.9855    367.9710 + 0.1064    711.7891 + 1.0000    516.2508 + 0.5675
+  58  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  59  JC                -107.5932    337.1865 + 0.0776   1024.8228 + 1.0000    476.9045 + 0.5322
+  60  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  61  JC                 -99.8247    321.6495 + 0.2469   1078.0495 + 1.0000    460.5261 + 0.6847
+  62  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  63  F81              -1541.6564   3211.3129 + 0.0173   3219.6579 + 0.0254   3529.2591 + 0.6847
+  64  F81+I            -2025.8853   4181.7706 - 0.0001   4188.3554 - 0.0002   4521.1899 + 0.7345
+  65  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  66  JC                -135.5659    393.1318 + 0.1142    637.1318 + 0.9995    547.6204 + 0.5864
+  67  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  68  HKY               -276.9015    683.8031 + 0.1204    753.5592 + 0.4830    894.5166 + 0.5460
+  69  JC                -104.7923    331.5847 + 0.1154   1172.0291 + 1.0000    469.6082 + 0.5365
+  70  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  71  JC                -102.5977    327.1953 + 0.2300    957.5286 + 1.0000    467.7433 + 0.6871
+  72  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  73  K2P               -470.7058   1065.4117 - 0.0003   1097.9617 + 0.0044   1295.6631 + 0.2531
+  74  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  75  HKY              -3247.9621   6625.9243 + 0.0146   6629.9355 + 0.0171   6996.3257 + 0.6052
+  76  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  77  F81              -3310.8167   6749.6334 - 0.0029   6753.4360 - 0.0037   7115.7146 + 0.5319
+  78  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  79  JC                -219.2530    560.5061 + 0.0531    682.5061 + 0.9231    732.5433 + 0.6331
+  80  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  81  JC                -219.2530    560.5061 + 0.0531    682.5061 + 0.9231    732.5433 + 0.6331
+  82  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  83  JC                -219.2530    560.5061 + 0.0531    682.5061 + 0.9231    732.5433 + 0.6331
+  84  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  85  JC                -133.7387    389.4774 + 0.0437    692.0374 + 1.0000    539.8978 + 0.3844
+  86  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  87  F81               -940.2635   2008.5270 + 0.0493   2023.9059 + 0.0907   2290.5673 + 0.7057
+  88  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  89  JC                -101.2112    324.4224 + 0.2360   1012.0588 + 1.0000    464.1404 + 0.6857
+  90  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  91  JC                 -48.5259    219.0518 + 0.1904   7783.0518 + 1.0000    330.5990 + 0.6074
+  92  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  93  JC                 -48.5259    219.0518 + 0.1904   7783.0518 + 1.0000    330.5990 + 0.6074
+  94  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  95  JC                -101.2112    324.4224 + 0.2492   1012.0588 + 1.0000    464.1404 + 0.6868
+  96  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  97  F81+I             -698.4986   1526.9972 + 0.0324   1547.8731 + 0.0961   1797.8858 + 0.7987
+  98  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+  99  F81              -1021.1574   2170.3148 - 0.0021   2183.8874 + 0.0041   2459.5402 + 0.2934
+ 100  TPM2u+I           -544.6332   1223.2664 + 0.1097   1254.1546 + 0.1960   1484.1914 + 0.2516
+ 101  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 102  JC                 -48.5259    219.0518 + 0.2525   7783.0518 + 1.0000    320.5291 + 0.5914
+ 103  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 104  JC                 -48.5259    219.0518 + 0.2525   7783.0518 + 1.0000    320.5291 + 0.5914
+ 105  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 106  JC                -101.2112    324.4224 + 0.2080   1012.0588 + 1.0000    464.1404 + 0.6830
+ 107  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 108  HKY               -625.9757   1381.9513 + 0.0951   1407.4871 + 0.1801   1641.7207 + 0.4609
+ 109  F81+I            -2235.1856   4600.3711 + 0.0054   4606.3837 + 0.0072   4945.4264 + 0.6247
+ 110  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 111  F81+R2           -2235.6057   4603.2115 - 0.0031   4609.7096 - 0.0047   4950.6374 + 0.8275
+ 112  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 113  K3Pu             -2393.2131   4918.4263 - 0.0089   4924.7165 + 0.0122   5267.9000 + 0.5936
+ 114  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 115  F81               -162.2604    452.5209 + 0.0317    622.3168 - 0.0031    627.6376 + 0.3257
+ 116  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 117  HKY               -847.1859   1824.3718 + 0.0157   1841.9178 + 0.0317   2105.1047 + 0.3778
+ 118  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 119  F81+R2           -1113.3890   2358.7780 + 0.0264   2372.9738 + 0.0439   2658.1996 + 0.5901
+ 120  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 121  F81+I            -1485.6053   3101.2106 - 0.0031   3110.7759 + 0.0049   3417.7641 + 0.3661
+ 122  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 123  F81               -168.9368    465.8736 + 0.0805    609.3219 - 0.0134    645.8534 + 0.4633
+ 124  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 125  F81               -161.2738    450.5476 + 0.0756    610.5476 - 0.0015    627.3267 + 0.3856
+ 126  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 127  JC                -166.3746    454.7491 + 0.1279    585.1629 + 0.9605    624.7861 + 0.7394
+ 128  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 129  JC                -349.3866    820.7732 - 0.0030    860.5837 + 0.0727   1036.0684 + 0.6094
+ 130  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 131  F81               -126.2183    380.4365 + 0.2065    648.8236 - 0.0000    544.5548 + 0.3616
+ 132  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 133  F81               -146.6261    421.2522 + 0.2097    591.0481 - 0.0227    596.3689 + 0.7132
+ 134  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 135  JC                -102.5977    327.1953 + 0.2521    957.5286 + 1.0000    467.7433 + 0.6889
+ 136  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 137  JC                -102.5977    327.1953 + 0.2300    957.5286 + 1.0000    467.7433 + 0.6871
+ 138  JC                -194.1713    510.3426 + 0.0064    613.9590 + 0.8583    687.5643 + 0.5602
+ 139  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 140  F81               -328.9150    785.8301 + 0.0149    844.4216 + 0.2459    999.1241 + 0.3126
+ 141  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 142  F81               -467.8491   1063.6982 + 0.0241   1098.2210 + 0.1083   1302.0077 + 0.5523
+ 143  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 144  K3Pu              -561.7473   1255.4946 + 0.2725   1286.3100 + 0.4361   1510.8682 + 0.4376
+ 145  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 146  JC                -158.0558    438.1117 + 0.1778   8002.1117 + 1.0000    536.3777 + 0.5622
+ 147  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 148  JC                -323.6370    769.2739 + 0.0051   1609.7184 + 1.0000    907.2974 + 0.3499
+ 149  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 150  JC                -323.6370    769.2739 + 0.0051   1609.7184 + 1.0000    907.2974 + 0.3499
+ 151  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 152  JC                -323.6370    769.2739 + 0.0051   1609.7184 + 1.0000    907.2974 + 0.3499
+ 153  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 154  HKY              -2209.1742   4548.3483 + 0.0382   4554.2210 + 0.0458   4894.8672 + 0.5376
+ 155  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 156  JC                -163.2888    448.5777 + 0.0073    613.0125 + 0.9641    612.1877 + 0.3914
+ 157  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 158  K2P               -200.8311    525.6623 + 0.0549    638.8796 + 0.3364    704.3960 + 0.3510
+ 159  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 160  K2P               -356.1627    836.3254 - 0.0003    885.4574 + 0.0362   1047.2914 + 0.2735
+ 161  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 162  JC                  -8.3187    138.6375 + 0.1998    151.6788 + 0.3129    410.9773 + 0.8859
+ 163  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 164  JC                  -8.3187    138.6375 + 0.1998    151.6788 + 0.3129    410.9773 + 0.8859
+ 165  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 166  JC                 -11.0916    144.1833 + 0.1339    162.4980 + 0.3021    398.1455 + 0.8673
+ 167  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 168  JC                 -11.0916    144.1833 + 0.1339    162.4980 + 0.3021    398.1455 + 0.8673
+ 169  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 170  TPM2u            -1624.0824   3380.1649 - 0.0007   3389.5038 - 0.0013   3704.9943 + 0.1628
+ 171  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 172  K2P               -646.2571   1416.5143 - 0.0011   1438.5821 + 0.0066   1666.5656 + 0.4597
+ 173  TVMe+I            -192.6757    517.3515 + 0.0076    705.5217 - 0.0006    697.9406 + 0.3110
+ 174  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 175  F81               -365.2142    858.4284 + 0.0413    904.9088 + 0.2866   1082.2471 + 0.4661
+ 176  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 177  F81               -600.4346   1328.8691 - 0.0021   1353.3397 + 0.0090   1585.1179 + 0.2970
+ 178  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 179  F81               -568.6293   1265.2586 + 0.0314   1292.6270 + 0.1082   1515.5495 + 0.6743
+ 180  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 181  TPM2u             -574.0286   1280.0571 + 0.1512  10124.0571 - 0.0000   1293.0739 + 0.1634
+ 182  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 183  TPM2u             -574.0286   1280.0571 + 0.1512  10124.0571 - 0.0000   1293.0739 + 0.1634
+ 184  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 185  F81              -1135.7974   2399.5948 - 0.0002   2413.7927 - 0.0006   2686.2194 + 0.4878
+ 186  TPM2u+R2          -971.0761   2078.1522 + 0.0271   2101.9091 + 0.0583   2359.6643 + 0.1970
+ 187  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 188  K3Pu              -459.4534   1050.9069 + 0.0820   1092.6239 + 0.2080   1290.5669 + 0.3495
+ 189  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 190  F81+I             -626.1968   1382.3936 + 0.0068   1408.7936 + 0.0317   1640.3596 + 0.4173
+ 191  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 192  F81+I             -626.1968   1382.3936 + 0.0068   1408.7936 + 0.0317   1640.3596 + 0.4173
+ 193  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 194  F81               -387.7580    903.5160 + 0.1084    941.8570 + 0.3623   1136.5981 + 0.7137
+ 195  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 196  JC                -102.5977    327.1953 + 0.2501    957.5286 + 1.0000    467.7433 + 0.6887
+ 197  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 198  K3Pu+I           -9762.5453  19659.0906 + 0.1830  19660.4356 + 0.1891  20116.7664 + 0.9565
+ 199  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 200  K3Pu+I            -848.1625   1830.3249 + 0.0512   1849.4678 + 0.0843   2118.3545 + 0.4721
+ 201  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 202  JC                -112.3028    346.6057 + 0.2321    744.7109 + 1.0000    492.6671 + 0.6995
+ 203  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 204  F81              -1021.4645   2170.9291 + 0.2098   2182.9696 + 0.2877   2467.1237 + 0.8903
+ 205  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 206  F81              -1021.4645   2170.9291 + 0.2098   2182.9696 + 0.2877   2467.1237 + 0.8903
+ 207  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 208  F81               -635.1301   1398.2602 + 0.2098   1418.9054 + 0.3521   1663.7622 + 0.8514
+ 209  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 210  JC                 -99.8247    321.6495 + 0.2469   1078.0495 + 1.0000    460.5261 + 0.6847
+ 211  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 212  F81              -2049.1877   4226.3754 + 0.1066   4232.2099 + 0.1304   4566.0364 + 0.8924
+ 213  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 214  JC                 -51.2988    224.5977 + 0.2441   7788.5977 + 1.0000    322.8636 + 0.5807
+ 215  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 216  JC                 -51.2988    224.5977 + 0.2441   7788.5977 + 1.0000    322.8636 + 0.5807
+ 217  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 218  JC                 -52.6853    227.3706 + 0.2437   7791.3706 + 1.0000    327.2633 + 0.5853
+ 219  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 220  JC                 -52.6853    227.3706 + 0.2437   7791.3706 + 1.0000    327.2633 + 0.5853
+ 221  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 222  F81+I            -3917.1490   7964.2980 + 0.0285   7967.4214 + 0.0320   8350.5284 + 0.7565
+ 223  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 224  JC                -142.8048    407.6097 + 0.1807    592.0975 + 0.9950    568.3281 + 0.7263
+ 225  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 226  JC                -167.7610    457.5220 + 0.2450    585.7254 + 0.9574    628.0653 + 0.7494
+ 227  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 228  JC                -102.5977    327.1953 + 0.1672    957.5286 + 1.0000    467.7433 + 0.6794
+ 229  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 230  JC                 -99.8247    321.6495 + 0.1802   1078.0495 + 1.0000    460.5261 + 0.6774
+ 231  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 232  F81+I            -1711.5870   3553.1739 + 0.0134   3561.4879 + 0.0202   3878.2549 + 0.8034
+ 233  TVM+I            -3926.5551   7991.1103 + 0.2820   7995.6327 + 0.2959   8384.3369 + 0.6607
+ 234  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 235  F81               -276.8572    681.7145 + 0.0063    758.0447 + 0.3058    883.8940 + 0.3018
+ 236  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 237  JC                -110.9164    343.8328 + 0.2046    764.0550 + 1.0000    489.1364 + 0.6954
+ 238  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 239  K3Pu+I           -1660.9800   3455.9599 + 0.1222   3466.1752 + 0.1734   3782.0444 + 0.7258
+ 240  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 241  TVM+R2           -2569.5341   5279.0682 + 0.6134   5286.0096 + 0.6366   5651.1335 + 0.5828
+ 242  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 243  K2P               -367.4469    858.8939 - 0.0018    901.5824 + 0.0581   1076.2244 + 0.3368
+ 244  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 245  F81               -486.0172   1100.0344 + 0.0560   1134.5572 + 0.2223   1338.3439 + 0.7290
+ 246  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 247  F81               -818.6447   1765.2893 + 0.0041   1783.1434 + 0.0104   2038.8741 + 0.3017
+ 248  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 249  F81               -776.2129   1680.4258 + 0.0237   1699.3779 + 0.0565   1950.6706 + 0.6159
+ 250  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 251  F81               -798.1404   1724.2808 + 0.0561   1741.3650 + 0.1169   2000.3479 + 0.8247
+ 252  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 253  F81               -798.1404   1724.2808 + 0.0561   1741.3650 + 0.1169   2000.3479 + 0.8247
+ 254  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 255  F81              -1746.3642   3620.7285 - 0.0028   3628.1770 + 0.0045   3945.5261 + 0.5900
+ 256  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 257  F81               -409.1117    946.2234 + 0.0927    985.6547 + 0.3573   1177.9291 + 0.7643
+ 258  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 259  TVM+I           -11407.0563  22952.1127 + 0.0724  22953.8423 + 0.0739  23410.2930 + 0.4616
+ 260  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 261  JC                 -99.8247    321.6495 + 0.1802   1078.0495 + 1.0000    460.5261 + 0.6774
+ 262  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 263  JC                -102.5977    327.1953 + 0.1672    957.5286 + 1.0000    467.7433 + 0.6794
+ 264  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 265  JC                -167.7610    457.5220 + 0.2450    585.7254 + 0.9574    628.0653 + 0.7494
+ 266  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 267  JC                -142.8048    407.6097 + 0.1807    592.0975 + 0.9950    568.3281 + 0.7263
+ 268  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 269  F81+I            -3917.1490   7964.2980 + 0.0285   7967.4214 + 0.0320   8350.5284 + 0.7565
+ 270  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 271  JC                 -52.6853    227.3706 + 0.2437   7791.3706 + 1.0000    327.2633 + 0.5853
+ 272  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 273  JC                 -52.6853    227.3706 + 0.2437   7791.3706 + 1.0000    327.2633 + 0.5853
+ 274  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 275  JC                 -51.2988    224.5977 + 0.2441   7788.5977 + 1.0000    322.8636 + 0.5807
+ 276  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 277  F81              -2049.1877   4226.3754 + 0.1066   4232.2099 + 0.1304   4566.0364 + 0.8924
+ 278  JC                 -51.2988    224.5977 + 0.2441   7788.5977 + 1.0000    322.8636 + 0.5807
+ 279  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 280  JC                 -99.8247    321.6495 + 0.2469   1078.0495 + 1.0000    460.5261 + 0.6847
+ 281  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 282  JC                -158.0558    438.1117 + 0.1778   8002.1117 + 1.0000    536.3777 + 0.5622
+ 283  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 284  JC                -158.0558    438.1117 + 0.1778   8002.1117 + 1.0000    536.3777 + 0.5622
+ 285  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 286  F81              -1021.4645   2170.9291 + 0.2098   2182.9696 + 0.2877   2467.1237 + 0.8903
+ 287  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 288  F81              -1021.4645   2170.9291 + 0.2098   2182.9696 + 0.2877   2467.1237 + 0.8903
+ 289  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 290  JC                -112.3028    346.6057 + 0.2321    744.7109 + 1.0000    492.6671 + 0.6995
+ 291  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 292  K3Pu+I            -848.1625   1830.3249 + 0.0512   1849.4678 + 0.0843   2118.3545 + 0.4721
+ 293  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 294  K3Pu+I           -9762.5453  19659.0906 + 0.1830  19660.4356 + 0.1891  20116.7664 + 0.9565
+ 295  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 296  JC                -102.5977    327.1953 + 0.2501    957.5286 + 1.0000    467.7433 + 0.6887
+ 297  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 298  F81               -387.7580    903.5160 + 0.1084    941.8570 + 0.3623   1136.5981 + 0.7137
+ 299  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+ 300  F81+I             -626.1968   1382.3936 + 0.0068   1408.7936 + 0.0317   1640.3596 + 0.4173
+ 301  TPM2u+G4          -476.4469   1086.8938 + 0.0296   1102.1824 + 0.0454   1388.2787 + 0.1975
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Proportional partition model with joint branch lengths and separate models between partitions
+
+  ID  Model           Speed  Parameters
+   1  JC             0.0118  JC
+   2  TPM2u+F+G4     3.5419  TPM2u{0.103488,0.626642}+F{0.439904,0.148614,0.144514,0.266968}+G4{0.245137}
+   3  TN+F+I         0.5203  TN{20.5568,1.6443}+F{0.343191,0.214762,0.206656,0.235391}+I{0.919288}
+   4  TPM2u+F+G4     2.2775  TPM2u{0.218402,0.746208}+F{0.373103,0.148377,0.148494,0.330026}+G4{0.355143}
+   5  JC             0.0253  JC
+   6  TPM2u+F+G4     1.6029  TPM2u{0.28497,0.586925}+F{0.345347,0.201208,0.115271,0.338174}+G4{0.174243}
+   7  TVM+F+R2       1.8478  TVM{0.97162,0.527478,0.0462926,0.676729}+F{0.358776,0.155547,0.174707,0.310971}+R2{0.995307,0.69425,0.00469258,65.8503}
+   8  TPM2u+F+G4     1.0480  TPM2u{1.21293,1.85443}+F{0.33258,0.176746,0.155136,0.335538}+G4{0.0200218}
+   9  JC             0.0239  JC
+  10  TPM2u+F+G4     2.5555  TPM2u{0.559781,0.894878}+F{0.438973,0.13655,0.138929,0.285548}+G4{0.293214}
+  11  F81+F          1.7029  F81
+  12  TPM2u+F+G4     1.1468  TPM2u{0.553568,1.13736}+F{0.325055,0.187728,0.151351,0.335866}+G4{0.0200233}
+  13  F81+F+I        0.0265  F81+I{0.999987}
+  14  TPM2u+F+G4     2.0802  TPM2u{0.243232,0.560184}+F{0.376172,0.140447,0.134749,0.348633}+G4{0.0892171}
+  15  JC             0.3519  JC
+  16  TPM2u+F+G4     1.5691  TPM2u{0.0965637,0.360505}+F{0.333245,0.123499,0.139036,0.40422}+G4{0.0200202}
+  17  F81+F          0.5447  F81
+  18  TPM2u+F+G4     2.4499  TPM2u{0.16993,0.271995}+F{0.348819,0.130076,0.170681,0.350424}+G4{0.0200233}
+  19  F81+F          0.2281  F81
+  20  TPM2u+F+R2     3.6076  TPM2u{0.544504,1.50799}+F{0.407182,0.119027,0.134376,0.339415}+R2{0.00996045,35.3302,0.99004,0.654616}
+  21  JC             0.0100  JC
+  22  TPM2u+F+G4     2.3997  TPM2u{0.64253,0.7026}+F{0.328469,0.162448,0.12661,0.382472}+G4{0.0200216}
+  23  JC             0.0384  JC
+  24  TPM2u+F+G4     1.8991  TPM2u{0.563115,1.02712}+F{0.34628,0.132829,0.166372,0.354519}+G4{0.0200241}
+  25  JC             0.0181  JC
+  26  TPM2u+F+G4     2.8228  TPM2u{0.606795,0.335174}+F{0.404332,0.112748,0.131436,0.351485}+G4{0.0200252}
+  27  JC             0.0123  JC
+  28  TPM2u+F+G4     4.0528  TPM2u{1.05408,0.792186}+F{0.373286,0.0890112,0.0926464,0.445056}+G4{0.190294}
+  29  HKY+F          0.2825  HKY{3.79087}+F{0.287258,0.218504,0.182005,0.312233}
+  30  TPM2u+F+R2     0.0000  TPM2u{0.997953,1.00063}+F{0.424837,0.104575,0.139434,0.331155}+R2{0.512017,1,0.487983,0.999999}
+  31  F81+F          0.0597  F81
+  32  TPM2u+F+G4     1.3060  TPM2u{0.502058,0.899406}+F{0.341644,0.190659,0.122473,0.345224}+G4{0.0200228}
+  33  F81+F          0.3495  F81
+  34  TPM2u+F+G4     2.2848  TPM2u{0.458187,0.839959}+F{0.357373,0.133997,0.15226,0.35637}+G4{0.527583}
+  35  K2P            0.3090  K2P{100}
+  36  TPM2u+F+G4     2.4210  TPM2u{0.500079,0.634589}+F{0.323692,0.161536,0.113625,0.401147}+G4{0.0200236}
+  37  HKY+F          0.4431  HKY{7.08676}+F{0.352445,0.18141,0.189348,0.276798}
+  38  TPM2u+F+R2     1.9193  TPM2u{0.0628417,0.988537}+F{0.348095,0.150234,0.128509,0.373162}+R2{0.99427,0.493633,0.00572971,88.8694}
+  39  F81+F          0.5702  F81
+  40  TPM2u+F+G4     7.3249  TPM2u{0.618027,0.209989}+F{0.301869,0.227925,0.129063,0.341143}+G4{0.0200218}
+  41  TIM+F+R2       0.6686  TIM{0.998753,0.20393,0.885215}+F{0.29683,0.197199,0.172074,0.333897}+R2{0.911037,0.00104041,0.0889626,11.23}
+  42  TPM2u+F+R2     0.4607  TPM2u{0.63407,0.81991}+F{0.315152,0.182008,0.2,0.302841}+R2{0.504347,0.984989,0.495653,1.01527}
+  43  F81+F          0.3602  F81
+  44  TPM2u+F+G4     1.1695  TPM2u{0.388013,1.10123}+F{0.305941,0.205976,0.142747,0.345336}+G4{0.0200207}
+  45  K3Pu+F+I       0.3454  K3Pu{0.989649,0.0001}+F{0.295668,0.202884,0.154801,0.346647}+I{0.966028}
+  46  TVM+F+R2       0.0000  TVM{0.999974,1,1.00003,0.999974}+F{0.2,0.4,0.2,0.2}+R2{0.512125,0.905785,0.487875,1.0989}
+  47  K3Pu+F+I       0.5637  K3Pu{1.42249,0.355674}+F{0.288152,0.22075,0.166414,0.324684}+I{0.921959}
+  48  TPM2u+F+G4     1.9208  TPM2u{0.725218,0.904826}+F{0.344531,0.135763,0.155283,0.364423}+G4{0.0200311}
+  49  JC             0.0125  JC
+  50  TPM2u+F+G4     2.4058  TPM2u{0.0769135,0.550315}+F{0.324013,0.181743,0.204633,0.289611}+G4{0.0200258}
+  51  JC             0.2814  JC
+  52  TPM2u+F+G4     1.6378  TPM2u{0.920712,1.27945}+F{0.319263,0.159899,0.148153,0.372685}+G4{0.0200254}
+  53  F81+F          0.2413  F81
+  54  TPM2u+F+G4     1.3737  TPM2u{0.925861,1.06015}+F{0.335593,0.17216,0.134603,0.357644}+G4{0.0200309}
+  55  JC             0.0120  JC
+  56  TPM2u+F+G4     2.3075  TPM2u{0.265321,1.39131}+F{0.345504,0.142097,0.179472,0.332926}+G4{0.268979}
+  57  JC             0.3014  JC
+  58  TPM2u+F+R2     1.2902  TPM2u{0.500681,0.698378}+F{0.305085,0.236758,0.153602,0.304555}+R2{0.489792,0.994587,0.510208,1.0052}
+  59  JC             0.3470  JC
+  60  TPM2u+F+G4     1.8607  TPM2u{0.415531,0.593167}+F{0.365282,0.14764,0.147257,0.339821}+G4{0.0200354}
+  61  JC             0.0123  JC
+  62  TPM2u+F+G4     1.8568  TPM2u{0.34785,0.369301}+F{0.375744,0.137353,0.1518,0.335102}+G4{0.0200239}
+  63  F81+F          0.2624  F81
+  64  F81+F+I        0.3564  F81+I{0.962694}
+  65  TPM2u+F+G4     57.3382  TPM2u{0.787569,3.34759}+F{0.31981,0.188488,0.161486,0.330216}+G4{0.0755784}
+  66  JC             0.2722  JC
+  67  TPM2u+F+G4     0.8752  TPM2u{22.9108,100}+F{0.343739,0.134851,0.188287,0.333123}+G4{998.448}
+  68  HKY+F          0.6698  HKY{100}+F{0.206349,0.17295,0.185185,0.435516}
+  69  JC             0.3569  JC
+  70  TPM2u+F+R2     2.6780  TPM2u{0.317513,0.454664}+F{0.389706,0.11636,0.185478,0.308456}+R2{0.657296,0.000100178,0.342704,2.91778}
+  71  JC             0.0120  JC
+  72  TPM2u+F+R2     1.2465  TPM2u{0.544422,1.37037}+F{0.406445,0.175195,0.196875,0.221484}+R2{0.761502,0.000100225,0.238498,4.19259}
+  73  K2P            0.5851  K2P{11.8724}
+  74  TPM2u+F+R2     0.9992  TPM2u{0.279201,0.0001}+F{0.401821,0.161417,0.169537,0.267224}+R2{0.495279,0.994665,0.504721,1.00524}
+  75  HKY+F          0.3103  HKY{4.954}+F{0.33869,0.216766,0.190179,0.254365}
+  76  TPM2u+F+R2     0.0000  TPM2u{0.999841,0.999941}+F{0.28,0.36,0.08,0.28}+R2{0.512125,0.905785,0.487875,1.0989}
+  77  F81+F          0.2697  F81
+  78  TPM2u+F+G4     1.0075  TPM2u{1.34354,1.97003}+F{0.34059,0.165936,0.145765,0.347709}+G4{0.0200363}
+  79  JC             0.1655  JC
+  80  TPM2u+F+G4     0.6699  TPM2u{0.291308,0.8329}+F{0.277609,0.188867,0.147576,0.385948}+G4{0.02004}
+  81  JC             0.3303  JC
+  82  TPM2u+F+G4     0.4724  TPM2u{0.758458,1.79877}+F{0.313271,0.201943,0.176747,0.30804}+G4{0.0200396}
+  83  JC             0.0071  JC
+  84  TPM2u+F+G4     1.1721  TPM2u{0.300638,0.773521}+F{0.388111,0.142846,0.152088,0.316954}+G4{8.90555}
+  85  JC             0.5828  JC
+  86  TPM2u+F+G4     1.2994  TPM2u{0.130499,0.62583}+F{0.330004,0.203506,0.139481,0.327008}+G4{0.0200225}
+  87  F81+F          0.5856  F81
+  88  TPM2u+F+R2     0.5398  TPM2u{99.9995,72.8418}+F{0.518142,0.116678,0.111185,0.253995}+R2{0.502976,0.988776,0.497024,1.01136}
+  89  JC             0.0121  JC
+  90  TPM2u+F+G4     1.9989  TPM2u{0.37551,0.720842}+F{0.421269,0.101931,0.134109,0.342692}+G4{0.0200258}
+  91  JC             0.0253  JC
+  92  TPM2u+F+G4     0.7590  TPM2u{1.04628,3.18138}+F{0.388084,0.148887,0.202948,0.260082}+G4{998.448}
+  93  JC             0.5509  JC
+  94  TPM2u+F+R2     1.4049  TPM2u{0.178166,0.325274}+F{0.323361,0.154535,0.157012,0.365091}+R2{0.971941,0.182677,0.0280593,29.3111}
+  95  JC             0.0121  JC
+  96  TPM2u+F+G4     1.5943  TPM2u{0.52955,0.65529}+F{0.321712,0.159364,0.141829,0.377095}+G4{0.0200222}
+  97  F81+F+I        0.3250  F81+I{0.968916}
+  98  TPM2u+F+R2     2.2407  TPM2u{0.0001,0.140455}+F{0.247908,0.116457,0.140865,0.49477}+R2{0.713701,0.000100165,0.286299,3.4926}
+  99  F81+F          0.4483  F81
+ 100  TPM2u+F+I      0.7744  TPM2u{0.0001,0.810567}+F{0.402001,0.217833,0.138258,0.241908}+I{0.937778}
+ 101  TPM2u+F+G4     3.4393  TPM2u{0.190898,0.200789}+F{0.362908,0.139606,0.126902,0.370584}+G4{0.0200234}
+ 102  JC             0.0253  JC
+ 103  TPM2u+F+G4     0.5911  TPM2u{0.0788106,0.523202}+F{0.296073,0.187435,0.185344,0.331148}+G4{0.0200373}
+ 104  JC             0.0227  JC
+ 105  TPM2u+F+R2     0.8785  TPM2u{0.296267,1.44397}+F{0.282876,0.109646,0.167449,0.440029}+R2{0.497319,0.993933,0.502681,1.006}
+ 106  JC             0.0121  JC
+ 107  TPM2u+F+G4     0.8650  TPM2u{0.178779,1.31473}+F{0.275862,0.172294,0.13817,0.413673}+G4{0.0200306}
+ 108  HKY+F          0.6937  HKY{5.45423}+F{0.264226,0.215174,0.173663,0.346937}
+ 109  F81+F+I        0.3783  F81+I{0.965966}
+ 110  TPM2u+F+G4     1.2374  TPM2u{0.293905,0.613117}+F{0.333862,0.146449,0.14592,0.373769}+G4{0.0200244}
+ 111  F81+F+R2       0.7177  F81+R2{0.996312,0.420771,0.00368771,157.491}
+ 112  TPM2u+F+G4     1.3736  TPM2u{0.508129,0.976515}+F{0.340287,0.162026,0.143525,0.354163}+G4{0.0200277}
+ 113  K3Pu+F         0.8445  K3Pu{0.91879,0.186693}+F{0.312733,0.145303,0.213192,0.328772}
+ 114  TPM2u+F+G4     2.3963  TPM2u{0.300913,0.482953}+F{0.350342,0.13353,0.125813,0.390315}+G4{0.0980323}
+ 115  F81+F          0.4444  F81
+ 116  TPM2u+F+G4     0.8385  TPM2u{0.674453,1.52426}+F{0.35941,0.133136,0.176419,0.331036}+G4{0.0200373}
+ 117  HKY+F          0.5478  HKY{6.39029}+F{0.255124,0.170158,0.230518,0.3442}
+ 118  TPM2u+F+G4     1.7010  TPM2u{1.03642,1.61921}+F{0.332066,0.150922,0.149948,0.367064}+G4{0.0200246}
+ 119  F81+F+R2       1.1253  F81+R2{0.996025,0.545771,0.00397474,114.825}
+ 120  TPM2u+F+G4     1.0428  TPM2u{0.0908953,0.422634}+F{0.331478,0.179224,0.151256,0.338042}+G4{998.448}
+ 121  F81+F+I        0.5836  F81+I{0.946012}
+ 122  TPM2u+F+G4     3.7014  TPM2u{0.490765,0.730249}+F{0.358944,0.131646,0.145396,0.364014}+G4{0.0200215}
+ 123  F81+F          0.2059  F81
+ 124  TPM2u+F+R2     0.1713  TPM2u{100,0.0180571}+F{0.277238,0.202703,0.121622,0.398438}+R2{0.509401,0.593327,0.490599,1.42226}
+ 125  F81+F          0.2164  F81
+ 126  TPM2u+F+R2     0.0000  TPM2u{0.999632,1.00026}+F{0.272727,0.0909091,0.136364,0.5}+R2{0.512123,0.905785,0.487877,1.0989}
+ 127  JC             0.0074  JC
+ 128  TPM2u+F+R2     51.8628  TPM2u{0.0001,100}+F{0.00694444,0.333333,0.326389,0.333333}+R2{0.124499,8.03151,0.875501,0.000100094}
+ 129  JC             0.0035  JC
+ 130  TPM2u+F+G4     2.2226  TPM2u{0.29939,0.417596}+F{0.343798,0.135521,0.150895,0.369786}+G4{0.0200238}
+ 131  F81+F          0.0092  F81
+ 132  TPM2u+F+R2     1.9184  TPM2u{1.54598,1.94156}+F{0.340445,0.15151,0.170494,0.337552}+R2{0.553217,0.0017538,0.446783,2.23605}
+ 133  F81+F          0.0078  F81
+ 134  TPM2u+F+R2     1.0071  TPM2u{0.35291,0.331987}+F{0.332837,0.143353,0.118056,0.405754}+R2{0.495202,0.99779,0.504798,1.00217}
+ 135  JC             0.0120  JC
+ 136  TPM2u+F+R2     1.5293  TPM2u{0.213333,0.597823}+F{0.388925,0.150583,0.124838,0.335654}+R2{0.862938,0.000100139,0.137062,7.29536}
+ 137  JC             0.0120  JC
+ 138  JC             0.1876  JC
+ 139  TPM2u+F+G4     0.8399  TPM2u{0.0909084,1.33222}+F{0.367237,0.143062,0.140835,0.348867}+G4{0.0200399}
+ 140  TPM2u+F+G4     1.2868  TPM2u{0.68345,1.1957}+F{0.376533,0.123032,0.182056,0.31838}+G4{0.0200381}
+ 141  F81+F          0.8778  F81
+ 142  TPM2u+F+R2     1.2373  TPM2u{0.488478,0.391434}+F{0.404726,0.14436,0.119055,0.33186}+R2{0.49082,0.997577,0.50918,1.00234}
+ 143  F81+F          0.6622  F81
+ 144  TPM2u+F+G4     1.6868  TPM2u{100,39.5897}+F{0.333531,0.193166,0.105956,0.367347}+G4{0.0200217}
+ 145  K3Pu+F         0.9312  K3Pu{1.12413,0.0001}+F{0.309234,0.197564,0.143097,0.350106}
+ 146  TPM2u+F+G4     1.0368  TPM2u{0.288351,0.55361}+F{0.309124,0.175683,0.145627,0.369565}+G4{1.76232}
+ 147  JC             0.0078  JC
+ 148  TPM2u+F+R2     1.5372  TPM2u{1.32144,1.18312}+F{0.34695,0.12933,0.17677,0.34695}+R2{0.870098,0.000100118,0.129902,7.69742}
+ 149  JC             0.1110  JC
+ 150  TPM2u+F+G4     0.7934  TPM2u{0.320774,0.711959}+F{0.338755,0.165604,0.154387,0.341253}+G4{0.0200241}
+ 151  JC             1.2154  JC
+ 152  TPM2u+F+G4     1.3505  TPM2u{0.181105,0.381355}+F{0.314412,0.182365,0.133049,0.370174}+G4{0.0200214}
+ 153  JC             0.0125  JC
+ 154  TPM2u+F+G4     0.7510  TPM2u{0.718705,2.65725}+F{0.340472,0.143622,0.158597,0.357309}+G4{0.0200376}
+ 155  HKY+F          0.2488  HKY{5.78671}+F{0.238253,0.175037,0.255444,0.331266}
+ 156  TPM2u+F+R2     0.8897  TPM2u{0.256422,0.384921}+F{0.290464,0.16543,0.149217,0.394889}+R2{0.497127,0.996059,0.502873,1.0039}
+ 157  JC             0.4694  JC
+ 158  TPM2u+F+R2     3.8004  TPM2u{2.75968,3.65378}+F{0.285577,0.177885,0.169712,0.366827}+R2{0.899449,0.000100188,0.100551,9.94435}
+ 159  K2P            0.5762  K2P{100}
+ 160  TPM2u+F+R2     0.2436  TPM2u{44.0231,0.0001}+F{0.423377,0.1247,0.144231,0.307692}+R2{0.508002,0.966645,0.491998,1.03444}
+ 161  K2P            0.7991  K2P{11.8745}
+ 162  TPM2u+F+R2     1.5928  TPM2u{2.09397,2.81791}+F{0.256404,0.137466,0.146615,0.459515}+R2{0.985775,0.655681,0.0142253,24.8603}
+ 163  JC             0.1473  JC
+ 164  TPM2u+F+G4     1.2864  TPM2u{0.832317,0.985216}+F{0.345791,0.153443,0.174184,0.326581}+G4{0.0200301}
+ 165  JC             0.1972  JC
+ 166  TPM2u+F+R2     0.5277  TPM2u{99.9987,52.864}+F{0.369466,0.125326,0.172038,0.333171}+R2{0.50321,0.991055,0.49679,1.00906}
+ 167  JC             0.1106  JC
+ 168  TPM2u+F+G4     1.2967  TPM2u{0.885367,1.70761}+F{0.315097,0.158644,0.202192,0.324067}+G4{0.0200275}
+ 169  JC             0.4801  JC
+ 170  TPM2u+F+R2     1.9212  TPM2u{0.220452,0.431253}+F{0.408138,0.124203,0.117978,0.349681}+R2{0.876238,0.000100116,0.123762,8.07931}
+ 171  TPM2u+F        0.8250  TPM2u{0.152869,0.738796}+F{0.288061,0.183432,0.165588,0.362919}
+ 172  TPM2u+F+R2     0.5953  TPM2u{0.0001,0.0001}+F{0.276923,0.123077,0.0850962,0.514904}+R2{0.925325,0.000100053,0.0746746,13.3902}
+ 173  K2P            0.5468  K2P{7.00576}
+ 174  TVMe+I         4.8982  TVMe{0.0359588,0.0844921,0.0001,0.0001}+I{0.957156}
+ 175  TPM2u+F+R2     0.6551  TPM2u{0.493022,0.746181}+F{0.344019,0.159483,0.169181,0.327317}+R2{0.501066,0.990693,0.498934,1.00935}
+ 176  F81+F          1.7679  F81
+ 177  TPM2u+F+R2     0.9339  TPM2u{0.134809,0.428044}+F{0.334228,0.202109,0.13557,0.328092}+R2{0.496395,0.997009,0.503605,1.00295}
+ 178  F81+F          0.4378  F81
+ 179  TPM2u+F+R2     4.1059  TPM2u{0.302329,0.568742}+F{0.324739,0.153859,0.0869565,0.434446}+R2{0.951155,0.323486,0.0488455,14.1736}
+ 180  F81+F          0.6178  F81
+ 181  TPM2u+F+R2     1.1874  TPM2u{0.0001,0.691294}+F{0.321289,0.158936,0.136475,0.383301}+R2{0.491781,1.00008,0.508219,0.999921}
+ 182  F81+F          0.3174  F81
+ 183  TPM2u+F+G4     1.8559  TPM2u{0.337559,0.735967}+F{0.275158,0.16211,0.151138,0.411593}+G4{0.0200258}
+ 184  TPM2u+F        0.0982  TPM2u{1.00002,0.999992}+F{0.444444,0.222222,0.111111,0.222222}
+ 185  TPM2u+F+R2     2.3098  TPM2u{0.0797427,0.210225}+F{0.392408,0.0892998,0.1369,0.381393}+R2{0.961417,0.551098,0.0385834,12.1857}
+ 186  F81+F          1.3250  F81
+ 187  TPM2u+F+R2     2.8942  TPM2u{0.258552,1.34227}+F{0.282508,0.208746,0.141017,0.367729}+R2{0.994056,0.826505,0.0059442,30.0138}
+ 188  TPM2u+F+R2     1.6231  TPM2u{0.0001,1.56655}+F{0.304129,0.190332,0.0906344,0.414904}+R2{0.483977,0.999778,0.516023,1.00021}
+ 189  K3Pu+F         1.2720  K3Pu{0.994013,0.0001}+F{0.284274,0.171259,0.167003,0.377464}
+ 190  TPM2u+F+R2     4.4270  TPM2u{0.755993,0.240433}+F{0.263105,0.247984,0.0675403,0.421371}+R2{0.95208,0.325444,0.0479198,14.4022}
+ 191  F81+F+I        0.3763  F81+I{0.991612}
+ 192  TPM2u+F+G4     0.1525  TPM2u{0.0001,56.4405}+F{0.269578,0.221338,0.165663,0.343421}+G4{998.432}
+ 193  F81+F+I        0.0648  F81+I{1.00244e-06}
+ 194  TPM2u+F+R2     2.1348  TPM2u{0.0001,0.0001}+F{0.333333,0.0416667,0.125,0.5}+R2{0.475591,1.00023,0.524409,0.999793}
+ 195  F81+F          0.0898  F81
+ 196  TPM2u+F+R2     0.2999  TPM2u{20.8102,27.3971}+F{0.283839,0.171228,0.183432,0.361501}+R2{0.507056,0.984068,0.492944,1.01639}
+ 197  JC             0.0120  JC
+ 198  TPM2u+F+R2     0.2883  TPM2u{0.0001,100}+F{0.386364,0.148082,0.204545,0.261009}+R2{0.507729,0.470208,0.492271,1.54643}
+ 199  K3Pu+F+I       0.1987  K3Pu{0.888113,0.0221692}+F{0.314526,0.184603,0.190968,0.309902}+I{0.969002}
+ 200  TPM2u+F+R2     0.0000  TPM2u{0.999823,0.999708}+F{0.344444,0.133333,0.277778,0.244444}+R2{0.512125,1,0.487875,0.999999}
+ 201  K3Pu+F+I       0.9493  K3Pu{0.270083,0.0001}+F{0.330497,0.194941,0.189997,0.284565}+I{0.976146}
+ 202  TPM2u+F+G4     0.3228  TPM2u{0.0001,2.90863}+F{0.260947,0.210291,0.242337,0.286425}+G4{998.432}
+ 203  JC             0.0109  JC
+ 204  TPM2u+F+G4     0.3047  TPM2u{0.578535,0.261439}+F{0.334837,0.17268,0.193729,0.298754}+G4{998.432}
+ 205  F81+F          0.0012  F81
+ 206  TPM2u+F+G4     0.1485  TPM2u{1.33311,0.838771}+F{0.285924,0.198085,0.19057,0.325422}+G4{998.432}
+ 207  F81+F          0.0326  F81
+ 208  TPM2u+F+G4     0.1581  TPM2u{0.0001,75.168}+F{0.255385,0.190962,0.153846,0.399808}+G4{0.0200343}
+ 209  F81+F          0.0019  F81
+ 210  TPM2u+F+G4     0.3198  TPM2u{0.359571,0.544242}+F{0.267908,0.200624,0.195449,0.336018}+G4{0.0200373}
+ 211  JC             0.0123  JC
+ 212  TPM2u+F+G4     0.3392  TPM2u{100,51.2585}+F{0.303689,0.176349,0.268722,0.251239}+G4{0.0200352}
+ 213  F81+F          0.0170  F81
+ 214  TPM2u+F+G4     0.0862  TPM2u{0.0001,33.2683}+F{0.22449,0.227997,0.29932,0.248193}+G4{998.432}
+ 215  JC             0.0239  JC
+ 216  TPM2u+F+G4     0.1863  TPM2u{0.526432,2.05584}+F{0.240513,0.237658,0.253348,0.268481}+G4{998.432}
+ 217  JC             0.0253  JC
+ 218  TPM2u+F+R2     0.3679  TPM2u{90.6483,0.0001}+F{0.325181,0.240036,0.246377,0.188406}+R2{0.505891,0.983211,0.494109,1.01719}
+ 219  JC             0.0233  JC
+ 220  TPM2u+F+G4     0.0630  TPM2u{0.0001,19.7242}+F{0.250311,0.222914,0.288917,0.237858}+G4{998.432}
+ 221  JC             0.0253  JC
+ 222  TPM2u+F+R2     0.1665  TPM2u{0.0001,60.2726}+F{0.276316,0.216283,0.210526,0.296875}+R2{0.509299,0.94915,0.490701,1.05278}
+ 223  F81+F+I        0.0724  F81+I{0.995285}
+ 224  TPM2u+F+R2     0.0000  TPM2u{1.00042,1.00007}+F{0.22449,0.27551,0.306122,0.193878}+R2{0.512126,0.905785,0.487874,1.0989}
+ 225  JC             0.0086  JC
+ 226  TPM2u+F+G4     0.0039  TPM2u{0.999357,0.999178}+F{0.232143,0.285714,0.174107,0.308036}+G4{0.0200291}
+ 227  JC             0.0073  JC
+ 228  TPM2u+F+G4     0.2978  TPM2u{0.586995,0.770307}+F{0.313725,0.223529,0.184069,0.278676}+G4{998.432}
+ 229  JC             0.0120  JC
+ 230  TPM2u+F+G4     0.5297  TPM2u{1.86552,0.564685}+F{0.301287,0.198191,0.210568,0.289954}+G4{0.0200216}
+ 231  JC             0.0123  JC
+ 232  TPM2u+F+G4     0.4914  TPM2u{0.0001,0.346405}+F{0.319054,0.200893,0.158625,0.321429}+G4{0.0200384}
+ 233  F81+F+I        0.7685  F81+I{0.959833}
+ 234  TVM+F+I        1.5272  TVM{0.508206,0.972694,0.0265318,0.583374}+F{0.398549,0.170432,0.149807,0.281211}+I{0.805367}
+ 235  TPM2u+F+G4     2.9365  TPM2u{0.581663,0.915422}+F{0.391322,0.115381,0.11993,0.373367}+G4{0.0644116}
+ 236  F81+F          1.0206  F81
+ 237  TPM2u+F+G4     3.5857  TPM2u{0.325884,0.582674}+F{0.383196,0.139446,0.129422,0.347936}+G4{0.124979}
+ 238  JC             0.0111  JC
+ 239  TPM2u+F+R2     1.9335  TPM2u{0.683912,2.29792}+F{0.315557,0.195992,0.108696,0.379755}+R2{0.478332,0.998771,0.521668,1.00113}
+ 240  K3Pu+F+I       1.3622  K3Pu{0.7964,0.0817753}+F{0.297624,0.156315,0.173991,0.37207}+I{0.860186}
+ 241  TPM2u+F+G4     3.5256  TPM2u{0.206475,0.260515}+F{0.433029,0.141301,0.106859,0.318811}+G4{0.237224}
+ 242  TVM+F+R2       1.2907  TVM{0.439445,0.752173,0.0374777,0.348095}+F{0.374792,0.171823,0.176418,0.276967}+R2{0.99169,0.675921,0.00830956,39.6766}
+ 243  TPM2u+F+R2     2.2184  TPM2u{1.08053,1.5569}+F{0.409732,0.124921,0.16284,0.302507}+R2{0.983658,0.718905,0.0163417,17.92}
+ 244  K2P            0.4119  K2P{100}
+ 245  TPM2u+F+G4     1.9089  TPM2u{0.0715354,0.359539}+F{0.332287,0.144241,0.120497,0.402975}+G4{0.0200254}
+ 246  F81+F          0.9108  F81
+ 247  TPM2u+F+G4     2.9677  TPM2u{0.388526,0.464856}+F{0.416049,0.0961335,0.139698,0.34812}+G4{0.0200204}
+ 248  F81+F          0.7158  F81
+ 249  TPM2u+F+G4     4.3184  TPM2u{0.277025,0.696231}+F{0.36791,0.138414,0.132289,0.361387}+G4{0.0200224}
+ 250  F81+F          0.6535  F81
+ 251  TPM2u+F+R2     1.0139  TPM2u{22.6782,100}+F{0.251563,0.13875,0.149688,0.46}+R2{0.495064,0.998864,0.504936,1.00111}
+ 252  F81+F          0.5160  F81
+ 253  TPM2u+F+G4     1.6397  TPM2u{0.463099,0.906915}+F{0.326515,0.164608,0.143888,0.364988}+G4{0.0200234}
+ 254  F81+F          0.4131  F81
+ 255  GTR+F+R3       0.0000  GTR{1,1,1,1,1}+F{0.0001,0.0001,0.0001,0.9997}+R3{0.334375,1,0.333177,1,0.332448,1}
+ 256  F81+F          0.3858  F81
+ 257  TPM2u+F+R2     3.7713  TPM2u{0.531805,0.274366}+F{0.410393,0.15028,0.100384,0.338943}+R2{0.842585,0.000100137,0.157415,6.35209}
+ 258  F81+F          0.5558  F81
+ 259  TPM2u+F+G4     2.6395  TPM2u{0.131395,0.450502}+F{0.394257,0.116822,0.129937,0.358984}+G4{0.175401}
+ 260  TVM+F+I        2.4101  TVM{0.954023,0.94808,0.145551,1.43111}+F{0.30443,0.156323,0.139757,0.39949}+I{0.759495}
+ 261  TPM2u+F+G4     0.4699  TPM2u{99.9746,65.5567}+F{0.321429,0.158625,0.200893,0.319054}+G4{0.0200399}
+ 262  JC             0.0123  JC
+ 263  TPM2u+F+G4     0.5371  TPM2u{0.244348,0.2033}+F{0.289954,0.210568,0.198191,0.301287}+G4{0.0200214}
+ 264  JC             0.0120  JC
+ 265  TPM2u+F+G4     0.2981  TPM2u{100,57.1664}+F{0.278676,0.184069,0.223529,0.313725}+G4{998.432}
+ 266  JC             0.0073  JC
+ 267  TPM2u+F+G4     0.0039  TPM2u{0.99999,0.999177}+F{0.308036,0.174107,0.285714,0.232143}+G4{0.0200318}
+ 268  JC             0.0086  JC
+ 269  TPM2u+F+R2     0.0000  TPM2u{1.00042,1.00007}+F{0.193878,0.306122,0.27551,0.22449}+R2{0.512126,0.905785,0.487874,1.0989}
+ 270  F81+F+I        0.0640  F81+I{0.996574}
+ 271  TPM2u+F+R2     0.1666  TPM2u{0.0001,63.3337}+F{0.296875,0.210526,0.216283,0.276316}+R2{0.509299,0.952241,0.490701,1.04957}
+ 272  JC             0.0253  JC
+ 273  TPM2u+F+G4     0.0631  TPM2u{0.0001,22.8784}+F{0.237858,0.288917,0.222914,0.250311}+G4{998.432}
+ 274  JC             0.0233  JC
+ 275  TPM2u+F+R2     0.3613  TPM2u{0.0001,0.0001}+F{0.185714,0.242857,0.236607,0.334821}+R2{0.506007,0.991478,0.493993,1.00873}
+ 276  JC             0.0253  JC
+ 277  TPM2u+F+G4     0.1861  TPM2u{63.5659,91.0271}+F{0.268481,0.253348,0.236607,0.241564}+G4{998.432}
+ 278  F81+F          0.0170  F81
+ 279  JC             0.0239  JC
+ 280  TPM2u+F+G4     0.0864  TPM2u{0.0001,26.8682}+F{0.24904,0.300341,0.225363,0.225256}+G4{998.432}
+ 281  TPM2u+F+G4     0.3392  TPM2u{0.0001,0.401499}+F{0.251239,0.268722,0.176349,0.303689}+G4{0.020036}
+ 282  JC             0.0123  JC
+ 283  TPM2u+F+G4     0.3710  TPM2u{1.13864,0.645142}+F{0.344857,0.196165,0.199428,0.259551}+G4{0.0200383}
+ 284  JC             0.0037  JC
+ 285  TPM2u+F+G4     0.1919  TPM2u{0.0001,65.6048}+F{0.314571,0.181877,0.204368,0.299183}+G4{998.432}
+ 286  JC             0.0239  JC
+ 287  TPM2u+F+R2     0.0000  TPM2u{0.999368,1.00015}+F{0.320755,0.226415,0.113208,0.339623}+R2{0.512125,0.905785,0.487875,1.0989}
+ 288  TPM2u+F+G4     0.1582  TPM2u{0.0001,68.8575}+F{0.399808,0.153846,0.190962,0.255385}+G4{0.0200343}
+ 289  F81+F          0.0326  F81
+ 290  TPM2u+F+G4     0.1486  TPM2u{0.304282,0.396667}+F{0.325422,0.19057,0.198085,0.285924}+G4{998.432}
+ 291  F81+F          0.0012  F81
+ 292  TPM2u+F+G4     0.3047  TPM2u{0.28867,0.195794}+F{0.298754,0.193729,0.17268,0.334837}+G4{998.432}
+ 293  JC             0.0109  JC
+ 294  TPM2u+F+G4     0.3226  TPM2u{20.2767,70.8354}+F{0.286425,0.242337,0.210291,0.260947}+G4{998.432}
+ 295  K3Pu+F+I       0.9494  K3Pu{0.270073,0.0001}+F{0.284565,0.189997,0.194941,0.330497}+I{0.976146}
+ 296  TPM2u+F+R2     0.0000  TPM2u{0.999667,0.999708}+F{0.244444,0.277778,0.133333,0.344444}+R2{0.512125,1,0.487875,0.999999}
+ 297  K3Pu+F+I       0.1987  K3Pu{0.888112,0.0221692}+F{0.309902,0.190968,0.184603,0.314526}+I{0.969002}
+ 298  TPM2u+F+R2     0.2884  TPM2u{0.0001,100}+F{0.261009,0.204545,0.148082,0.386364}+R2{0.507767,0.447405,0.492233,1.57003}
+ 299  JC             0.0120  JC
+ 300  TPM2u+F+R2     0.3000  TPM2u{0.0001,0.699195}+F{0.361501,0.183432,0.171228,0.283839}+R2{0.507044,0.986373,0.492956,1.01402}
+ 301  F81+F          0.0898  F81
+ 302  TPM2u+F+R2     2.1165  TPM2u{100,0.0001}+F{0.5,0.125,0.0416667,0.333333}+R2{0.475282,0.999503,0.524718,1.00045}
+ 303  F81+F+I        0.0648  F81+I{1.00353e-06}
+ 304  TPM2u+F+G4     0.1525  TPM2u{0.0001,68.3933}+F{0.34339,0.16567,0.221349,0.269591}+G4{998.432}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -252538.6639 (s.e. 672.0633)
+Unconstrained log-likelihood (without tree): -248318.0950
+Number of free parameters (#branches + #model parameters): 1665
+Akaike information criterion (AIC) score: 508407.3278
+Corrected Akaike information criterion (AICc) score: 508443.2176
+Bayesian information criterion (BIC) score: 524989.3528
+
+Total tree length (sum of branch lengths): 0.0395
+Sum of internal branch lengths: 0.0093 (23.5180% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'E.cloeziana' is drawn at root
+Numbers in parentheses are  ultrafast bootstrap support (%)
+
++---------E.cloeziana
+|
+|           +---------------E.marginata
+|        +--| (100)
+|        |  |                                            +--E.nitens
+|        |  |                                         +--| (66)
+|        |  |                                         |  +-----E.globulus
+|        |  |                                      +--| (55)
+|        |  |                                      |  +--E.aromaphloia
+|        |  |                                   +--| (100)
+|        |  |                                   |  +----E.saligna
+|        |  |                                +--| (100)
+|        |  |                                |  +----E.camaldulensis
+|        |  |                             +--| (100)
+|        |  |                             |  +------E.grandis
+|        |  |                          +--| (100)
+|        |  |                          |  +------E.deglupta
+|        |  |                       +--| (100)
+|        |  |                       |  |             +--E.polybractea
+|        |  |                       |  |          +--| (83)
+|        |  |                       |  |          |  +--E.cladocalyx
+|        |  |                       |  +----------| (100)
+|        |  |                       |             +---E.melliodora
+|        |  |            +----------| (100)
+|        |  |            |          |     +---------E.spathulata
+|        |  |            |          |  +--| (84)
+|        |  |            |          |  |  +------------E.torquata
+|        |  |            |          +--| (100)
+|        |  |            |             +---------E.diversicolor
+|        |  |         +--| (68)
+|        |  |         |  |     +------------------E.guilfoylei
+|        |  |         |  +-----| (100)
+|        |  |         |        |  +----------------E.microcorys
+|        |  |         |        +--| (99)
+|        |  |         |           +----------------------E.salmonophloia
+|        |  |     +---| (100)
+|        |  |     |   +------------------------------------------E.erythrocorys
+|        |  +-----| (100)
+|        |        +--------------------------------------E.curtisii
+|     +--| (100)
+|     |  +-----------E.patens
+|  +--| (50)
+|  |  |              +--E.sieberi
+|  |  |           +--| (100)
+|  |  |           |  +--E.elata
+|  |  |        +--| (100)
+|  |  |        |  +--E.regnans
+|  |  +--------| (100)
+|  |           +-------E.pauciflora
++--| (68)
+|  |           +--E.baxteri
+|  |     +-----| (100)
+|  |     |     +--E.diversifolia
+|  |  +--| (93)
+|  |  |  +---------E.verrucata
+|  +--| (88)
+|     |        +--E.radiata
+|     |     +--| (100)
+|     |     |  +--E.obliqua
+|     +-----| (100)
+|           +--E.delegatensis
+|
++----E.umbra
+
+Tree in newick format:
+
+(E.cloeziana:0.0010811499,((((E.marginata:0.0016070025,(((((((((((E.nitens:0.0002815254,E.globulus:0.0006049886)66:0.000043,E.aromaphloia:0.0003827977)55:0.000008,E.saligna:0.0005239163)100:0.000211,E.camaldulensis:0.0005809385)100:0.000358,E.grandis:0.0007525283)100:0.000336,E.deglupta:0.0007401872)100:0.000150,((E.polybractea:0.0003253350,E.cladocalyx:0.0002857764)83:0.000023,E.melliodora:0.0004881680)100:0.001128)100:0.000179,((E.spathulata:0.0010637589,E.torquata:0.0013455495)84:0.000045,E.diversicolor:0.0010001602)100:0.000352)100:0.001173,(E.guilfoylei:0.0019655395,(E.microcorys:0.0017665582,E.salmonophloia:0.0023004289)99:0.000151)100:0.000621)68:0.000019,E.erythrocorys:0.0042778657)100:0.000414,E.curtisii:0.0039371099)100:0.000603)100:0.000205,E.patens:0.0012654177)100:0.000387,(((E.sieberi:0.0001884916,E.elata:0.0001448572)100:0.000146,E.regnans:0.0002910053)100:0.000356,E.pauciflora:0.0008855517)100:0.000948)50:0.000013,(((E.baxteri:0.0001117381,E.diversifolia:0.0001216909)100:0.000623,E.verrucata:0.0010426735)93:0.000034,((E.radiata:0.0001140205,E.obliqua:0.0001075425)100:0.000079,E.delegatensis:0.0001207245)100:0.000634)88:0.000024)68:0.000028,E.umbra:0.0005034908);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -252538.667450
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with bootstrap support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++---------E.cloeziana
+|
+|           +---------------E.marginata
+|        +--| (100)
+|        |  |                                            +--E.nitens
+|        |  |                                         +--| (66)
+|        |  |                                         |  +-----E.globulus
+|        |  |                                      +--| (55)
+|        |  |                                      |  +--E.aromaphloia
+|        |  |                                   +--| (100)
+|        |  |                                   |  +----E.saligna
+|        |  |                                +--| (100)
+|        |  |                                |  +----E.camaldulensis
+|        |  |                             +--| (100)
+|        |  |                             |  +------E.grandis
+|        |  |                          +--| (100)
+|        |  |                          |  +------E.deglupta
+|        |  |                       +--| (100)
+|        |  |                       |  |             +--E.polybractea
+|        |  |                       |  |          +--| (83)
+|        |  |                       |  |          |  +--E.cladocalyx
+|        |  |                       |  +----------| (100)
+|        |  |                       |             +---E.melliodora
+|        |  |            +----------| (100)
+|        |  |            |          |     +---------E.spathulata
+|        |  |            |          |  +--| (84)
+|        |  |            |          |  |  +------------E.torquata
+|        |  |            |          +--| (100)
+|        |  |            |             +---------E.diversicolor
+|        |  |         +--| (68)
+|        |  |         |  |     +------------------E.guilfoylei
+|        |  |         |  +-----| (100)
+|        |  |         |        |  +----------------E.microcorys
+|        |  |         |        +--| (99)
+|        |  |         |           +----------------------E.salmonophloia
+|        |  |     +---| (100)
+|        |  |     |   +------------------------------------------E.erythrocorys
+|        |  +-----| (100)
+|        |        +--------------------------------------E.curtisii
+|     +--| (100)
+|     |  +-----------E.patens
+|  +--| (50)
+|  |  |              +--E.sieberi
+|  |  |           +--| (100)
+|  |  |           |  +--E.elata
+|  |  |        +--| (100)
+|  |  |        |  +--E.regnans
+|  |  +--------| (100)
+|  |           +-------E.pauciflora
++--| (68)
+|  |           +--E.baxteri
+|  |     +-----| (100)
+|  |     |     +--E.diversifolia
+|  |  +--| (93)
+|  |  |  +---------E.verrucata
+|  +--| (88)
+|     |        +--E.radiata
+|     |     +--| (100)
+|     |     |  +--E.obliqua
+|     +-----| (100)
+|           +--E.delegatensis
+|
++----E.umbra
+
+
+Consensus tree in newick format: 
+
+(E.cloeziana:0.0010806038,((((E.marginata:0.0016071387,(((((((((((E.nitens:0.0002817327,E.globulus:0.0006054730)66:0.0000440000,E.aromaphloia:0.0003827847)55:0.0000080000,E.saligna:0.0005238029)100:0.0002110000,E.camaldulensis:0.0005814086)100:0.0003580000,E.grandis:0.0007530298)100:0.0003350000,E.deglupta:0.0007405849)100:0.0001510000,((E.polybractea:0.0003254417,E.cladocalyx:0.0002858748)83:0.0000230000,E.melliodora:0.0004885020)100:0.0011270000)100:0.0001780000,((E.spathulata:0.0010640667,E.torquata:0.0013459212)84:0.0000440000,E.diversicolor:0.0009997174)100:0.0003520000)100:0.0011740000,(E.guilfoylei:0.0019652445,(E.microcorys:0.0017661892,E.salmonophloia:0.0023004934)99:0.0001510000)100:0.0006210000)68:0.0000190000,E.erythrocorys:0.0042772626)100:0.0004140000,E.curtisii:0.0039372006)100:0.0006030000)100:0.0002040000,E.patens:0.0012651385)100:0.0003870000,(((E.sieberi:0.0001890145,E.elata:0.0001454568)100:0.0001460000,E.regnans:0.0002909047)100:0.0003560000,E.pauciflora:0.0008850452)100:0.0009470000)50:0.0000120000,(((E.baxteri:0.0001114909,E.diversifolia:0.0001210367)100:0.0006230000,E.verrucata:0.0010421121)93:0.0000340000,((E.radiata:0.0001135939,E.obliqua:0.0001071953)100:0.0000790000,E.delegatensis:0.0001215880)100:0.0006340000)88:0.0000240000)68:0.0000280000,E.umbra:0.0005034840);
+
+TIME STAMP
+----------
+
+Date and time: Thu Aug 31 16:10:01 2017
+Total CPU time used: 978.856191 seconds (0h:16m:18s)
+Total wall-clock time used: 982.9404831 seconds (0h:16m:22s)
+

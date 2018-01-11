@@ -1,0 +1,612 @@
+#nexus
+begin sets;
+  charset trnH_GUG = 1-75;
+  charset nocoding = 76-296;
+  charset psbA = 297-1358;
+  charset nocoding = 1359-1626;
+  charset trnK_UUU = 1627-1661;
+  charset nocoding = 1662-1930;
+  charset matK = 1931-3442;
+  charset nocoding = 3443-4214;
+  charset trnK_UUU = 4215-4251;
+  charset nocoding = 4252-4821;
+  charset rps16 = 4822-5015;
+  charset nocoding = 5016-5871;
+  charset rps16 = 5872-5911;
+  charset nocoding = 5912-7218;
+  charset trnQ_UUG = 7219-7290;
+  charset nocoding = 7291-7644;
+  charset psbK = 7645-7830;
+  charset nocoding = 7831-8109;
+  charset psbI = 8110-8220;
+  charset nocoding = 8221-8330;
+  charset trnS_GCU = 8331-8418;
+  charset nocoding = 8419-9145;
+  charset trnG_GGA = 9146-9168;
+  charset nocoding = 9169-9914;
+  charset trnG_GGA = 9915-9963;
+  charset nocoding = 9964-10217;
+  charset trnR_UCU = 10218-10289;
+  charset nocoding = 10290-10590;
+  charset atpA = 10591-12114;
+  charset nocoding = 12115-12172;
+  charset atpF = 12173-12597;
+  charset nocoding = 12598-13343;
+  charset atpF = 13344-13488;
+  charset nocoding = 13489-13929;
+  charset atpH = 13930-14175;
+  charset nocoding = 14176-15234;
+  charset atpI = 15235-15978;
+  charset nocoding = 15979-16165;
+  charset rps2 = 16166-16876;
+  charset nocoding = 16877-17107;
+  charset rpoC2 = 17108-21292;
+  charset nocoding = 21293-21457;
+  charset rpoC1 = 21458-23074;
+  charset nocoding = 23075-23803;
+  charset rpoC1 = 23804-24256;
+  charset nocoding = 24257-24261;
+  charset rpoB = 24262-27480;
+  charset nocoding = 27481-28751;
+  charset trnC_GCA = 28752-28822;
+  charset nocoding = 28823-29278;
+  charset petN = 29279-29368;
+  charset nocoding = 29369-30320;
+  charset psbM = 30321-30425;
+  charset nocoding = 30426-31232;
+  charset trnD_GUC = 31233-31306;
+  charset nocoding = 31307-31750;
+  charset trnY_GUA = 31751-31834;
+  charset nocoding = 31835-31893;
+  charset trnE_UUC = 31894-31966;
+  charset nocoding = 31967-32885;
+  charset trnT_GGU = 32886-32957;
+  charset nocoding = 32958-34381;
+  charset psbD = 34382-35443;
+  charset psbC = 35444-36812;
+  charset nocoding = 36813-37072;
+  charset trnS_UGA = 37073-37165;
+  charset nocoding = 37166-37513;
+  charset psbZ = 37514-37702;
+  charset trnG_UCC = 37703-37773;
+  charset nocoding = 37774-37943;
+  charset trnfM_CAU = 37944-38017;
+  charset nocoding = 38018-38177;
+  charset rps14 = 38178-38480;
+  charset nocoding = 38481-38607;
+  charset psaB = 38608-40812;
+  charset nocoding = 40813-40837;
+  charset psaA = 40838-43090;
+  charset nocoding = 43091-43789;
+  charset ycf3 = 43790-43944;
+  charset nocoding = 43945-44677;
+  charset ycf3 = 44678-44907;
+  charset nocoding = 44908-45660;
+  charset ycf3 = 45661-45784;
+  charset nocoding = 45785-46611;
+  charset trnS_GGA = 46612-46698;
+  charset nocoding = 46699-46980;
+  charset rps4 = 46981-47586;
+  charset nocoding = 47587-47776;
+  charset trnT_UGU = 47777-47849;
+  charset nocoding = 47850-48996;
+  charset trnL_UAA = 48997-49031;
+  charset nocoding = 49032-49546;
+  charset trnL_UAA = 49547-49592;
+  charset nocoding = 49593-49756;
+  charset trnF_GAA = 49757-49829;
+  charset nocoding = 49830-50611;
+  charset ndhJ = 50612-51088;
+  charset nocoding = 51089-51180;
+  charset ndhK = 51181-51858;
+  charset ndhC = 51859-52221;
+  charset nocoding = 52222-52681;
+  charset trnV_UAC = 52682-52716;
+  charset nocoding = 52717-53314;
+  charset trnV_UAC = 53315-53353;
+  charset nocoding = 53354-53526;
+  charset trnM_CAU = 53527-53599;
+  charset nocoding = 53600-53860;
+  charset atpE = 53861-54262;
+  charset atpB = 54263-55755;
+  charset nocoding = 55756-56526;
+  charset rbcL = 56527-57954;
+  charset nocoding = 57955-58633;
+  charset accD = 58634-60106;
+  charset nocoding = 60107-60831;
+  charset psaI = 60832-60945;
+  charset nocoding = 60946-61335;
+  charset ycf4 = 61336-61890;
+  charset nocoding = 61891-62928;
+  charset cemA = 62929-63618;
+  charset nocoding = 63619-63837;
+  charset petA = 63838-64800;
+  charset nocoding = 64801-65792;
+  charset psbJ = 65793-65915;
+  charset nocoding = 65916-66063;
+  charset psbL = 66064-66180;
+  charset nocoding = 66181-66202;
+  charset psbF = 66203-66322;
+  charset nocoding = 66323-66331;
+  charset psbE = 66332-66583;
+  charset nocoding = 66584-67844;
+  charset petL = 67845-67940;
+  charset nocoding = 67941-68113;
+  charset petG = 68114-68227;
+  charset nocoding = 68228-68353;
+  charset trnW_CCA = 68354-68427;
+  charset nocoding = 68428-68620;
+  charset trnP_UGG = 68621-68694;
+  charset psaJ = 68695-68829;
+  charset nocoding = 68830-69247;
+  charset nocoding = 69248-69642;
+  charset rpl33 = 69643-69849;
+  charset nocoding = 69850-70054;
+  charset rps18 = 70055-70360;
+  charset nocoding = 70361-70624;
+  charset rpl20 = 70625-70978;
+  charset nocoding = 70979-71737;
+  charset rps12 = 71738-71851;
+  charset nocoding = 71852-72017;
+  charset clpP = 72018-72245;
+  charset nocoding = 72246-72859;
+  charset clpP = 72860-73151;
+  charset nocoding = 73152-74024;
+  charset clpP = 74025-74095;
+  charset nocoding = 74096-74498;
+  charset psbB = 74499-76025;
+  charset nocoding = 76026-76139;
+  charset psbT = 76140-76247;
+  charset nocoding = 76248-76312;
+  charset psbN = 76313-76444;
+  charset nocoding = 76445-76548;
+  charset psbH = 76549-76770;
+  charset nocoding = 76771-76907;
+  charset petB = 76908-76913;
+  charset nocoding = 76914-77693;
+  charset petB = 77694-78335;
+  charset nocoding = 78336-78527;
+  charset petD = 78528-78535;
+  charset nocoding = 78536-79305;
+  charset petD = 79306-79780;
+  charset nocoding = 79781-79986;
+  charset rpoA = 79987-81000;
+  charset nocoding = 81001-81065;
+  charset rps11 = 81066-81482;
+  charset rpl36 = 81483-81596;
+  charset nocoding = 81597-81712;
+  charset infA_fragment = 81713-81956;
+  charset nocoding = 81957-82119;
+  charset rps8 = 82120-82524;
+  charset nocoding = 82525-82711;
+  charset rpl14 = 82712-83080;
+  charset nocoding = 83081-83208;
+  charset rpl16 = 83209-83607;
+  charset nocoding = 83608-84626;
+  charset rpl16 = 84627-84635;
+  charset nocoding = 84636-84794;
+  charset rps3 = 84795-85445;
+  charset rpl22 = 85446-85909;
+  charset nocoding = 85910-85972;
+  charset rps19 = 85973-86251;
+  charset nocoding = 86252-86282;
+  charset rpl2 = 86283-86716;
+  charset nocoding = 86717-87380;
+  charset rpl2 = 87381-87771;
+  charset nocoding = 87772-87795;
+  charset rpl23 = 87796-88077;
+  charset nocoding = 88078-88246;
+  charset trnI_CAU = 88247-88320;
+  charset nocoding = 88321-88408;
+  charset ycf2 = 88409-95251;
+  charset nocoding = 95252-95341;
+  charset ycf15_fragment = 95342-95885;
+  charset nocoding = 95886-96199;
+  charset trnL_CAA = 96200-96280;
+  charset nocoding = 96281-96862;
+  charset ndhB = 96863-97618;
+  charset nocoding = 97619-98300;
+  charset ndhB = 98301-99077;
+  charset nocoding = 99078-99402;
+  charset rps7 = 99403-99870;
+  charset nocoding = 99871-102595;
+  charset trnV_GAC = 102596-102667;
+  charset nocoding = 102668-102894;
+  charset rrn16 = 102895-104385;
+  charset nocoding = 104386-104679;
+  charset trnI_GAU = 104680-104716;
+  charset nocoding = 104717-105668;
+  charset trnI_GAU = 105669-105703;
+  charset nocoding = 105704-105772;
+  charset trnA_UGC = 105773-105810;
+  charset nocoding = 105811-106613;
+  charset trnA_UGC = 106614-106648;
+  charset nocoding = 106649-106800;
+  charset rrn23 = 106801-109614;
+  charset nocoding = 109615-109712;
+  charset rrn4.5 = 109713-109815;
+  charset nocoding = 109816-110039;
+  charset rrn5 = 110040-110160;
+  charset nocoding = 110161-110415;
+  charset trnR_ACG = 110416-110489;
+  charset nocoding = 110490-111118;
+  charset trnN_GUU = 111119-111190;
+  charset nocoding = 111191-111519;
+  charset ycf1_fragment = 111520-112617;
+  charset ndhF = 112618-114823;
+  charset nocoding = 114824-115753;
+  charset rpl32 = 115754-115927;
+  charset nocoding = 115928-116459;
+  charset trnL_UAG = 116460-116539;
+  charset nocoding = 116540-116631;
+  charset ccsA = 116632-117591;
+  charset nocoding = 117592-117915;
+  charset ndhD = 117916-119418;
+  charset nocoding = 119419-119567;
+  charset psaC = 119568-119813;
+  charset nocoding = 119814-120042;
+  charset ndhE = 120043-120348;
+  charset nocoding = 120349-120584;
+  charset ndhG = 120585-121115;
+  charset nocoding = 121116-121517;
+  charset ndhI = 121518-122021;
+  charset nocoding = 122022-122121;
+  charset ndhA = 122122-122661;
+  charset nocoding = 122662-123722;
+  charset ndhA = 123723-124274;
+  charset nocoding = 124275-124275;
+  charset ndhH = 124276-125457;
+  charset nocoding = 125458-125563;
+  charset rps15 = 125564-125839;
+  charset nocoding = 125840-126254;
+  charset ycf1 = 126255-131909;
+  charset nocoding = 131910-132238;
+  charset trnN_GUU = 132239-132310;
+  charset nocoding = 132311-132939;
+  charset trnR_ACG = 132940-133013;
+  charset nocoding = 133014-133268;
+  charset rrn5 = 133269-133389;
+  charset nocoding = 133390-133613;
+  charset rrn4.5 = 133614-133716;
+  charset nocoding = 133717-133814;
+  charset rrn23 = 133815-136627;
+  charset nocoding = 136628-136779;
+  charset trnA_UGC = 136780-136814;
+  charset nocoding = 136815-137617;
+  charset trnA_UGC = 137618-137655;
+  charset nocoding = 137656-137725;
+  charset trnI_GAU = 137726-137760;
+  charset nocoding = 137761-138712;
+  charset rrn16 = 138713-140203;
+  charset trnI_GAU = 140204-140240;
+  charset nocoding = 140241-140533;
+  charset nocoding = 140534-140760;
+  charset trnV_GAC = 140761-140832;
+  charset nocoding = 140833-142701;
+  charset rps12 = 142702-142940;
+  charset nocoding = 142941-143468;
+  charset rps12 = 143469-143505;
+  charset nocoding = 143506-143558;
+  charset nocoding = 143559-143883;
+  charset ndhB = 143884-144660;
+  charset nocoding = 144661-145342;
+  charset ndhB = 145343-146098;
+  charset nocoding = 146099-146680;
+  charset trnL_CAA = 146681-146761;
+  charset nocoding = 146762-147075;
+  charset ycf15_fragment = 147076-147619;
+  charset nocoding = 147620-147709;
+  charset ycf2 = 147710-154552;
+  charset nocoding = 154553-154640;
+  charset trnI_CAU = 154641-154714;
+  charset nocoding = 154715-154883;
+  charset rpl23 = 154884-155165;
+  charset nocoding = 155166-155189;
+  charset rpl2 = 155190-155580;
+  charset nocoding = 155581-156244;
+  charpartition mymodels =
+    JC: trnH_GUG,
+    TPM2u+G4: nocoding,
+    TN+I: psbA,
+    TPM2u+G4: nocoding,
+    JC: trnK_UUU,
+    TPM2u+G4: nocoding,
+    TVM+R2: matK,
+    TPM2u+G4: nocoding,
+    JC: trnK_UUU,
+    TPM2u+G4: nocoding,
+    F81: rps16,
+    TPM2u+G4: nocoding,
+    F81+I: rps16,
+    TPM2u+G4: nocoding,
+    JC: trnQ_UUG,
+    TPM2u+G4: nocoding,
+    F81: psbK,
+    TPM2u+G4: nocoding,
+    F81: psbI,
+    TPM2u+R2: nocoding,
+    JC: trnS_GCU,
+    TPM2u+G4: nocoding,
+    JC: trnG_GGA,
+    TPM2u+G4: nocoding,
+    JC: trnG_GGA,
+    TPM2u+G4: nocoding,
+    JC: trnR_UCU,
+    TPM2u+G4: nocoding,
+    HKY: atpA,
+    TPM2u+R2: nocoding,
+    F81: atpF,
+    TPM2u+G4: nocoding,
+    F81: atpF,
+    TPM2u+G4: nocoding,
+    K2P: atpH,
+    TPM2u+G4: nocoding,
+    HKY: atpI,
+    TPM2u+R2: nocoding,
+    F81: rps2,
+    TPM2u+G4: nocoding,
+    TIM+R2: rpoC2,
+    TPM2u+R2: nocoding,
+    F81: rpoC1,
+    TPM2u+G4: nocoding,
+    K3Pu+I: rpoC1,
+    TVM+R2: nocoding,
+    K3Pu+I: rpoB,
+    TPM2u+G4: nocoding,
+    JC: trnC_GCA,
+    TPM2u+G4: nocoding,
+    JC: petN,
+    TPM2u+G4: nocoding,
+    F81: psbM,
+    TPM2u+G4: nocoding,
+    JC: trnD_GUC,
+    TPM2u+G4: nocoding,
+    JC: trnY_GUA,
+    TPM2u+R2: nocoding,
+    JC: trnE_UUC,
+    TPM2u+G4: nocoding,
+    JC: trnT_GGU,
+    TPM2u+G4: nocoding,
+    F81: psbD,
+    F81+I: psbC,
+    TPM2u+G4: nocoding,
+    JC: trnS_UGA,
+    TPM2u+G4: nocoding,
+    HKY: psbZ,
+    JC: trnG_UCC,
+    TPM2u+R2: nocoding,
+    JC: trnfM_CAU,
+    TPM2u+R2: nocoding,
+    K2P: rps14,
+    TPM2u+R2: nocoding,
+    HKY: psaB,
+    TPM2u+R2: nocoding,
+    F81: psaA,
+    TPM2u+G4: nocoding,
+    JC: ycf3,
+    TPM2u+G4: nocoding,
+    JC: ycf3,
+    TPM2u+G4: nocoding,
+    JC: ycf3,
+    TPM2u+G4: nocoding,
+    JC: trnS_GGA,
+    TPM2u+G4: nocoding,
+    F81: rps4,
+    TPM2u+R2: nocoding,
+    JC: trnT_UGU,
+    TPM2u+G4: nocoding,
+    JC: trnL_UAA,
+    TPM2u+G4: nocoding,
+    JC: trnL_UAA,
+    TPM2u+R2: nocoding,
+    JC: trnF_GAA,
+    TPM2u+G4: nocoding,
+    F81+I: ndhJ,
+    TPM2u+R2: nocoding,
+    F81: ndhK,
+    TPM2u+I: ndhC,
+    TPM2u+G4: nocoding,
+    JC: trnV_UAC,
+    TPM2u+G4: nocoding,
+    JC: trnV_UAC,
+    TPM2u+R2: nocoding,
+    JC: trnM_CAU,
+    TPM2u+G4: nocoding,
+    HKY: atpE,
+    F81+I: atpB,
+    TPM2u+G4: nocoding,
+    F81+R2: rbcL,
+    TPM2u+G4: nocoding,
+    K3Pu: accD,
+    TPM2u+G4: nocoding,
+    F81: psaI,
+    TPM2u+G4: nocoding,
+    HKY: ycf4,
+    TPM2u+G4: nocoding,
+    F81+R2: cemA,
+    TPM2u+G4: nocoding,
+    F81+I: petA,
+    TPM2u+G4: nocoding,
+    F81: psbJ,
+    TPM2u+R2: nocoding,
+    F81: psbL,
+    TPM2u+R2: nocoding,
+    JC: psbF,
+    TPM2u+R2: nocoding,
+    JC: psbE,
+    TPM2u+G4: nocoding,
+    F81: petL,
+    TPM2u+R2: nocoding,
+    F81: petG,
+    TPM2u+R2: nocoding,
+    JC: trnW_CCA,
+    TPM2u+R2: nocoding,
+    JC: trnP_UGG,
+    JC: psaJ,
+    TPM2u+G4: nocoding,
+    TPM2u+G4: nocoding,
+    F81: rpl33,
+    TPM2u+R2: nocoding,
+    F81: rps18,
+    TPM2u+G4: nocoding,
+    K3Pu: rpl20,
+    TPM2u+G4: nocoding,
+    JC: rps12,
+    TPM2u+R2: nocoding,
+    JC: clpP,
+    TPM2u+G4: nocoding,
+    JC: clpP,
+    TPM2u+G4: nocoding,
+    JC: clpP,
+    TPM2u+G4: nocoding,
+    HKY: psbB,
+    TPM2u+R2: nocoding,
+    JC: psbT,
+    TPM2u+R2: nocoding,
+    K2P: psbN,
+    TPM2u+R2: nocoding,
+    K2P: psbH,
+    TPM2u+R2: nocoding,
+    JC: petB,
+    TPM2u+G4: nocoding,
+    JC: petB,
+    TPM2u+R2: nocoding,
+    JC: petD,
+    TPM2u+G4: nocoding,
+    JC: petD,
+    TPM2u+R2: nocoding,
+    TPM2u: rpoA,
+    TPM2u+R2: nocoding,
+    K2P: rps11,
+    TVMe+I: rpl36,
+    TPM2u+R2: nocoding,
+    F81: infA_fragment,
+    TPM2u+R2: nocoding,
+    F81: rps8,
+    TPM2u+R2: nocoding,
+    F81: rpl14,
+    TPM2u+R2: nocoding,
+    F81: rpl16,
+    TPM2u+G4: nocoding,
+    TPM2u: rpl16,
+    TPM2u+R2: nocoding,
+    F81: rps3,
+    TPM2u+R2: rpl22,
+    TPM2u+R2: nocoding,
+    K3Pu: rps19,
+    TPM2u+R2: nocoding,
+    F81+I: rpl2,
+    TPM2u+G4: nocoding,
+    F81+I: rpl2,
+    TPM2u+R2: nocoding,
+    F81: rpl23,
+    TPM2u+R2: nocoding,
+    JC: trnI_CAU,
+    TPM2u+R2: nocoding,
+    K3Pu+I: ycf2,
+    TPM2u+R2: nocoding,
+    K3Pu+I: ycf15_fragment,
+    TPM2u+G4: nocoding,
+    JC: trnL_CAA,
+    TPM2u+G4: nocoding,
+    F81: ndhB,
+    TPM2u+G4: nocoding,
+    F81: ndhB,
+    TPM2u+G4: nocoding,
+    F81: rps7,
+    TPM2u+G4: nocoding,
+    JC: trnV_GAC,
+    TPM2u+G4: nocoding,
+    F81: rrn16,
+    TPM2u+G4: nocoding,
+    JC: trnI_GAU,
+    TPM2u+G4: nocoding,
+    JC: trnI_GAU,
+    TPM2u+R2: nocoding,
+    JC: trnA_UGC,
+    TPM2u+G4: nocoding,
+    JC: trnA_UGC,
+    TPM2u+R2: nocoding,
+    F81+I: rrn23,
+    TPM2u+R2: nocoding,
+    JC: rrn4.5,
+    TPM2u+G4: nocoding,
+    JC: rrn5,
+    TPM2u+G4: nocoding,
+    JC: trnR_ACG,
+    TPM2u+G4: nocoding,
+    JC: trnN_GUU,
+    TPM2u+G4: nocoding,
+    F81+I: ycf1_fragment,
+    TVM+I: ndhF,
+    TPM2u+G4: nocoding,
+    F81: rpl32,
+    TPM2u+G4: nocoding,
+    JC: trnL_UAG,
+    TPM2u+R2: nocoding,
+    K3Pu+I: ccsA,
+    TPM2u+G4: nocoding,
+    TVM+R2: ndhD,
+    TPM2u+R2: nocoding,
+    K2P: psaC,
+    TPM2u+G4: nocoding,
+    F81: ndhE,
+    TPM2u+G4: nocoding,
+    F81: ndhG,
+    TPM2u+G4: nocoding,
+    F81: ndhI,
+    TPM2u+R2: nocoding,
+    F81: ndhA,
+    TPM2u+G4: nocoding,
+    F81: ndhA,
+    GTR+R3: nocoding,
+    F81: ndhH,
+    TPM2u+R2: nocoding,
+    F81: rps15,
+    TPM2u+G4: nocoding,
+    TVM+I: ycf1,
+    TPM2u+G4: nocoding,
+    JC: trnN_GUU,
+    TPM2u+G4: nocoding,
+    JC: trnR_ACG,
+    TPM2u+G4: nocoding,
+    JC: rrn5,
+    TPM2u+G4: nocoding,
+    JC: rrn4.5,
+    TPM2u+R2: nocoding,
+    F81+I: rrn23,
+    TPM2u+R2: nocoding,
+    JC: trnA_UGC,
+    TPM2u+G4: nocoding,
+    JC: trnA_UGC,
+    TPM2u+R2: nocoding,
+    JC: trnI_GAU,
+    TPM2u+G4: nocoding,
+    F81: rrn16,
+    JC: trnI_GAU,
+    TPM2u+G4: nocoding,
+    TPM2u+G4: nocoding,
+    JC: trnV_GAC,
+    TPM2u+G4: nocoding,
+    JC: rps12,
+    TPM2u+G4: nocoding,
+    JC: rps12,
+    TPM2u+R2: nocoding,
+    TPM2u+G4: nocoding,
+    F81: ndhB,
+    TPM2u+G4: nocoding,
+    F81: ndhB,
+    TPM2u+G4: nocoding,
+    JC: trnL_CAA,
+    TPM2u+G4: nocoding,
+    K3Pu+I: ycf15_fragment,
+    TPM2u+R2: nocoding,
+    K3Pu+I: ycf2,
+    TPM2u+R2: nocoding,
+    JC: trnI_CAU,
+    TPM2u+R2: nocoding,
+    F81: rpl23,
+    TPM2u+R2: nocoding,
+    F81+I: rpl2,
+    TPM2u+G4: nocoding;
+end;

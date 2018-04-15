@@ -2,6 +2,10 @@
 
 This pipeline is used to assemble Eucalyptus pauciflora chloroplast genome with short-read (Unicycler) or long-read (Canu and Hinge) or hybrid (Unicycler). If anyone want to use, they should change the input/output file in scripts. We randomly selected 5x, 8x, 10x, 20x, 40x, 60x, 80x, 100x, 200x, 300x, 400x and 500x coverage of long-/short- read to do the assembly to compare the difference. For long-read only assembly, according to our analysis, Hinge is better than Canu, but the min coverage should be **>=20x**. In our analysis, long-read only assembly result needs to be manually removed duplication and rearranged structure. For short-read only assembly, we found that **when the short-read coverage >=20x, Unicycler is able to correct distinguish short single copy (ssc), long singel copy (lsc) and inverst repeats (ir), which returns three individual, complete contigs (ssc, lsc and ir)**. In terms to hybrid assembly, we found that **>=20x coverage shor-read and >=20x coverage of long read** can provide **a single, no duplication and complete chloroplast genome**.) 
 
+Epau.genome.fa is the of Eucalyptus pauciflora chloroplast genome.
+
+Epau.gff3 is the gene annotation of Eucalyptus pauciflora chloroplast genome.
+
 ## Requirements
 - Fastqc
 - Bbduk v37.31

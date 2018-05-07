@@ -15,6 +15,7 @@ Epau.gff3 is the gene annotation of Eucalyptus pauciflora chloroplast genome.
 - Blasr v5.1
 - Bwa v0.7.15
 - samtools v1.5
+- varScan v2.4.0
 - Hinge
 - Canu v1.6
 - Unicycler v0.3.1

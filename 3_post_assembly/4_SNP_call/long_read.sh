@@ -14,6 +14,9 @@ threads=$4
         -x ont \
         --skip-write
  
+samtools view -b -F 2308 -@ $threads $outputFile > $outputFile.bam
+samtools sort -@ $threads $outputFile.bam > $outputFile.sort.bam
+samtools index $outputFile.sort.bam
  
         
  nanopolish variants \

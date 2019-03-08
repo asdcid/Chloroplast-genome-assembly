@@ -13,19 +13,22 @@ from Bio import SeqIO
  
 def main():
     inputFile   = 'result/RB7_C4.fasta.out'
-    reference   = 'query/RB7_C4.fasta'
+    reads       = 'query/RB7_C4.fasta'
+   
+    #the readsFormat should be fasta or fastq
+    readsFormat = 'fasta'
     outputFile  = 'result/blasr_RB7_C4.fasta'
 
 
     o = open(outputFile, 'w+')
-    reads   = {}
+    mappedReads   = {}
     with open(inputFile) as f:
         for line in f:
             info    = line.split()
             read    = info[0]
-            reads[read] = ''
-    for r in SeqIO.parse(reference, 'fasta'):
-        if str(r.id) in reads:
+            mappedReads[read] = ''
+    for r in SeqIO.parse(reads, readsFormat):
+        if str(r.id) in mappedReads:
             o.write('>%s\n%s\n' % (r.id, r.seq))
     o.close()
 

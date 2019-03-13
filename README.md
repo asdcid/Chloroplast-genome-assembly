@@ -12,7 +12,7 @@ Epau.gff3 is the gene annotation of Eucalyptus pauciflora chloroplast genome.
 - Porechop v0.2.1
 - Nanofilt v1.2.0
 - Bowtie2 v2.2.6
-- Blasr v5.1
+- Blasr v5.1 (**NOTE**: Some versions of Blasr will add something at the end of the read name, which will cause error in the 1\_pre\_assembly/2\_cpDNAExtraction/longRead/2\_resultParse.py, need to manually fix the read name or the 2\_resultParse.py script)
 - Bwa v0.7.15
 - samtools v1.5
 - varScan v2.4.0

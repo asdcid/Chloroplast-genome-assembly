@@ -18,7 +18,7 @@ outputPlotFile=$4
 
 nucmer \
     --mum \
-    -prefix=$outputFile  \
+    --prefix=$outputFile  \
     $ref \
     $inputFile \
 

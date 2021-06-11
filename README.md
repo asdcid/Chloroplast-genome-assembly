@@ -110,7 +110,6 @@ Run Racon. The path of inputFile (the chloroplast long-reads) and ref (assembly 
 ```
 Run Nanopolish. Nanopolish needs the index data (link to original Fast5 data, details see [Nanopolish] (https://github.com/jts/nanopolish)) .
 ```
-./3_post_assembly/2_polish/
 ./3_post_assembly/2_polish/run_nanopolish.sh 
 ```
 For Racon+Nanopolish, run Racon first, and then used the Racon-polish result as input to run Nanopolish.

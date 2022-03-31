@@ -6,6 +6,10 @@ Epau.genome.fa is the of Eucalyptus pauciflora chloroplast genome.
 
 Epau.gff3 is the gene annotation of Eucalyptus pauciflora chloroplast genome.
 
+## Citation
+Wang, W., Schalamun, M., Morales-Suarez, A. et al. Assembly of chloroplast genomes with long- and short-read data: a comparison of approaches using Eucalyptus pauciflora as a test case. BMC Genomics 19, 977 (2018). https://doi.org/10.1186/s12864-018-5348-8
+
+
 ## Requirements
 - Fastqc
 - Bbduk v37.31
